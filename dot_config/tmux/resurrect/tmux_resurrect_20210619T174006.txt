@@ -1,0 +1,9 @@
+pane	Learning	1	:weechat	0	:	1	:/home/patrick	1	weechat	:weechat
+pane	Learning	2	:shell	1	:*	1	:/home/patrick	1	vim	:vim .tmux.conf
+pane	Learning	3	:vim	0	:-	1	:/home/patrick	1	zsh	:
+pane	Learning	4	:admin	0	:	1	:/home/patrick	1	zsh	:
+window	Learning	1	0	:	c37d,144x36,0,0,0
+window	Learning	2	1	:*	c37e,144x36,0,0,1
+window	Learning	3	0	:-	c37f,144x36,0,0,2
+window	Learning	4	0	:	61f0,144x36,0,0,11
+state	Learning	
