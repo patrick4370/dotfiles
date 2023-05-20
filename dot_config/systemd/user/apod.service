@@ -1,0 +1,7 @@
+[Unit]
+Description=Retrieves APOD from NASA
+
+[Service]
+Type=simple
+ExecStart=/home/patrick/.local/bin/nasaph.sh
+

@@ -1,0 +1,7 @@
+[Unit]
+Description=Changes wallpaper every 5 minutes
+
+[Service]
+Type=simple
+ExecStart=/home/patrick/.local/bin/wallpaper.sh
+

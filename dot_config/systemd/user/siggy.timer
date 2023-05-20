@@ -1,0 +1,10 @@
+[Unit]
+Description=Runs siggy.sh every 5 minutes
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=5min
+Unit=siggy.service
+
+[Install]
+WantedBy=timers.target
