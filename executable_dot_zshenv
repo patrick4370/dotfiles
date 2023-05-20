@@ -1,9 +1,5 @@
-export BW_CLIENTID=user.66917a87-1efe-4595-a3f7-aaab00725403
-export BW_CLIENTSECRET=Ad1NN9zvFgw5mmfrOJhUWaMkS9Sxso
-export AUR_PASSWORD=IrNkSfh4LAwd
 export AUR_USER=patrick4370
 export BROWSER='/usr/bin/librewolf'
-export BW_SESSION="ZqQ1EwEXnhP+M+w5veGCYGwLtft2NOedzNYrTNpPpCqhRo74b6n4S3U1RUe0QQ/H82aTkRhWxDIpnXj8LfnM9Q=="
 export CDPATH='.:/:~/:..:../..:~/Documents:~/Pictures:/etc:~/Videos/:~/Pictures/Screenshots/'
 export CM_HISTLENGTH=20
 export CM_LAUNCHER='/usr/bin/rofi'
@@ -58,5 +54,3 @@ export XDG_DATA_DIRS="${XDG_DATA_DIRS:=$HOME/.local/share/:/usr/local/share:/usr
 export XMODIFIERS=@im=ibus
 export ZDOTDIR="${XDG_CONFIG_HOME}/zsh"
 export ZSH_TMUX_CONFIG="${XDG_CONFIG_HOME}/tmux/tmux.conf"
-
-
