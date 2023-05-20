@@ -1,0 +1,175 @@
+# History Variables and options
+setopt EXTENDED_HISTORY                                 # Write the history file in the ':start:elapsed;command' format.
+setopt INC_APPEND_HISTORY                               # Write to the history file immediately, not when the shell exits.
+setopt SHARE_HISTORY                                    # Share history between all sessions.
+setopt HIST_EXPIRE_DUPS_FIRST                           # Expire a duplicate event first when trimming history.
+setopt HIST_IGNORE_DUPS                                 # Do not record an event that was just recorded again.
+setopt HIST_IGNORE_ALL_DUPS                             # Delete an old recorded event if a new event is a duplicate.
+setopt HIST_FIND_NO_DUPS                                # Do not display a previously found event.
+setopt HIST_IGNORE_SPACE                                # Do not record an event starting with a space.
+setopt HIST_SAVE_NO_DUPS                                # Do not write a duplicate event to the history file.
+setopt HIST_VERIFY                                      # Do not execute immediately upon history expansion.
+setopt APPEND_HISTORY                                   # append to history file
+setopt HIST_NO_STORE                                    # Don't store history commands
+export HISTFILE="${XDG_CACHE_HOME}/zsh/histfile"
+export HISTSIZE=1000000
+export SAVEHIST=1000000
+
+# Initialize the completion for the current Zsh session 
+autoload -U compinit; compinit -i
+
+zstyle ':completion:*' menu select
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path "$XDG_CACHE_HOME/zsh/.zcompcache"
+zstyle ':completion:*:*:*:*:descriptions' format '%F{green}-- %d --%f'
+zstyle ':completion:*:*:-command-:*:*' group-order alias builtins functions commands
+zstyle ':completion:*:corrections' format '%B%d (errors: %e)%b'
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+zstyle ':completion:*' format %d
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+
+setopt COMPLETE_ALIASES		# Prevent aliases being expanded
+setopt PUSHD_MINUS
+setopt EXTENDED_GLOB		# Treat the `#', `~' and `^' characters as part of patterns for filename generation
+setopt GLOB_COMPLETE
+setopt INTERACTIVECOMMENTS  # Allow comments at the prompt
+setopt LIST_PACKED
+setopt LIST_ROWS_FIRST
+setopt MENU_COMPLETE
+setopt PUSHD_IGNORE_DUPS	# Don't push multiple copies of the same directory onto the directory stack	
+setopt PUSHD_MINUS			# Exchanges the meanings of `+' and `-' when used with a number to specify a directory in the stack
+setopt PUSHD_SILENT			# Do not print the directory stack after pushd or popd
+setopt PUSHD_TO_HOME		# Have pushd with no arguments act like `pushd $HOME'
+setopt AUTO_CD
+setopt AUTOPUSHD 
+setopt PUSHDIGNOREDUPS
+
+export cdpath=($HOME/Documents $HOME/Downloads $HOME/Pictures $HOME/Videos)
+
+# Load and merge changes in ~/.Xresouces
+[[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
+
+source ~/.zshenv
+source /usr/share/doc/find-the-command/ftc.zsh info
+
+# Plugin Manager
+
+# Clone zcomet if necessary
+if [[ ! -f ${ZDOTDIR:-${HOME}}/.zcomet/bin/zcomet.zsh ]]; then
+  git clone https://github.com/agkozak/zcomet.git ${ZDOTDIR:-${HOME}}/.zcomet/bin
+fi
+
+# Source zcomet.zsh
+source ${ZDOTDIR:-${HOME}}/.zcomet/bin/zcomet.zsh
+
+zcomet load momo-lab/zsh-smartinput
+zcomet load Aloxaf/fzf-Tab
+zcomet load zdharma-continuum/fast-syntax-highlighting
+zcomet load sunlei/zsh-ssh
+zcomet load jeffreytse/zsh-vi-mode
+zcomet load Tarrasch/zsh-command-not-found
+# It is good to load these popular plugins last, and in this order:
+# zcomet load zsh-users/zsh-syntax-highlighting
+zcomet load zsh-users/zsh-autosuggestions
+
+# Run compinit and compile its cache
+zcomet compinit
+
+# FZF Key bindings for ZSH
+[[ -f "/usr/share/fzf/key-bindings.zsh" ]] && source "/usr/share/fzf/key-bindings.zsh"
+# Autosuggestions
+[[ -f "/usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" ]] && source "/usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
+# FZF Completions
+[[ -f "/usr/share/fzf/completion.zsh" ]] && source "/usr/share/fzf/completion.zsh"
+# ZSH Syntax highlighting
+[[ -f "/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]] && source "/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+# Local Aliases
+[[ -f "$ZDOTDIR/.alias.zsh" ]] && source "$ZDOTDIR/.alias.zsh"
+# Local functions
+[[ -f "$ZDOTDIR/.functions.zsh" ]] && source "$ZDOTDIR/.functions.zsh"
+[[ -f "/usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh" ]] && source "/usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh"
+
+eval $(keychain --quiet ~/.ssh/pidns_ecdsa ~/.ssh/pxe_ecdsa ~/.ssh/id_ed25519_gitlab)
+source /home/patrick/.keychain/bella-sh
+
+# Custom completion directories
+fpath=($HOME/.local/share/zsh/prompt $fpath)
+ 
+bindkey -s '^o' 'mc^M'
+bindkey -s '^h' 'cd ~^M'
+bindkey -s '^e' 'cd ~/.config/^M'
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
+export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND="fg=black,bg=green"
+
+# PATH
+typeset -U PATH path
+path=("$HOME/.local/bin" "$HOME/bin" "$path[@]")
+export PATH
+
+# Shortcut to exit shell on partial command line
+exit_zsh() { exit }
+zle -N exit_zsh
+bindkey '^D' exit_zsh
+ 
+# Persistent rehash - Auto reload - New commands automatically included in the completion
+zshcache_time="$(date +%s%N)"
+
+# create a zkbd compatible hash;
+# to add other keys to this hash, see: man 5 terminfo
+typeset -g -A key
+
+key[Home]="${terminfo[khome]}"
+key[End]="${terminfo[kend]}"
+key[Insert]="${terminfo[kich1]}"
+key[Backspace]="${terminfo[kbs]}"
+key[Delete]="${terminfo[kdch1]}"
+key[Up]="${terminfo[kcuu1]}"
+key[Down]="${terminfo[kcud1]}"
+key[Left]="${terminfo[kcub1]}"
+key[Right]="${terminfo[kcuf1]}"
+key[PageUp]="${terminfo[kpp]}"
+key[PageDown]="${terminfo[knp]}"
+key[Shift-Tab]="${terminfo[kcbt]}"
+
+# setup key accordingly
+[[ -n "${key[Home]}"      ]] && bindkey -- "${key[Home]}"       beginning-of-line
+[[ -n "${key[End]}"       ]] && bindkey -- "${key[End]}"        end-of-line
+[[ -n "${key[Insert]}"    ]] && bindkey -- "${key[Insert]}"     overwrite-mode
+[[ -n "${key[Backspace]}" ]] && bindkey -- "${key[Backspace]}"  backward-delete-char
+[[ -n "${key[Delete]}"    ]] && bindkey -- "${key[Delete]}"     delete-char
+[[ -n "${key[Up]}"        ]] && bindkey -- "${key[Up]}"         up-line-or-history
+[[ -n "${key[Down]}"      ]] && bindkey -- "${key[Down]}"       down-line-or-history
+[[ -n "${key[Left]}"      ]] && bindkey -- "${key[Left]}"       backward-char
+[[ -n "${key[Right]}"     ]] && bindkey -- "${key[Right]}"      forward-char
+[[ -n "${key[PageUp]}"    ]] && bindkey -- "${key[PageUp]}"     beginning-of-buffer-or-history
+[[ -n "${key[PageDown]}"  ]] && bindkey -- "${key[PageDown]}"   end-of-buffer-or-history
+[[ -n "${key[Shift-Tab]}" ]] && bindkey -- "${key[Shift-Tab]}"  reverse-menu-complete
+
+# Finally, make sure the terminal is in application mode, when zle is
+# active. Only then are the values from $terminfo valid.
+if (( ${+terminfo[smkx]} && ${+terminfo[rmkx]} )); then
+	autoload -Uz add-zle-hook-widget
+	function zle_application_mode_start { echoti smkx }
+	function zle_application_mode_stop { echoti rmkx }
+	add-zle-hook-widget -Uz zle-line-init zle_application_mode_start
+	add-zle-hook-widget -Uz zle-line-finish zle_application_mode_stop
+fi
+
+# When you forget to add sudo
+function prepend-sudo {
+  if [[ $BUFFER != "sudo "* ]]; then
+    BUFFER="sudo $BUFFER"; CURSOR+=5
+  fi
+}
+zle -N prepend-sudo
+bindkey -M vicmd s prepend-sudo
+
+# Edit command line in Nvim
+# autoload -U edit-command-line
+# zle -N edit-command-line
+# bindkey -M vicmd v edit-command-line
+
+# # Command Prompt
+eval "$(starship init zsh)"
