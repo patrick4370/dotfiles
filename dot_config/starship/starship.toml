@@ -1,0 +1,92 @@
+# Get editor completions based on the config schema
+'$schema' = 'https://starship.rs/config-schema.json'
+
+# Increase Starship command scan & duration time-outs
+scan_timeout = 80
+command_timeout = 1000
+
+#Inserts ad blank line between shell prompts
+add_newline = true 
+
+# Prompt layout
+format = """\
+		 $directory\
+         $status\
+         $sudo\
+		 $line_break\
+		 $git_branch\
+		 $git_commit\
+         $git_status\
+		 $git_state\
+         $username\
+         $hostname\
+		 $character\
+		 """
+
+# Replace the '❯' symbol in the prompt with '➜'
+[character]                            # The name of the module we are configuring is 'character'
+success_symbol = '[:](#DA70D6)'     # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
+error_symbol = '[:](bold red) '
+vimcmd_symbol = '[<:>](bold blue)'
+vimcmd_visual_symbol = '[V](bold yellow)'
+vimcmd_replace_symbol = '[R](bold red)'
+disabled = false
+
+[sudo]
+style = 'bold green'
+symbol = '👀'
+format = '[\[](#708090)[$symbol]($style)[\]](#708090)'
+disabled = false
+
+[username]
+style_user = '#009E60'
+format = ' [\[](#708090)[$user]($style)[@](#FFF8DC)'
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+format =  '[$hostname](#FF2400)[\]](#708090)'
+disabled = false
+
+[directory]
+truncation_length = 100
+truncate_to_repo = false
+style = 'italic #F3E5AB'
+read_only = ' 🔐 '
+format = ' [\[](#708090)[$path]($style)[$read_only]($read_only_style)[\]](#708090)'
+disabled = false
+
+[status]
+disabled = false
+format = ' [\[](#708090)[$status - $common_meaning](bold red)[\]](#708090) '
+
+[git_branch]
+symbol = '🌱 '
+format = ' [$symbol$branch(:$remote_branch)]($style) '
+style = 'white'
+disabled = false
+
+[git_commit]
+commit_hash_length = 4
+tag_symbol = '🏷️ '
+disabled = false
+
+[git_status]
+conflicted = '🏳️ '
+ahead = '🚀 '
+behind = '😰 '
+diverged = '😫 '
+untracked = '🤷 '
+stashed = '📦 '
+modified = '✍️ ' 
+staged = '[++\($count\)](green)'
+renamed = '👅 '
+deleted = '🗑️ '
+style = 'bright-white'
+disabled = false
+
+[git_state]
+format = '[\($state( $progress_current of $progress_total)\)]($style) '
+cherry_pick = '[🍒 PICKING](bold red)'
+disabled = false
