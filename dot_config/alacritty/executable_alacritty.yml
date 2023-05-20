@@ -1,0 +1,114 @@
+bell:
+  animation: EaseOutExpo
+  color: '0x262626'
+  duration: 300
+
+draw_bold_text_with_bright_colors: true
+
+env:
+  LANG: en-AU.UTF-8
+  TERM: xterm-256color
+
+line_indicator:
+  foreground: '#ffffff'
+  background: '#ff00ff'
+
+footer_bar:
+  background: '#00ff00'
+  foreground: '#1d1f21'
+
+
+font:
+  bold:
+    family: Inconsolata Nerd Font Mono
+    style: Bold
+  bold_italic:
+    family: Inconsolata Nerd Font Mono
+    style: Bold Italic
+  italic:
+    family: Inconsolata Nerd Font Mono
+    style: Italic
+  normal:
+    family: Inconsolata Nerd Font Mono
+    style: Regular
+  size: 12.5
+  glyph_offset:
+    x: 0
+    y: 0
+
+hints:
+  foreground: '#ffffff'
+  background: '#562626'
+
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+  foreground: '#ffffff'
+  background: '#ff0000'
+
+search:
+  matches:
+    foreground: '#ffffff'
+    background: '#662626'
+  bar:
+    background: '#c5c8c6'
+    foreground: '#1d1f21'  
+
+style:
+  blink-interval: 3000
+  blinking: true
+  shape: Beam
+vi_mode_style:
+  shape: Block
+hints.enabled.hyperlinks: true
+unfocused_hollow: true
+
+key_bindings:
+- action: Paste
+  key: V
+  mods: Control|Shift
+- action: Copy
+  key: C
+  mods: Control|Shift
+- action: ResetFontSize
+  key: Key0
+  mods: Control
+- action: IncreaseFontSize
+  key: Equals
+  mods: Control
+- action: IncreaseFontSize
+  key: NumpadAdd
+  mods: Control
+- action: DecreaseFontSize
+  key: NumpadSubtract
+  mods: Control
+- action: DecreaseFontSize
+  key: Minus
+  mods: Control
+- action: SpawnNewInstance
+  key: Return
+  mods: Control|Shift
+
+live_config_reload: true
+draw_bold_text_with_bright_colors: true
+
+multiplier: 10
+
+offset:
+  x: 0
+  y: 0
+
+save_to_clipboard: true
+
+scrolling:
+  history: 100000
+
+window:
+  dynamic_title: true
+  opacity: 0.85
+  padding:
+    x: 5 
+    y: 5 
+
+import:
+  - /home/patrick/.config/alacritty/themes/ef-tritanopia-dark.yaml
+
