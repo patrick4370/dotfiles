@@ -1,0 +1,6 @@
+[Unit]
+Description=Backup to external drive
+
+[Service]
+Type=simple
+ExecStart=/home/patrick/.local/bin/homebackup.sh
