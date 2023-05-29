@@ -110,5 +110,5 @@ window:
     y: 5 
 
 import:
-  - /home/patrick/.config/alacritty/themes/ef-tritanopia-dark.yaml
+  - /home/patrick/.config/alacritty/themes/xterm.yaml
 
