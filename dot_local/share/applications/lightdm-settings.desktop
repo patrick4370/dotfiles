@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Login Window
+Comment=Configure the login window
+Exec=pkexec lightdm-settings
+Icon=lightdm-settings
+StartupNotify=true
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;Settings;System;XFCE;X-XFCE-SettingsDialog;X-XFCE-SystemSettings;
+X-KDE-SubstituteUID=true
+NoDisplay=true
+MimeType=application/x-executable

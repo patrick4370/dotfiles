@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=SDDM Configuration
+GenericName=Display Manager Configuration
+Comment=Qt configuration editor for SDDM
+Categories=Settings;System;Qt
+Icon=preferences-system-login
+Terminal=false
+Exec=env QT_STYLE_OVERRIDE=kvantum sddm-config-editor
+StartupNotify=false
