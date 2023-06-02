@@ -1,0 +1,70 @@
+GENERAL
+
+ranger                  Start Ranger
+Q                       Quit Ranger
+R                       Reload current directory
+?                       Ranger Manpages / Shortcuts
+
+MOVEMENT
+
+k                       Up
+j                       Down
+h                       Parent directory
+l                       Subdirectory
+gg                      Go to top of list
+G                       Go t bottom of list
+J                       Half page down
+K                       Half page up
+H                       History Back
+L                       History Forward
+~                       Switch the view
+
+FILE OPERATIONS
+
+<Enter>                 Open
+r                       Open file with
+z                       Toggle settings
+o                       Change sort order
+zh                      View hidden files
+cw                      Rename current file
+yy                      Yank / copy
+dd                      Cut
+pp                      Paste
+/                       Search for files :search
+n                       Next match
+N                       Prev match
+<delete>                Delete
+
+COMMANDS
+
+:                       Execute Range Command
+!                       Execute Shell Command
+chmod                   Change file Permissions
+du                      Disk Usage Current Directory
+S                       Run the terminal in your current ranger window (exit to go back to ranger)
+
+TABS
+
+C-n                     Create new tab
+C-w                     Close current tab
+tab                     Next tab
+shift + tab             Previous tab
+alt + [n]               Goto / create [n] tab
+
+FILE SUBSTITUTING
+
+%f                      Substitute highlighted file
+%d                      Substitute current directory
+%s                      Substitute currently selected files
+%t                      Substitute currently tagged files
+
+Example for substitution
+:bulkrename %s
+
+MARKER
+
+m + <letter>            Create Marker
+um + <letter>           Delete Marker
+' + <letter>            Go to Marker
+t                       Tag a file with an *
+t"<any>                 Tag a file with your desired mark

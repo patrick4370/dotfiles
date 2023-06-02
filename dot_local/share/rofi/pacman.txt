@@ -1,0 +1,18 @@
+        Common pacman commands
+
+pacman -Syu                         Upgrade packages
+pacman -Ss string                   Search for packages
+pacman -R package_name              Remove single package leaving all its dependencies installed
+pacman -Rs package_name             Remove package & its dependencies not required by other installed package
+pacman -Qs string1 string2 ...      Search for already installed packages
+pacman -F string1 string2 ...       Search for package file names in remote packages
+pacman -Si package_name             Display extensive information about a given package
+pacman -Qi package_name             Display extensive information about a local package
+pacman -Ql package_name             Retrieve a list of the files installed by a package
+pacman -Fl package_name             Retrieve a list of the files in a remote package
+pacman -Qk package_name             Verify the presence of the files installed by a package
+pacman -Qo /path/to/file_name       Query the database to know which package a file belongs to
+pacman -F /path/to/file_name        Query the database to know which remote package a file belongs to
+pacman -Qdt                         List all packages no longer required as dependencies (orphans)
+pacman -Rs $(pacman -Qdtq)          Remove packages no longer required as dependencies (orphans)
+paccache -r                         Clean the package cache

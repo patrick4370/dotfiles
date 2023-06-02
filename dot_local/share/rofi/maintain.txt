@@ -1,0 +1,39 @@
+System Maintenance
+
+Check for Failed System Services  & Errors in Log Files  
+systemctl --failed 
+sudo journalctl -p 3 -xb  
+
+Update the System
+sudo pacman -Syu
+
+Check the Pacman Cache  
+sudo pacman -Sc                       Clean the package cache
+sudo pacman -Qtdq                     Check for orpan packages 
+sudo pacman -Rs $(pacman -Qdtq)       Remove orphan packages 
+
+Clean up the ~/.cache directory
+du -sh ~/.cache/                      Find how much space is being used  
+rm -rf ~/.cache/*                     Delete all in the ~/.cache directory
+
+Clean up unused programs in the ~/.config directory  
+Find unused program configs and delete
+
+Clean up the journal directory  
+du -sh /var/log/journal/              Find how much space is being used  
+sudo journalctl --vacuum-time=2weeks  Clean all except the last 2 weeks  
+
+Update mirrorlist using Reflector  
+sudo reflector --country Australia --latest 6 --age 6 --sort rate --save /etc/pacman.d/mirrorlist  
+
+
+
+
+
+
+
+
+
+
+
+)

@@ -1,0 +1,1595 @@
+😀 Grinning face                    1F600
+😃 Grinning face with big eyes      1F603
+😄 Grinning face with smiling eyes  1F604
+😁 Beaming face with smiling eyes   1F601
+😆 Grinning squinting face          1F606
+😅 Grinning face with sweat         1F605
+🤣 Rolling on the floor laughing    1F923
+😂 Face with tears of joy           1F602
+🙂 Slightly smiling face            1F642
+🙃 Upside-down face                 1F643
+😉 Winking face                     1F609
+😊 Smiling face with smiling eyes   1F60A
+😇 Smiling face with halo           1F607
+🥰 Smiling face with hearts         1F970
+😍 Smiling face with heart-eyes     1F60D
+🤩 Star-struck                      1F929
+😘 Face blowing a kiss              1F618
+😗 Kissing face                     1F617
+☺️ sMiling face                     263A FE0F
+😚 Kissing face with closed eyes    1F61A
+😙 Kissing face with smiling eyes   1F619
+🥲 Smiling face with tear           1F972
+😋 Face savoring food               1F60B
+😛 Face with tongue                 1F61B
+😜 Winking face with tongue         1F61C
+🤪 Zany face                        1F92A
+😝 Squinting face with tongue       1F61D
+🤑 Money-mouth face                 1F911
+🤗 Hugging face                     1F917
+🤭 Face with hand over mouth        1F92D
+🤫 Shushing face                    1F92B
+🤔 Thinking face                    1F914
+🤐 Zipper-mouth face                1F910
+🤨 Face with raised eyebrow         1F928
+😐 Neutral face                     1F610
+😑 Expressionless face              1F611
+😶 Face without mouth               1F636
+😏 Smirking face                    1F60F
+😒 Unamused face                    1F612
+🙄 Face with rolling eyes           1F644
+😬 Grimacing face                   1F62C
+🤥 Lying face                       1F925
+😌 Relieved face                    1F60C
+😔 Pensive face                     1F614
+😪 Sleepy face                      1F62A
+🤤 Drooling face                    1F924
+😴 Sleeping face                    1F634
+😷 Face with medical mask           1F637
+🤒 Face with thermometer            1F912
+🤕 Face with head-bandage           1F915
+🤢 Nauseated face                   1F922
+🤮 Face vomiting                    1F92E
+🤧 Sneezing face                    1F927
+🥵 Hot face                         1F975
+🥶 Cold face                        1F976
+🥴 Woozy face                       1F974
+😵 Dizzy face                       1F635
+🤯 Exploding head                   1F92F
+🤠 Cowboy hat face                  1F920
+🥳 Partying face                    1F973
+🥸 Disguised face                   1F978
+😎 Smiling face with sunglasses     1F60E
+🤓 Nerd face                        1F913
+🧐 Face with monocle                1F9D0
+😕 Confused face                    1F615
+😟 Worried face                     1F61F
+🙁 Slightly frowning face           1F641
+☹️ Frowning face                     2639 FE0F
+😮 Face with open mouth             1F62E
+😯 Hushed face                      1F62F
+😲 Astonished face                  1F632
+😳 Flushed face                     1F633 
+🥺 Pleading face                    1F97A
+😦 Frowning face with open mouth    1F626
+😧 Anguished face                   1F627
+😨 Fearful face                     1F628
+😰 Anxious face with sweat          1F630
+😥 Sad but relieved face            1F625
+😢 Crying face                      1F622
+😭 Loudly crying face               1F62D
+😱 Face screaming in fear           1F631
+😖 Confounded face                  1F616
+😣 Persevering face                 1F623
+😞 Disappointed face                1F61E
+😓 Downcast face with sweat         1F613
+😩 Weary face                       1F629
+😫 Tired face                       1F62B
+🥱 Yawning face                     1F971
+😤 Face with steam from nose        1F624
+😡 Pouting face                     1F621
+😠 Angry face                       1F620
+🤬 Face with symbols on mouth       1F92C
+😈 Smiling face with horns          1F608
+👿 Angry face with horns            1F47F
+💀 Skull                            1F480
+☠️ Skull and crossbones              2620 FE0F
+💩 Pile of poo                      1F4A9
+🤡 Clown face                       1F921
+👹 Ogre                             1F479
+👺 Goblin                           1F47A
+👻 Ghost                            1F47B
+👽 Alien                            1F47D
+👾 Alien monster                    1F47E
+🤖 Robot                            1F916
+😺 Grinning cat                     1F63A
+😸 Grinning cat with smiling eyes   1F638
+😹 Cat with tears of joy            1F639
+😻 Smiling cat with heart-eyes      1F63B
+😼 Cat with wry smile               1F63C
+😽 Kissing cat                      1F63D
+🙀 Weary cat                        1F640
+😿 Crying cat                       1F63F
+😾 Pouting cat                      1F63E
+🙈 See-no-evil monkey               1F648
+🙉 Hear-no-evil monkey              1F649
+🙊 Speak-no-evil monkey             1F64A
+💋 Kiss mark                        1F48B
+💌 Love letter                      1F48C
+💘 Heart with arrow                 1F498
+💝 Heart with ribbon                1F49D
+💖 Sparkling heart                  1F496
+💗 Growing heart                    1F497
+💓 Beating heart                    1F493
+💞 Revolving hearts                 1F49E
+💕 Two hearts                       1F495
+💟 Heart decoration                 1F49F
+❣️ hEart exclamation                 2763 FE0F
+💔 Broken heart                     1F494
+❤️ rEd heart                         2764 FE0F
+🧡 Orange heart                     1F9E1
+💛 Yellow heart                     1F49B
+💚 Green heart                      1F49A
+💙 Blue heart                       1F499
+💜 Purple heart                     1F49C
+🤎 Brown heart                      1F90E
+🖤 Black heart                      1F5A4
+🤍 White heart                      1F90D
+💯 Hundred points                   1F4AF
+💢 Anger symbol                     1F4A2
+💥 Collision                        1F4A5
+💫 Dizzy                            1F4AB
+💦 Sweat droplets                   1F4A6
+💨 Dashing away                     1F4A8
+🕳️ Hole                             1F573 FE0F
+💣 Bomb                             1F4A3
+💬 Speech balloon                   1F4AC
+🗨️ Left speech bubble               1F5E8 FE0F
+🗯️ Right anger bubble               1F5EF FE0F
+💭 Thought balloon                  1F4AD
+💤 Zzz                              1F4A4
+👋 Waving hand                      1F44B
+🤚 Raised back of hand              1F91A
+🖐️ Hand with fingers splayed        1F590 FE0F
+✋ Raised hand                      270B
+🖖 Vulcan salute                    1F596
+👌 OK hand                          1F44C
+🤌 Pinched fingers                  1F90C
+🤏 Pinching hand                    1F90F
+✌️ Victory hand                     270C FE0F
+🤞 Crossed fingers                  1F91E
+🤟 Love-you gesture                 1F91F
+🤘 Sign of the horns                1F918
+🤙 Call me hand                     1F919
+👈 Backhand index pointing left     1F448
+👉 Backhand index pointing right    1F449
+👆 Backhand index pointing up       1F446
+🖕 Middle finger                    1F595
+👇 Backhand index pointing down     1F447
+☝️ Index pointing up                261D FE0F
+👍 Thumbs up                        1F44D
+👎 Thumbs down                      1F44E
+✊ Raised fist                      270A
+👊 Oncoming fist                    1F44A
+🤛 Left-facing fist                 1F91B
+🤜 Right-facing fist                1F91C
+👏 Clapping hands                   1F44F
+🙌 Raising hands                    1F64C
+👐 Open hands                       1F450
+🤲 Palms up together                1F932
+🤝 Handshake                        1F91D
+🙏 Folded hands                     1F64F
+✍️ Writing hand                     270D FE0F
+💅 Nail polish                      1F485
+🤳 Selfie                           1F933
+💪 Flexed biceps                    1F4AA
+🖴  Hard drive                       1F5B4
+🦾 Mechanical arm                   1F9BE
+🦿 Mechanical leg                   1F9BF
+🦵 Leg                              1F9B5
+🦶 Foot                             1F9B6
+👂 Ear                              1F442
+🦻 Ear with hearing aid             1F9BB
+👃 Nose                             1F443
+🧠 Brain                            1F9E0
+🫀 Anatomical heart                 1FAC0
+🫁 Lungs                            1FAC1
+🦷 Tooth                            1F9B7
+🦴 Bone                             1F9B4
+👀 Eyes                             1F440
+👁️ Eye                              1F441 FE0F
+👅 Tongue                           1F445
+👄 Mouth                            1F444
+👶 Baby                             1F476
+🧒 Child                            1F9D2
+👦 Boy                              1F466
+👧 Girl                             1F467   
+🧑 Person                           1F9D1
+👱 Person: blond hair               1F471
+👨 Man                              1F468
+🧔 Man: beard                       1F9D4
+👩 Woman                            1F469
+🧓 Older person                     1F9D3
+👴 Old man                          1F474
+👵 Old woman                        1F475
+🙍 Person frowning                  1F64D
+🙎 Person pouting                   1F64E
+🙅 Person gesturing NO              1F645
+🙆 Person gesturing OK              1F646
+💁 Person tipping hand              1F481
+🙋 Person raising hand              1F64B
+🧏 Deaf person                      1F9CF
+🙇 Person bowing                    1F647
+🤦 Person facepalming               1F926
+🤷 Person shrugging                 1F937
+👮 Police officer                   1F46E
+🕵️ Detective                        1F575 FE0F
+💂 Guard                            1F482
+🥷 Ninja                            1F977
+👷 Construction worker              1F477
+🤴 Prince                           1F934
+👸 Princess                         1F478
+👳 Person wearing turban            1F473
+👲 Person with skullcap             1F472
+🧕 Woman with headscarf             1F9D5
+🤵 Person in tuxedo                 1F935
+👰 Person with veil                 1F470
+🤰 Pregnant woman                   1F930
+🤱 Breast-feeding                   1F931
+👼 Baby angel                       1F47C
+🎅 Santa Claus                      1F385
+🤶 Mrs. Claus                       1F936
+🦸 Superhero                        1F9B8
+🦹 Supervillain                     1F9B9
+🧙 Mage                             1F9D9
+🧚 Fairy                            1F9DA
+🧛 Vampire                          1F9DB
+🧜 Merperson                        1F9DC
+🧝 Elf                              1F9DD
+🧞 Genie                            1F9DE
+🧟 Zombie                           1F9DF
+💆 Person getting massage           1F486
+💇 Person getting haircut           1F487
+🚶 Person walking                   1F6B6
+🧍 Person standing                  1F9CD
+🧎 Person kneeling                  1F9CE
+🏃 Person running                   1F3C3
+💃 Woman dancing                    1F483
+🕺 Man dancing                      1F57A
+🕴️ Person in suit levitating        1F574 FE0F
+👯 People with bunny ears           1F46F
+🧖 Person in steamy room            1F9D6
+🧗 Person climbing                  1F9D7
+🤺 Person fencing                   1F93A
+🏇 Horse racing                     1F3C7
+⛷️ Skier                            26F7 FE0F
+🏂 Snowboarder                      1F3C2
+🏌️ Person golfing                   1F3CC FE0F
+🏄 Person surfing                   1F3C4
+🚣 Person rowing boat               1F6A3
+🏊 Person swimming                  1F3CA
+⛹️ Person bouncing ball             26F9 FE0F
+🏋️ Person lifting weights           1F3CB FE0F
+🚴 Person biking                    1F6B4
+🚵 Person mountain biking           1F6B5
+🤸 Person cartwheeling              1F938
+🤼 People wrestling                 1F93C
+🤽 Person playing water polo        1F93D
+🤾 Person playing handball          1F93E
+🤹 Person juggling                  1F939
+🧘 Person in lotus position         1F9D8
+🛀 Person taking bath               1F6C0
+🛌 Person in bed                    1F6CC
+👭 Women holding hands              1F46D
+👫 Woman and man holding hands      1F46B
+👬 Men holding hands                1F46C
+💏 Kiss                             1F48F
+💑 Couple with heart                1F491
+👪 Family                           1F46A
+🗣️ Speaking head                    1F5E3 FE0F
+👤 Bust in silhouette               1F464
+👥 Busts in silhouette              1F465
+🫂 People hugging                   1FAC2
+👣 Footprints                       1F463
+🐵 Monkey face                      1F435
+🐒 Monkey                           1F412
+🦍 Gorilla                          1F98D
+🦧 Orangutan                        1F9A7
+🐶 Dog face                         1F436
+🐕 Dog                              1F415
+🦮 Guide dog                        1F9AE
+🐩 Poodle                           1F429
+🐺 Wolf                             1F43A
+🦊 Fox                              1F98A
+🦝 Raccoon                          1F99D
+🐱 Cat face                         1F431
+🐈 Cat                              1F408
+🦁 Lion                             1F981   
+🐯 Tiger face                       1F42F
+🐅 Tiger                            1F405
+🐆 Leopard                          1F406
+🐴 Horse face                       1F434
+🐎 Horse                            1F40E
+🦄 Unicorn                          1F984
+🦓 Zebra                            1F993
+🦌 Deer                             1F98C
+🦬 Bison                            1F9AC
+🐮 Cow face                         1F42E
+🐂 Ox                               1F402
+🐃 Water buffalo                    1F403
+🐄 Cow                              1F404
+🐷 Pig face                         1F437
+🐖 Pig                              1F416
+🐗 Boar                             1F417
+🐽 Pig nose                         1F43D
+🐏 Ram                              1F40F
+🐑 Ewe                              1F411
+🐐 Goat                             1F410
+🐪 Camel                            1F42A
+🐫 Two-hump camel                   1F42B
+🦙 Llama                            1F999
+🦒 Giraffe                          1F992
+🐘 Elephant                         1F418
+🦣 Mammoth                          1F9A3
+🦏 Rhinoceros                       1F98F
+🦛 Hippopotamus                     1F99B
+🐭 Mouse face                       1F42D
+🐁 Mouse                            1F401
+🐀 Rat                              1F400
+🐹 Hamster                          1F439
+🐰 Rabbit face                      1F430
+🐇 Rabbit                           1F407
+🐿️ Chipmunk                         1F43F FE0F
+🦫 Beaver                           1F9AB
+🦔 Hedgehog                         1F994
+🦇 Bat                              1F987
+🐻 Bear                             1F43B
+🐨 Koala                            1F428  
+🐼 Panda                            1F43C
+🦥 Sloth                            1F9A5
+🦦 Otter                            1F9A6
+🦨 Skunk                            1F9A8
+🦘 Kangaroo                         1F998
+🦡 Badger                           1F9A1
+🐾 Paw prints                       1F43E
+🦃 Turkey                           1F983
+🐔 Chicken                          1F414
+🐓 Rooster                          1F413
+🐣 Hatching chick                   1F423
+🐤 Baby chick                       1F424
+🐥 Front-facing baby chick          1F425
+🐦 Bird                             1F426
+🐧 Penguin                          1F427
+🕊️ Dove                             1F54A FE0F
+🦅 Eagle                            1F985
+🦆 Duck                             1F986
+🦢 Swan                             1F9A2
+🦉 Owl                              1F989
+🦤 Dodo                             1F9A4
+🪶 Feather                          1FAB6
+🦩 Flamingo                         1F9A9
+🦚 Peacock                          1F99A
+🦜 Parrot                           1F99C
+🐸 Frog                             1F438
+🐊 Crocodile                        1F40A
+🐢 Turtle                           1F422
+🦎 Lizard                           1F98E
+🐍 Snake                            1F40D
+🐲 Dragon face                      1F432
+🐉 Dragon                           1F409
+🦕 Sauropod                         1F995   
+🦖 T-Rex                            1F996
+🐳 Spouting whale                   1F433
+🐋 Whale                            1F40B
+🐬 Dolphin                          1F42C
+🦭 Seal                             1F9AD
+🐟 Fish                             1F41F
+🐠 Tropical fish                    1F420
+🐡 Blowfish                         1F421
+🦈 Shark                            1F988
+🐙 Octopus                          1F419
+🐚 Spiral shell                     1F41A
+🐌 Snail                            1F40C
+🦋 Butterfly                        1F98B
+🐛 Bug                              1F41B
+🐜 Ant                              1F41C
+🐝 Honeybee                         1F41D
+🪲 Beetle                           1FAB2
+🐞 Lady beetle                      1F41E
+🦗 Cricket                          1F997
+🪳 Cockroach                        1FAB3
+🕷️ Spider                           1F577 FE0F
+🕸️ Spider web                       1F578 FE0F
+🦂 Scorpion                         1F982
+🦟 Mosquito                         1F99F
+🪰 Fly                              1FAB0
+🪱 Worm                             1FAB1
+🦠 Microbe                          1F9A0
+💐 Bouquet                          1F490
+🌸 Cherry blossom                   1F338
+💮 White flower                     1F4AE
+🏵️ Rosette                          1F3F5 FE0F
+🌹 Rose                             1F339
+🥀 Wilted flower                    1F940
+🌺 Hibiscus                         1F33A
+🌻 Sunflower                        1F33B
+🌼 Blossom                          1F33C
+🌷 Tulip                            1F337
+🌱 Seedling                         1F331
+🪴 Potted plant                     1FAB4
+🌲 Evergreen tree                   1F332
+🌳 Deciduous tree                   1F333
+🌴 Palm tree                        1F334
+🌵 Cactus                           1F335
+🌾 Sheaf of rice                    1F33E
+🌿 Herb                             1F33F
+☘️ Shamrock                          2618 FE0F
+🍀 Four leaf clover                 1F340
+🍁 Maple leaf                       1F341
+🍂 Fallen leaf                      1F342
+🍃 Leaf fluttering in wind          1F343
+🍇 Grapes                           1F347
+🍈 Melon                            1F348
+🍉 Watermelon                       1F349
+🍊 Tangerine                        1F34A
+🍋 Lemon                            1F34B
+🍌 Banana                           1F34C
+🍍 Pineapple                        1F34D
+🥭 Mango                            1F96D
+🍎 Red apple                        1F34E
+🍏 Green apple                      1F34F
+🍐 Pear                             1F350
+🍑 Peach                            1F351
+🍒 Cherries                         1F352
+🍓 Strawberry                       1F353
+🫐 Blueberries                      1FAD0
+🥝 Kiwi fruit                       1F95D
+🍅 Tomato                           1F345
+🫒 Olive                            1FAD2
+🥥 Coconut                          1F965
+🥑 Avocado                          1F951
+🍆 Eggplant                         1F346
+🥔 Potato                           1F954
+🥕 Carrot                           1F955
+🌽 Ear of corn                      1F33D
+🌶️ Hot pepper                       1F336 FE0F
+🫑 Bell pepper                      1FAD1
+🥒 Cucumber                         1F952
+🥬 Leafy green                      1F96C
+🥦 Broccoli                         1F966
+🧄 Garlic                           1F9C4
+🧅 Onion                            1F9C5
+🍄 Mushroom                         1F344
+🥜 Peanuts                          1F95C
+🌰 Chestnut                         1F330
+🍞 Bread                            1F35E
+🥐 Croissant                        1F950
+🥖 Baguette bread                   1F956
+🫓 Flatbread                        1FAD3
+🥨 Pretzel                          1F968
+🥯 Bagel                            1F96F
+🥞 Pancakes                         1F95E
+🧇 Waffle                           1F9C7
+🧀 Cheese wedge                     1F9C0
+🍖 Meat on bone                     1F356
+🍗 Poultry leg                      1F357
+🥩 Cut of meat                      1F969
+🥓 Bacon                            1F953
+🍔 Hamburger                        1F354
+🍟 French fries                     1F35F
+🍕 Pizza                            1F355
+🌭 Hot dog                          1F32D
+🥪 Sandwich                         1F96A
+🌮 Taco                             1F32E
+🌯 Burrito                          1F32F
+🫔 Tamale                           1FAD4
+🥙 Stuffed flatbread                1F959
+🧆 Falafel                          1F9C6
+🥚 Egg                              1F95A    
+🍳 Cooking egg                      1F373
+🥘 Shallow pan of food              1F958
+🍲 Pot of food                      1F372
+🫕 Fondue                           1FAD5
+🥣 Bowl with spoon                  1F963
+🥗 Green salad                      1F957
+🍿 Popcorn                          1F37F
+🧈 Butter                           1F9C8
+🧂 Salt                             1F9C2
+🥫 Canned food                      1F96B
+🍱 Bento box                        1F371
+🍘 Rice cracker                     1F358
+🍙 Rice ball                        1F359
+🍚 Cooked rice                      1F35A
+🍛 Curry rice                       1F35B
+🍜 Steaming bowl                    1F35C
+🍝 Spaghetti                        1F35D
+🍠 Roasted sweet potato             1F360
+🍢 Oden                             1F362
+🍣 Sushi                            1F363
+🍤 Fried shrimp                     1F364
+🍥 Fish cake with swirl             1F365
+🥮 Moon cake                        1F96E
+🍡 Dango                            1F361
+🥟 Dumpling                         1F95F
+🥠 Fortune cookie                   1F960
+🥡 Takeout box                      1F961
+🦀 Crab                             1F980
+🦞 Lobster                          1F99E
+🦐 Shrimp                           1F990
+🦑 Squid                            1F991  
+🦪 Oyster                           1F9AA
+🍦 Soft ice cream                   1F366
+🍧 Shaved ice                       1F367
+🍨 Ice cream                        1F368
+🍩 Doughnut                         1F369
+🍪 Cookie                           1F36A
+🎂 Birthday cake                    1F382
+🍰 Shortcake                        1F370
+🧁 Cupcake                          1F9C1
+🥧 Pie                              1F967
+🍫 Chocolate bar                    1F36B
+🍬 Candy                            1F36C
+🍭 Lollipop                         1F36D
+🍮 Custard                          1F36E
+🍯 Honey pot                        1F36F
+🍼 Baby bottle                      1F37C
+🥛 Glass of milk                    1F95B
+☕ Hot beverage                     2615
+🫖 Teapot                           1FAD6
+🍵 Teacup without handle            1F375
+🍶 Sake                             1F376
+🍾 Bottle with popping cork         1F37E
+🍷 Wine glass                       1F377
+🍸 Cocktail glass                   1F378
+🍹 Tropical drink                   1F379
+🍺 Beer mug                         1F37A
+🍻 Clinking beer mugs               1F37B
+🥂 Clinking glasses                 1F942
+🥃 Tumbler glass                    1F943
+🥤 Cup with straw                   1F964
+🧋 Bubble tea                       1F9CB
+🧃 Beverage box                     1F9C3
+🧉 Mate                             1F9C9
+🧊 Ice                              1F9CA
+🥢 Chopsticks                       1F962
+🍽️ Fork and knife with plate        1F37D FE0F
+🍴 Fork and knife                   1F374
+🥄 Spoon                            1F944
+🔪 Kitchen knife                    1F52A
+🏺 Amphora                          1F3FA        
+🌍 Globe showing Europe-Africa      1F30D
+🌎 Globe showing Americas           1F30E
+🌏 Globe showing Asia-Australia     1F30F
+🌐 Globe with meridians             1F310
+🗺️ World map                        1F5FA FE0F
+🗾 Map of Japan                     1F5FE
+🧭 Compass                          1F9ED
+🏔️ Snow-capped mountain             1F3D4 FE0F
+⛰️ Mountain                         26F0 FE0F
+🌋 Volcano                          1F30B    
+🗻 Mount fuji                       1F5FB
+🏕️ Camping                          1F3D5 FE0F
+🏖️ Beach with umbrella              1F3D6 FE0F
+🏜️ Desert                           1F3DC FE0F
+🏝️ Desert island                    1F3DD FE0F
+🏞️ National park                    1F3DE FE0F
+🏟️ Stadium 1F3DF                    FE0F
+🏛️ Classical building               1F3DB FE0F
+🏗️ Building construction            1F3D7 FE0F
+🧱 Brick                            1F9F1
+🪨 Rock                             1FAA8
+🪵 Wood                             1FAB5
+🛖 Hut                              1F6D6
+🏘️ Houses                           1F3D8 FE0F
+🏚️ Derelict house                   1F3DA FE0F
+🏠 House                            1F3E0
+🏡 House with garden                1F3E1
+🏢 Office building                  1F3E2
+🏣 Japanese post office             1F3E3
+🏤 Post office                      1F3E4
+🏥 Hospital                         1F3E5
+🏦 Bank                             1F3E6
+🏨 Hotel                            1F3E8
+🏩 Love hotel                       1F3E9
+🏪 Convenience store                1F3EA
+🏫 School                           1F3EB
+🏬 Department store                 1F3EC
+🏭 Factory                          1F3ED
+🏯 Japanese castle                  1F3EF
+🏰 Castle                           1F3F0
+💒 Wedding                          1F492
+🗼 Tokyo tower                      1F5FC
+🗽 Statue of Liberty                1F5FD
+⛪ Church                           26EA
+🕌 Mosque                           1F54C
+🛕 Hindu temple                     1F6D5
+🕍 Synagogue                        1F54D
+⛩️ Shinto shrine                    26E9 FE0F
+🕋 Kaaba                            1F54B
+⛲ Fountain                         26F2
+⛺ Tent                             26FA
+🌁 Foggy                            1F301
+🌃 Night with stars                 1F303
+🏙️ Cityscape                        1F3D9 FE0F
+🌄 Sunrise over mountains           1F304
+🌅 Sunrise                          1F305
+🌆 Cityscape at dusk                1F306
+🌇 Sunset                           1F307
+🌉 Bridge at night                  1F309
+♨️ hOt springs                       2668 FE0F
+🎠 Carousel horse                   1F3A0
+🎡 Ferris wheel                     1F3A1
+🎢 Roller coaster                   1F3A2
+💈 Barber pole                      1F488
+🎪 Circus tent                      1F3AA
+🚂 Locomotive                       1F682
+🚃 Railway car                      1F683
+🚄 High-speed train                 1F684
+🚅 Bullet train                     1F685
+🚆 Train                            1F686
+🚇 Metro                            1F687
+🚈 Light rail                       1F688
+🚉 Station                          1F689
+🚊 Tram                             1F68A
+🚝 Monorail                         1F69D
+🚞 Mountain railway                 1F69E
+🚋 Tram car                         1F68B
+🚌 Bus                              1F68C
+🚍 Oncoming bus                     1F68D
+🚎 Trolleybus                       1F68E
+🚐 Minibus                          1F690
+🚑 Ambulance                        1F691
+🚒 Fire engine                      1F692
+🚓 Police car                       1F693
+🚔 Oncoming police car              1F694
+🚕 Taxi                             1F695
+🚖 Oncoming taxi                    1F696
+🚗 Automobile                       1F697
+🚘 Oncoming automobile              1F698
+🚙 Sport utility vehicle            1F699
+🛻 Pickup truck                     1F6FB
+🚚 Delivery truck                   1F69A
+🚛 Articulated lorry                1F69B
+🚜 Tractor                          1F69C
+🏎️ Racing car                       1F3CE FE0F
+🏍️ Motorcycle                       1F3CD FE0F
+🛵 Motor scooter                    1F6F5
+🦽 Manual wheelchair                1F9BD
+🦼 Motorized wheelchair             1F9BC
+🛺 Auto rickshaw                    1F6FA
+🚲 Bicycle                          1F6B2
+🛴 Kick scooter                     1F6F4
+🛹 Skateboard                       1F6F9
+🛼 Roller skate                     1F6FC
+🚏 Bus stop                         1F68F
+🛣️ Motorway                         1F6E3 FE0F
+🛤️ Railway track                    1F6E4 FE0F
+🛢️ Oil drum                         1F6E2 FE0F  
+⛽ Fuel pump                        26FD
+🚨 Police car light                 1F6A8
+🚥 Horizontal traffic light         1F6A5
+🚦 Vertical traffic light           1F6A6
+🛑 Stop sign                        1F6D1
+🚧 Construction                     1F6A7
+⚓ Anchor                           2693
+⛵ Sailboat                         26F5
+🛶 Canoe                            1F6F6
+🚤 Speedboat                        1F6A4
+🛳️ Passenger ship                   1F6F3 FE0F
+⛴️ Ferry                             26F4 FE0F
+🛥️ Motor boat                       1F6E5 FE0F
+🚢 Ship                             1F6A2
+✈️ Airplane                         2708 FE0F
+🛩️ Small airplane                   1F6E9 FE0F
+🛫 Airplane departure               1F6EB
+🛬 Airplane arrival                 1F6EC
+🪂 Parachute                        1FA82
+💺 Seat                             1F4BA
+🚁 Helicopter                       1F681
+🚟 Suspension railway               1F69F
+🚠 Mountain cableway                1F6A0
+🚡 Aerial tramway                   1F6A1
+🛰️ Satellite                        1F6F0 FE0F
+🚀 Rocket                           1F680
+🛸 Flying saucer                    1F6F8
+🛎️ Bellhop bell                     1F6CE FE0F
+🧳 Luggage                          1F9F3
+⌛ Hourglass done                   231B
+⏳ Hourglass not done               23F3  
+⌚ Watch                            231A
+⏰ Alarm clock                      23F0
+⏱️ Stopwatch                        23F1 FE0F
+⏲️ Timer clock                      23F2 FE0F
+🕰️ Mantelpiece clock                1F570 FE0F
+🕛 Twelve o’clock                   1F55B
+🕧 Twelve-thirty                    1F567
+🕐 One o’clock                      1F550
+🕜 One-thirty                       1F55C
+🕑 Two o’clock                      1F551
+🕝 Two-thirty                       1F55D
+🕒 Three o’clock                    1F552
+🕞 Three-thirty                     1F55E
+🕓 Four o’clock                     1F553
+🕟 Four-thirty                      1F55F
+🕔 Five o’clock                     1F554
+🕠 Five-thirty                      1F560
+🕕 Six o’clock                      1F555
+🕡 Six-thirty                       1F561
+🕖 Seven o’clock                    1F556
+🕢 Seven-thirty                     1F562
+🕗 Eight o’clock                    1F557
+🕣 Eight-thirty                     1F563
+🕘 Nine o’clock                     1F558
+🕤 Nine-thirty                      1F564
+🕙 Ten o’clock                      1F559
+🕥 Ten-thirty                       1F565
+🕚 Eleven o’clock                   1F55A
+🕦 Eleven-thirty                    1F566
+🌑 New moon                         1F311
+🌒 Waxing crescent moon             1F312
+🌓 First quarter moon               1F313
+🌔 Waxing gibbous moon              1F314
+🌕 Full moon                        1F315
+🌖 Waning gibbous moon              1F316
+🌗 Last quarter moon                1F317
+🌘 Waning crescent moon             1F318
+🌙 Crescent moon                    1F319
+🌚 New moon face                    1F31A
+🌛 First quarter moon face          1F31B
+🌜 Last quarter moon face           1F31C
+🌡️ Thermometer 1F321                FE0F
+☀️ Sun                              2600 FE0F
+🌝 Full moon face                   1F31D
+🌞 Sun with face                    1F31E
+🪐 Ringed planet                    1FA90
+⭐ Star                             2B50
+🌟 Glowing star                     1F31F
+🌠 Shooting star                    1F320
+🌌 Milky way                        1F30C
+☁️ Cloud                            2601 FE0F
+⛅ Sun behind cloud                 26C5
+⛈️ Cloud with lightning and rain    26C8 FE0F
+🌤️ Sun behind small cloud           1F324 FE0F
+🌥️ Sun behind large cloud           1F325 FE0F
+🌦️ Sun behind rain cloud            1F326 FE0F
+🌧️ Cloud with rain                  1F327 FE0F
+🌨️ Cloud with snow                  1F328 FE0F
+🌩️ Cloud with lightning             1F329 FE0F
+🌪️ Tornado                          1F32A FE0F
+🌫️ Fog                              1F32B FE0F
+🌬️ Wind face                        1F32C FE0F
+🌀 Cyclone                          1F300
+🌈 Rainbow                          1F308
+🌂 Closed umbrella                  1F302
+☂️ Umbrella                          2602 FE0F
+☔ Umbrella with rain drops         2614
+⛱️ Umbrella on ground               26F1 FE0F
+⚡ High voltage                     26A1
+❄️ Snowflake                        2744 FE0F
+☃️ Snowman                          2603 FE0F
+⛄ Snowman without snow             26C4
+☄️ Comet                            2604 FE0F
+🔥 Fire                             1F525
+💧 Droplet                          1F4A7
+🌊 Water wave                       1F30A
+🎃 Jack-o-lantern                   1F383
+🎄 Christmas tree                   1F384
+🎆 Fireworks                        1F386
+🎇 Sparkler                         1F387
+🧨 Firecracker                      1F9E8
+✨ Sparkles                         2728
+🎈 Balloon                          1F388
+🎉 Party popper                     1F389
+🎊 Confetti ball                    1F38A
+🎋 Tanabata tree                    1F38B
+🎍 Pine decoration                  1F38D
+🎎 Japanese dolls                   1F38E
+🎏 Carp streamer                    1F38F
+🎐 Wind chime                       1F390
+🎑 Moon viewing ceremony            1F391
+🧧 Red envelope                     1F9E7
+🎀 Ribbon                           1F380
+🎁 Wrapped gift                     1F381
+🎗️ Reminder ribbon                  1F397 FE0F
+🎟️ Admission tickets                1F39F FE0F
+🎫 Ticket                           1F3AB
+🎖️ Military medal                   1F396 FE0F
+🏆 Trophy                           1F3C6
+🏅 Sports medal                     1F3C5
+🥇 1st place medal                  1F947
+🥈 2nd place medal                  1F948
+🥉 3rd place medal                  1F949
+⚽ Soccer ball                      26BD
+⚾ Baseball                         26BE
+🥎 Softball                         1F94E
+🏀 Basketball                       1F3C0
+🏐 Volleyball                       1F3D0
+🏈 American football                1F3C8
+🏉 Rugby football                   1F3C9
+🎾 Tennis                           1F3BE
+🥏 Flying disc                      1F94F
+🎳 Bowling                          1F3B3
+🏏 Cricket game                     1F3CF
+🏑 Field hockey                     1F3D1
+🏒 Ice hockey                       1F3D2
+🥍 Lacrosse                         1F94D
+🏓 Ping pong                        1F3D3
+🏸 Badminton                        1F3F8
+🥊 Boxing glove                     1F94A
+🥋 Martial arts uniform             1F94B
+🥅 Goal net                         1F945
+⛳ Flag in hole                     26F3
+⛸️ Ice skate                        26F8 FE0F
+🎣 Fishing pole                     1F3A3
+🤿 Diving mask                      1F93F
+🎽 Running shirt                    1F3BD
+🎿 Skis                             1F3BF
+🛷 Sled                             1F6F7
+🥌 Curling stone                    1F94C
+🎯 Direct hit                       1F3AF
+🪀 Yo-yo                            1FA80
+🪁 Kite                             1FA81
+🎱 Pool 8 ball                      1F3B1
+🔮 Crystal ball                     1F52E
+🪄 Magic wand                       1FA84
+🧿 Nazar amulet                     1F9FF
+🎮 Video game                       1F3AE
+🕹️ Joystick                         1F579 FE0F
+🎰 Slot machine                     1F3B0
+🎲 Game die                         1F3B2
+🧩 Puzzle piece                     1F9E9
+🧸 Teddy bear                       1F9F8
+🪅 Piñata                           1FA85
+🪆 Nesting dolls                    1FA86
+♠️ Spade suit                        2660 FE0F
+♥️ Heart suit                        2665 FE0F
+♦️ Diamond suit                      2666 FE0F
+♣️ Club suit                         2663 FE0F
+♟️ Chess pawn                        265F FE0F
+🃏 Joker                            1F0CF
+🀄 Mahjong red dragon               1F004
+🎴 Flower playing cards             1F3B4
+🎭 Performing arts                  1F3AD
+🖼️ Framed picture                   1F5BC FE0F
+🎨 Artist palette                   1F3A8
+🧵 Thread                           1F9F5
+🪡 Sewing needle                    1FAA1
+🧶 Yarn                             1F9F6
+🪢 Knot                             1FAA2
+👓 Glasses                          1F453
+🕶️ Sunglasses                       1F576 FE0F
+🥽 Goggles                          1F97D
+🥼 Lab coat                         1F97C
+🦺 Safety vest                      1F9BA
+👔 Necktie                          1F454
+👕 T-shirt                          1F455
+👖 Jeans                            1F456
+🧣 Scarf                            1F9E3
+🧤 Gloves                           1F9E4
+🧥 Coat                             1F9E5
+🧦 Socks                            1F9E6
+👗 Dress                            1F457
+👘 Kimono                           1F458
+🥻 Sari                             1F97B
+🩱 One-piece swimsuit               1FA71
+🩲 Briefs                           1FA72
+🩳 Shorts                           1FA73
+👙 Bikini                           1F459
+👚 Woman’s clothes                  1F45A
+👛 Purse                            1F45B
+👜 Handbag                          1F45C
+👝 Clutch bag                       1F45D
+🛍️ Shopping bags                    1F6CD FE0F
+🎒 Backpack                         1F392
+🩴 Thong sandal                     1FA74
+👞 Man’s shoe                       1F45E
+👟 Running shoe                     1F45F
+🥾 Hiking boot                      1F97E
+🥿 Flat shoe                        1F97F
+👠 High-heeled shoe                 1F460
+👡 Woman’s sandal                   1F461
+🩰 Ballet shoes                     1FA70
+👢 Woman’s boot                     1F462
+👑 Crown                            1F451
+👒 Woman’s hat                      1F452
+🎩 Top hat                          1F3A9
+🎓 Graduation cap                   1F393
+🧢 Billed cap                       1F9E2
+🪖 Military helmet                  1FA96
+⛑️ Rescue worker’s helmet           26D1 FE0F
+📿 Prayer beads                     1F4FF
+💄 Lipstick                         1F484
+💍 Ring                             1F48D
+💎 Gem stone                        1F48E
+🔇 Muted speaker                    1F507
+🔈 Speaker low volume               1F508
+🔉 Speaker medium volume            1F509
+🔊 Speaker high volume              1F50A
+📢 Loudspeaker                      1F4E2
+📣 Megaphone                        1F4E3
+📯 Postal horn                      1F4EF
+🔔 Bell                             1F514
+🔕 Bell with slash                  1F515
+🎼 Musical score                    1F3BC
+🎵 Musical note                     1F3B5
+🎶 Musical notes                    1F3B6
+🎙️ Studio microphone                1F399 FE0F
+🎚️ Level slider                     1F39A FE0F
+🎛️ Control knobs                    1F39B FE0F
+🎤 Microphone                       1F3A4
+🎧 Headphone                        1F3A7
+📻 Radio                            1F4FB
+🎷 Saxophone                        1F3B7
+🪗 Accordion                        1FA97
+🎸 Guitar                           1F3B8
+🎹 Musical keyboard                 1F3B9
+🎺 Trumpet                          1F3BA
+🎻 Violin                           1F3BB
+🪕 Banjo                            1FA95
+🥁 Drum                             1F941
+🪘 Long drum                        1FA98
+📱 Mobile phone                     1F4F1
+📲 Mobile phone with arrow          1F4F2
+☎️ Telephone                        260E FE0F
+📞 Telephone receiver               1F4DE
+📟 Pager                            1F4DF
+📠 Fax machine                      1F4E0
+🔋 Battery                          1F50B
+🔌 Electric plug                    1F50C
+💻 Laptop                           1F4BB
+🖥️ Desktop computer                 1F5A5 FE0F
+🖨️ Printer                          1F5A8 FE0F
+⌨️ Keyboard                         2328 FE0F
+🖱️ Computer mouse                   1F5B1 FE0F
+🖲️ Trackball                        1F5B2 FE0F
+💽 Computer disk                    1F4BD
+💾 Floppy disk                      1F4BE
+💿 Optical disk                     1F4BF
+📀 Dvd                              1F4C0
+🧮 Abacus                           1F9EE
+🎥 Movie camera                     1F3A5
+🎞️ Film frames                      1F39E FE0F
+📽️ Film projector                   1F4FD FE0F
+🎬 Clapper board                    1F3AC
+📺 Television                       1F4FA
+📷 Camera                           1F4F7
+📸 Camera with flash                1F4F8
+📹 Video camera                     1F4F9
+📼 Videocassette                    1F4FC
+🔍 Magnifying glass tilted left     1F50D
+🔎 Magnifying glass tilted right    1F50E
+🕯️ Candle                           1F56F FE0F
+💡 Light bulb                       1F4A1
+🔦 Flashlight                       1F526
+🏮 Red paper lantern                1F3EE
+🪔 Diya lamp                        1FA94
+📔 Notebook with decorative cover   1F4D4
+📕 Closed book                      1F4D5
+📖 Open book                        1F4D6
+📗 Green book                       1F4D7
+📘 Blue book                        1F4D8
+📙 Orange book                      1F4D9
+📚 Books                            1F4DA
+📓 Notebook                         1F4D3
+📒 Ledger                           1F4D2
+📃 Page with curl                   1F4C3
+📜 Scroll                           1F4DC
+📄 Page facing up                   1F4C4
+📰 Newspaper                        1F4F0
+🗞️ Rolled-up newspaper              1F5DE FE0F
+📑 Bookmark tabs                    1F4D1
+🔖 Bookmark                         1F516
+🏷️ Label                            1F3F7 FE0F
+💰 Money bag                        1F4B0
+🪙 Coin                             1FA99
+💴 Yen banknote                     1F4B4
+💵 Dollar banknote                  1F4B5
+💶 Euro banknote                    1F4B6
+💷 Pound banknote                   1F4B7
+💸 Money with wings                 1F4B8
+💳 Credit card                      1F4B3
+🧾 Receipt                          1F9FE
+💹 Chart increasing with yen        1F4B9
+✉️ eNvelope                          2709 FE0F
+📧 E-mail                           1F4E7
+📨 Incoming envelope                1F4E8
+📩 Envelope with arrow              1F4E9
+📤 Outbox tray                      1F4E4
+📥 Inbox tray                       1F4E5
+📦 Package                          1F4E6
+📫 Closed mailbox with raised flag  1F4EB
+📪 Closed mailbox with lowered flag 1F4EA
+📬 Open mailbox with raised flag    1F4EC
+📭 Open mailbox with lowered flag   1F4ED
+📮 Postbox                          1F4EE
+🗳️ Ballot box with ballot           1F5F3 FE0F
+✏️ Pencil                           270F FE0F
+✒️ Black nib                        2712 FE0F
+🖋️ Fountain pen                     1F58B FE0F
+🖊️ Pen                              1F58A FE0F
+🖌️ Paintbrush                       1F58C FE0F
+🖍️ Crayon                           1F58D FE0F
+📝 Memo                             1F4DD
+💼 Briefcase                        1F4BC
+📁 File folder                      1F4C1
+📂 Open file folder                 1F4C2
+🗂️ Card index dividers              1F5C2 FE0F
+📅 Calendar                         1F4C5
+📆 Tear-off calendar                1F4C6
+🗒️ Spiral notepad                   1F5D2 FE0F
+🗓️ Spiral calendar                  1F5D3 FE0F
+📇 Card index                       1F4C7
+📈 Chart increasing                 1F4C8
+📉 Chart decreasing                 1F4C9
+📊 Bar chart                        1F4CA
+📋 Clipboard                        1F4CB
+📌 Pushpin                          1F4CC
+📍 Round pushpin                    1F4CD
+📎 Paperclip                        1F4CE
+🖇️ Linked paperclips                1F587 FE0F
+📏 Straight ruler                   1F4CF
+📐 Triangular ruler                 1F4D0
+✂️ sCissors                          2702 FE0F
+🗃️ Card file box                    1F5C3 FE0F
+🗄️ File cabinet                     1F5C4 FE0F
+🗑️ Wastebasket                      1F5D1 FE0F
+🔒 Locked                           1F512
+🔓 Unlocked                         1F513
+🔏 Locked with pen                  1F50F
+🔐 Locked with key                  1F510
+🔑 Key                              1F511
+🗝️ Old key                          1F5DD FE0F
+🔨 Hammer                           1F528
+🪓 Axe                              1FA93
+⛏️ Pick                             26CF FE0F
+⚒️ hAmmer and pick                   2692 FE0F
+🛠️ Hammer and wrench                1F6E0 FE0F
+🗡️ Dagger                           1F5E1 FE0F
+⚔️ cRossed swords                    2694 FE0F
+🔫 Pistol                           1F52B
+🪃 Boomerang                        1FA83
+🏹 Bow and arrow                    1F3F9
+🛡️ Shield                           1F6E1 FE0F
+🪚 Carpentry saw                    1FA9A
+🔧 Wrench                           1F527
+🪛 Screwdriver                      1FA9B
+🔩 Nut and bolt                     1F529
+⚙️ Gear                             2699 FE0F
+🗜️ Clamp                            1F5DC FE0F
+⚖️ Balance scale                    2696 FE0F
+🦯 White cane                       1F9AF
+🔗 Link                             1F517
+⛓️ Chains                           26D3 FE0F
+🪝 Hook                             1FA9D
+🧰 Toolbox                          1F9F0
+🧲 Magnet                           1F9F2
+🪜 Ladder                           1FA9C
+⚗️ aLembic                          2697 FE0F
+🧪 Test tube                        1F9EA
+🧫 Petri dish                       1F9EB
+🧬 Dna                              1F9EC
+🔬 Microscope                       1F52C
+🔭 Telescope                        1F52D
+📡 Satellite antenna                1F4E1
+💉 Syringe                          1F489
+🩸 Drop of blood                    1FA78
+💊 Pill                             1F48A
+🩹 Adhesive bandage                 1FA79
+🩺 Stethoscope                      1FA7A
+🚪 Door                             1F6AA
+🛗 Elevator                         1F6D7
+🪞 Mirror                           1FA9E
+🪟 Window                           1FA9F
+🛏️ Bed                              1F6CF FE0F
+🛋️ Couch and lamp                   1F6CB FE0F
+🪑 Chair                            1FA91
+🚽 Toilet                           1F6BD
+🪠 Plunger                          1FAA0
+🚿 Shower                           1F6BF
+🛁 Bathtub                          1F6C1
+🪤 Mouse trap                       1FAA4
+🪒 Razor                            1FA92
+🧴 Lotion bottle                    1F9F4
+🧷 Safety pin                       1F9F7
+🧹 Broom                            1F9F9
+🧺 Basket                           1F9FA
+🧻 Roll of paper                    1F9FB
+🪣 Bucket                           1FAA3
+🧼 Soap                             1F9FC
+🪥 Toothbrush                       1FAA5
+🧽 Sponge                           1F9FD
+🧯 Fire extinguisher                1F9EF
+🛒 Shopping cart                    1F6D2
+🚬 Cigarette                        1F6AC
+⚰️ Coffin                           26B0 FE0F
+🪦 Headstone                        1FAA6
+⚱️ Funeral urn                      26B1 FE0F
+🗿 Moai                             1F5FF
+🪧 Placard                          1FAA7
+🏧 ATM sign                         1F3E7
+🚮 Litter in bin sign               1F6AE
+🚰 Potable water                    1F6B0
+♿ Wheelchair symbol                267F
+🚹 Men’s room                       1F6B9
+🚺 Women’s room                     1F6BA
+🚻 Restroom                         1F6BB
+🚼 Baby symbol                      1F6BC
+🚾 Water closet                     1F6BE
+🛂 Passport control                 1F6C2
+🛃 Customs                          1F6C3
+🛄 Baggage claim                    1F6C4
+🛅 Left luggage                     1F6C5
+⚠️ Warning                          26A0 FE0F
+🚸 children crossing                1F6B8
+⛔ No entry                         26D4
+🚫 Prohibited                       1F6AB
+🚳 No bicycles                      1F6B3
+🚭 No smoking                       1F6AD
+🚯 No littering                     1F6AF
+🚱 Non-potable water                1F6B1
+🚷 No pedestrians                   1F6B7
+📵 No mobile phones                 1F4F5
+🔞 No one under eighteen            1F51E
+☢️ Radioactive                      2622 FE0F
+☣️ Biohazard                        2623 FE0F
+⬆️ Up arrow                         2B06 FE0F
+↗️ Up-right arrow                    2197 FE0F
+➡️ Right arrow                      27A1 FE0F
+↘️ Down-right arrow                  2198 FE0F
+⬇️ Down arrow                       2B07 FE0F
+↙️ Down-left arrow                   2199 FE0F
+⬅️ Left arrow                       2B05 FE0F
+↖️ Up-left arrow                     2196 FE0F
+↕️ Up-down arrow                     2195 FE0F
+↔️ Left-right arrow                  2194 FE0F
+↩️ Right arrow curving left         21A9 FE0F
+↪️ Left arrow curving right         21AA FE0F
+⤴️ Right arrow curving up           2934 FE0F
+⤵️ Right arrow curving down         2935 FE0F
+🔃 Clockwise vertical arrows        1F503
+🔄 Counterclockwise arrows button   1F504
+🔙 BACK arrow                       1F519
+🔚 END arrow                        1F51A
+🔛 ON! arrow                        1F51B
+🔜 SOON arrow                       1F51C
+🔝 TOP arrow                        1F51D
+🛐 Place of worship                 1F6D0
+⚛️ Atom symbol                       269B FE0F
+🕉️ Om                               1F549 FE0F
+✡️ Star of David                    2721 FE0F
+☸️ Wheel of dharma                  2638 FE0F
+☯️ Yin yang                         262F FE0F
+✝️ Latin cross                      271D FE0F
+☦️ Orthodox cross                   2626 FE0F
+☪️ Star and crescent                262A FE0F
+☮️ Peace symbol                     262E FE0F
+🕎 Menorah                          1F54E
+🔯 Dotted six-pointed star          1F52F
+♈ Aries                            2648
+♉ Taurus                           2649
+♊ Gemini                           264A
+♋ Cancer                           264B
+♌ Leo                              264C
+♍ Virgo                            264D
+♎ Libra                            264E
+♏ Scorpio                          264F
+♐ Sagittarius                      2650
+♑ Capricorn                        2651
+♒ Aquarius                         2652
+♓ Pisces                           2653
+⛎ Ophiuchus                        26CE
+🔀 Shuffle tracks button            1F500
+🔁 Repeat button                    1F501
+🔂 Repeat single button             1F502
+▶️ Play button                      25B6 FE0F
+⏩ Fast-forward button              23E9
+⏭️ Next track button                23ED FE0F
+⏯️ Play or pause button             23EF FE0F
+◀️ Reverse button                    25C0 FE0F
+⏪ Fast reverse button              23EA
+⏮️ Last track button                23EE FE0F
+🔼 Upwards button                   1F53C
+⏫ Fast up button                   23EB
+🔽 Downwards button                 1F53D
+⏬ Fast down button                 23EC
+⏸️ Pause button                     23F8 FE0F
+⏹️ Stop button                      23F9 FE0F
+⏺️ Record button                    23FA FE0F
+⏏️ Eject button                      23CF FE0F
+🎦 Cinema                           1F3A6
+🔅 Dim button                       1F505
+🔆 Bright button                    1F506
+📶 Antenna bars                     1F4F6
+📳 Vibration mode                   1F4F3
+📴 Mobile phone off                 1F4F4
+♀️ Female sign                       2640 FE0F
+♂️ Male sign                         2642 FE0F
+⚧️ Transgender symbol                26A7 FE0F
+✖️ Multiply                          2716 FE0F
+➕ Plus                             2795
+➖ Minus                            2796
+➗ Divide                           2797
+♾️ Infinity                          267E FE0F
+‼️ Double exclamation mark           203C FE0F
+⁉️ Exclamation question mark         2049 FE0F
+❓ Question mark                    2753
+❔ White question mark              2754
+❕ White exclamation mark           2755
+❗ Exclamation mark                 2757
+〰️ Wavy dash 3030                   FE0F
+💱 Currency exchange                1F4B1
+💲 Heavy dollar sign                1F4B2
+⚕️ Medical symbol                   2695 FE0F
+♻️ Recycling symbol                 267B FE0F
+⚜️ Fleur-de-lis                     269C FE0F
+🔱 Trident emblem                   1F531
+📛 Name badge                       1F4DB
+🔰 Japanese symbol for beginner     1F530
+⭕ Hollow red circle                2B55
+✅ Check mark button                2705
+☑️ Check box with check             2611 FE0F
+✔️ Check mark                       2714 FE0F
+❌ Cross mark                       274C
+❎ Cross mark button                274E
+➰ Curly loop                       27B0
+➿ Double curly loop                27BF
+〽️ Part alternation mark            303D FE0F
+✳️ Eight-spoked asterisk            2733 FE0F
+✴️ Eight-pointed star               2734 FE0F
+❇️ Sparkle                          2747 FE0F
+©️ Copyright                         00A9 FE0F
+®️ Registered                        00AE FE0F
+™️ Trade mark                        2122 FE0F
+#️⃣ Keycap: #                         0023 FE0F 20E3
+*️⃣ Keycap: *                         002A FE0F 20E3
+0️⃣ Keycap: 0                         0030 FE0F 20E3
+1️⃣ Keycap: 1                         0031 FE0F 20E3
+2️⃣ Keycap: 2                         0032 FE0F 20E3
+3️⃣ Keycap: 3                         0033 FE0F 20E3
+4️⃣ Keycap: 4                         0034 FE0F 20E3
+5️⃣ Keycap: 5                         0035 FE0F 20E3
+6️⃣ Keycap: 6                         0036 FE0F 20E3
+7️⃣ Keycap: 7                         0037 FE0F 20E3
+8️⃣ Keycap: 8                         0038 FE0F 20E3
+9️⃣ Keycap: 9                         0039 FE0F 20E3
+🔟 Keycap: 10                       1F51F
+🔠 Input latin uppercase            1F520
+🔡 Input latin lowercase            1F521
+🔢 Input numbers                    1F522
+🔣 Input symbols                    1F523
+🔤 Input latin letters              1F524
+🅰️ A button (blood type)            1F170 FE0F
+🆎 AB button (blood type)           1F18E
+🅱️ B button (blood type)            1F171 FE0F
+🆑 CL button                        1F191
+🆒 COOL button                      1F192
+🆓 FREE button                      1F193
+ℹ️ Information                      2139 FE0F
+🆔 ID button                        1F194
+Ⓜ️ circled M                        24C2 FE0F
+🆕 NEW button                       1F195
+🆖 NG button                        1F196
+🅾️ O button (blood type)            1F17E FE0F
+🆗 OK button                        1F197
+🅿️ P button                         1F17F FE0F
+🆘 SOS button                       1F198 
+🆙 UP! button                       1F199
+🆚 VS button                        1F19A
+🈁 Japanese “here” button           1F201
+🈂️ Japanese “service charge” button 1F202 FE0F
+🈷️ Japanese “monthly amount” button 1F237 FE0F
+🈶 Japanese “not free of charge” button 1F236
+🈯 Japanese “reserved” button       1F22F
+🉐 Japanese “bargain” button        1F250
+🈹 Japanese “discount” button       1F239
+🈚 Japanese “free of charge” button 1F21A
+🈲 Japanese “prohibited” button     1F232
+🉑 Japanese “acceptable” button     1F251
+🈸 Japanese “application” button    1F238
+🈴 Japanese “passing grade” button  1F234
+🈳 Japanese “vacancy” button        1F233
+㊗️ Japanese “congratulations” button 3297 FE0F
+㊙️ Japanese “secret” button 3299    FE0F
+🈺 Japanese “open for business” button 1F23A
+🈵 Japanese “no vacancy” button     1F235
+🔴 red circle                       1F534
+🟠 orange circle                    1F7E0
+🟡 yellow circle                    1F7E1
+🟢 green circle                     1F7E2
+🔵 blue circle                      1F535
+🟣 purple circle                    1F7E3
+🟤 brown circle                     1F7E4
+⚫ black circle                     26AB
+⚪ white circle                     26AA
+🟥 red square                       1F7E5
+🟧 orange square                    1F7E7
+🟨 yellow square                    1F7E8
+🟩 green square                     1F7E9
+🟦 blue square                      1F7E6
+🟪 purple square                    1F7EA
+🟫 brown square                     1F7EB
+⬛ black large square               2B1B
+⬜ white large square               2B1C
+◼️ black medium square              25FC FE0F
+◻️ white medium square              25FB FE0F
+◾ black medium-small square        25FE
+◽ white medium-small square        25FD
+▪️ black small square                25AA FE0F
+▫️ white small square                25AB FE0F
+🔶 large orange diamond             1F536
+🔷 large blue diamond               1F537
+🔸 small orange diamond             1F538
+🔹 small blue diamond               1F539
+🔺 red triangle pointed up          1F53A
+🔻 red triangle pointed down        1F53B
+💠 diamond with a dot               1F4A0
+🔘 radio button                     1F518
+🔳 white square button              1F533
+🔲 black square button              1F532
+🏁 chequered flag                   1F3C1
+🚩 triangular flag                  1F6A9
+🎌 crossed flags                    1F38C
+🏴 black flag                       1F3F4
+🏳️ white flag                       1F3F3 FE0F
+🇦🇨 Ascension Island               1F1E6 1F1E8
+🇦🇩 Andorra                        1F1E6 1F1E9
+🇦🇪 United Arab Emirates           1F1E6 1F1EA
+🇦🇫 Afghanistan                    1F1E6 1F1EB
+🇦🇬 Antigua & Barbuda              1F1E6 1F1EC
+🇦🇮 Anguilla                       1F1E6 1F1EE
+🇦🇱 Albania                        1F1E6 1F1F1
+🇦🇲 Armenia                        1F1E6 1F1F2
+🇦🇴 Angola                         1F1E6 1F1F4
+🇦🇶 Antarctica                     1F1E6 1F1F6
+🇦🇷 Argentina                      1F1E6 1F1F7
+🇦🇸 American Samoa                 1F1E6 1F1F8
+🇦🇹 Austria                        1F1E6 1F1F9
+🇦🇺 Australia                      1F1E6 1F1FA
+🇦🇼 Aruba                          1F1E6 1F1FC
+🇦🇽 Åland Islands                  1F1E6 1F1FD
+🇦🇿 Azerbaijan                     1F1E6 1F1FF
+🇧🇦 Bosnia & Herzegovina           1F1E7 1F1E6
+🇧🇧 Barbados                       1F1E7 1F1E7
+🇧🇩 Bangladesh                     1F1E7 1F1E9
+🇧🇪 Belgium                        1F1E7 1F1EA
+🇧🇫 Burkina Faso                   1F1E7 1F1EB
+🇧🇬 Bulgaria                       1F1E7 1F1EC
+🇧🇭 Bahrain                        1F1E7 1F1ED
+🇧🇮 Burundi                        1F1E7 1F1EE
+🇧🇯 Benin                          1F1E7 1F1EF
+🇧🇱 St. Barthélemy                 1F1E7 1F1F1
+🇧🇲 Bermuda                        1F1E7 1F1F2
+🇧🇳 Brunei                         1F1E7 1F1F3
+🇧🇴 Bolivia                        1F1E7 1F1F4
+🇧🇶 Caribbean Netherlands          1F1E7 1F1F6
+🇧🇷 Brazil                         1F1E7 1F1F7
+🇧🇸 Bahamas                        1F1E7 1F1F8
+🇧🇹 Bhutan                         1F1E7 1F1F9
+🇧🇻 Bouvet Island                  1F1E7 1F1FB
+🇧🇼 Botswana                       1F1E7 1F1FC
+🇧🇾 Belarus                        1F1E7 1F1FE
+🇧🇿 Belize                         1F1E7 1F1FF
+🇨🇦 Canada                         1F1E8 1F1E6
+🇨🇨 Cocos (Keeling) Islands        1F1E8 1F1E8
+🇨🇩 Congo - Kinshasa               1F1E8 1F1E9
+🇨🇫 Central African Republic       1F1E8 1F1EB
+🇨🇬 Congo - Brazzaville            1F1E8 1F1EC
+🇨🇭 Switzerland                    1F1E8 1F1ED
+🇨🇮 Côte d’Ivoire                  1F1E8 1F1EE
+🇨🇰 Cook Islands                   1F1E8 1F1F0
+🇨🇱 Chile                          1F1E8 1F1F1
+🇨🇲 Cameroon                       1F1E8 1F1F2
+🇨🇳 China                          1F1E8 1F1F3
+🇨🇴 Colombia                       1F1E8 1F1F4
+🇨🇵 Clipperton Island              1F1E8 1F1F5
+🇨🇷 Costa Rica                     1F1E8 1F1F7
+🇨🇺 Cuba                           1F1E8 1F1FA
+🇨🇻 Cape Verde                     1F1E8 1F1FB
+🇨🇼 Curaçao                        1F1E8 1F1FC
+🇨🇽 Christmas Island               1F1E8 1F1FD
+🇨🇾 Cyprus                         1F1E8 1F1FE
+🇨🇿 Czechia                        1F1E8 1F1FF
+🇩🇪 Germany                        1F1E9 1F1EA
+🇩🇬 Diego Garcia                   1F1E9 1F1EC
+🇩🇯 Djibouti                       1F1E9 1F1EF
+🇩🇰 Denmark                        1F1E9 1F1F0
+🇩🇲 Dominica                       1F1E9 1F1F2
+🇩🇴 Dominican Republic             1F1E9 1F1F4
+🇩🇿 Algeria                        1F1E9 1F1FF
+🇪🇦 Ceuta & Melilla                1F1EA 1F1E6
+🇪🇨 Ecuador                        1F1EA 1F1E8
+🇪🇪 Estonia                        1F1EA 1F1EA
+🇪🇬 Egypt                          1F1EA 1F1EC
+🇪🇭 Western Sahara                 1F1EA 1F1ED
+🇪🇷 Eritrea                        1F1EA 1F1F7
+🇪🇸 Spain                          1F1EA 1F1F8
+🇪🇹 Ethiopia                       1F1EA 1F1F9
+🇪🇺 European Union                 1F1EA 1F1FA
+🇫🇮 Finland                        1F1EB 1F1EE
+🇫🇯 Fiji                           1F1EB 1F1EF
+🇫🇰 Falkland Islands               1F1EB 1F1F0
+🇫🇲 Micronesia                     1F1EB 1F1F2
+🇫🇴 Faroe Islands                  1F1EB 1F1F4
+🇫🇷 France                         1F1EB 1F1F7
+🇬🇦 Gabon                          1F1EC 1F1E6
+🇬🇧 United Kingdom                 1F1EC 1F1E7
+🇬🇩 Grenada                        1F1EC 1F1E9
+🇬🇪 Georgia                        1F1EC 1F1EA
+🇬🇫 French Guiana                  1F1EC 1F1EB
+🇬🇬 Guernsey                       1F1EC 1F1EC
+🇬🇭 Ghana                          1F1EC 1F1ED
+🇬🇮 Gibraltar                      1F1EC 1F1EE
+🇬🇱 Greenland                      1F1EC 1F1F1
+🇬🇲 Gambia                         1F1EC 1F1F2
+🇬🇳 Guinea                         1F1EC 1F1F3
+🇬🇵 Guadeloupe                     1F1EC 1F1F5
+🇬🇶 Equatorial Guinea              1F1EC 1F1F6
+🇬🇷 Greece                         1F1EC 1F1F7
+🇬🇸 South Georgia & South Sandwich Islands 1F1EC 1F1F8
+🇬🇹 Guatemala                      1F1EC 1F1F9
+🇬🇺 Guam                           1F1EC 1F1FA
+🇬🇼 Guinea-Bissau                  1F1EC 1F1FC
+🇬🇾 Guyana                         1F1EC 1F1FE
+🇭🇰 Hong Kong SAR China            1F1ED 1F1F0
+🇭🇲 Heard & McDonald Islands       1F1ED 1F1F2
+🇭🇳 Honduras                       1F1ED 1F1F3
+🇭🇷 Croatia                        1F1ED 1F1F7
+🇭🇹 Haiti                          1F1ED 1F1F9
+🇭🇺 Hungary                        1F1ED 1F1FA
+🇮🇨 Canary Islands                 1F1EE 1F1E8
+🇮🇩 Indonesia                      1F1EE 1F1E9
+🇮🇪 Ireland                        1F1EE 1F1EA
+🇮🇱 Israel                         1F1EE 1F1F1
+🇮🇲 Isle of Man                    1F1EE 1F1F2
+🇮🇳 India                          1F1EE 1F1F3
+🇮🇴 British Indian Ocean Territory 1F1EE 1F1F4
+🇮🇶 Iraq                           1F1EE 1F1F6
+🇮🇷 Iran                           1F1EE 1F1F7
+🇮🇸 Iceland                        1F1EE 1F1F8
+🇮🇹 Italy                          1F1EE 1F1F9
+🇯🇪 Jersey                         1F1EF 1F1EA
+🇯🇲 Jamaica                        1F1EF 1F1F2
+🇯🇴 Jordan                         1F1EF 1F1F4
+🇯🇵 Japan                          1F1EF 1F1F5
+🇰🇪 Kenya                          1F1F0 1F1EA
+🇰🇬 Kyrgyzstan                     1F1F0 1F1EC
+🇰🇭 Cambodia                       1F1F0 1F1ED
+🇰🇮 Kiribati                       1F1F0 1F1EE
+🇰🇲 Comoros                        1F1F0 1F1F2
+🇰🇳 St. Kitts & Nevis              1F1F0 1F1F3
+🇰🇵 North Korea                    1F1F0 1F1F5
+🇰🇷 South Korea                    1F1F0 1F1F7
+🇰🇼 Kuwait                         1F1F0 1F1FC
+🇰🇾 Cayman Islands                 1F1F0 1F1FE
+🇰🇿 Kazakhstan                     1F1F0 1F1FF
+🇱🇦 Laos                           1F1F1 1F1E6
+🇱🇧 Lebanon                        1F1F1 1F1E7
+🇱🇨 St. Lucia                      1F1F1 1F1E8
+🇱🇮 Liechtenstein                  1F1F1 1F1EE
+🇱🇰 Sri Lanka                      1F1F1 1F1F0
+🇱🇷 Liberia                        1F1F1 1F1F7
+🇱🇸 Lesotho                        1F1F1 1F1F8
+🇱🇹 Lithuania                      1F1F1 1F1F9
+🇱🇺 Luxembourg                     1F1F1 1F1FA
+🇱🇻 Latvia                         1F1F1 1F1FB
+🇱🇾 Libya                          1F1F1 1F1FE
+🇲🇦 Morocco                        1F1F2 1F1E6
+🇲🇨 Monaco                         1F1F2 1F1E8
+🇲🇩 Moldova                        1F1F2 1F1E9
+🇲🇪 Montenegro                     1F1F2 1F1EA
+🇲🇫 St. Martin                     1F1F2 1F1EB
+🇲🇬 Madagascar                     1F1F2 1F1EC
+🇲🇭 Marshall Islands               1F1F2 1F1ED
+🇲🇰 North Macedonia                1F1F2 1F1F0
+🇲🇱 Mali                           1F1F2 1F1F1
+🇲🇲 Myanmar (Burma)                1F1F2 1F1F2
+🇲🇳 Mongolia                       1F1F2 1F1F3
+🇲🇴 Macao SAR China                1F1F2 1F1F4
+🇲🇵 Northern Mariana Islands       1F1F2 1F1F5
+🇲🇶 Martinique                     1F1F2 1F1F6
+🇲🇷 Mauritania                     1F1F2 1F1F7
+🇲🇸 Montserrat                     1F1F2 1F1F8
+🇲🇹 Malta                          1F1F2 1F1F9
+🇲🇺 Mauritius                      1F1F2 1F1FA
+🇲🇻 Maldives                       1F1F2 1F1FB
+🇲🇼 Malawi                         1F1F2 1F1FC
+🇲🇽 Mexico                         1F1F2 1F1FD
+🇲🇾 Malaysia                       1F1F2 1F1FE
+🇲🇿 Mozambique                     1F1F2 1F1FF
+🇳🇦 Namibia                        1F1F3 1F1E6
+🇳🇨 New Caledonia                  1F1F3 1F1E8
+🇳🇪 Niger                          1F1F3 1F1EA
+🇳🇫 Norfolk Island                 1F1F3 1F1EB
+🇳🇬 Nigeria                        1F1F3 1F1EC
+🇳🇮 Nicaragua                      1F1F3 1F1EE
+🇳🇱 Netherlands                    1F1F3 1F1F1
+🇳🇴 Norway                         1F1F3 1F1F4
+🇳🇵 Nepal                          1F1F3 1F1F5
+🇳🇷 Nauru                          1F1F3 1F1F7
+🇳🇺 Niue                           1F1F3 1F1FA
+🇳🇿 New Zealand                    1F1F3 1F1FF
+🇴🇲 Oman                           1F1F4 1F1F2
+🇵🇦 Panama                         1F1F5 1F1E6
+🇵🇪 Peru                           1F1F5 1F1EA
+🇵🇫 French Polynesia               1F1F5 1F1EB
+🇵🇬 Papua New Guinea               1F1F5 1F1EC
+🇵🇭 Philippines                    1F1F5 1F1ED
+🇵🇰 Pakistan                       1F1F5 1F1F0
+🇵🇱 Poland                         1F1F5 1F1F1
+🇵🇲 St. Pierre & Miquelon          1F1F5 1F1F2
+🇵🇳 Pitcairn Islands               1F1F5 1F1F3
+🇵🇷 Puerto Rico                    1F1F5 1F1F7
+🇵🇸 Palestinian Territories        1F1F5 1F1F8
+🇵🇹 Portugal                       1F1F5 1F1F9
+🇵🇼 Palau                          1F1F5 1F1FC
+🇵🇾 Paraguay                       1F1F5 1F1FE
+🇶🇦 Qatar                          1F1F6 1F1E6
+🇷🇪 Réunion                        1F1F7 1F1EA
+🇷🇴 Romania                        1F1F7 1F1F4
+🇷🇸 Serbia                         1F1F7 1F1F8
+🇷🇺 Russia                         1F1F7 1F1FA
+🇷🇼 Rwanda                         1F1F7 1F1FC
+🇸🇦 Saudi Arabia                   1F1F8 1F1E6
+🇸🇧 Solomon Islands                1F1F8 1F1E7
+🇸🇨 Seychelles                     1F1F8 1F1E8
+🇸🇩 Sudan                          1F1F8 1F1E9
+🇸🇪 Sweden                         1F1F8 1F1EA
+🇸🇬 Singapore                      1F1F8 1F1EC
+🇸🇭 St. Helena                     1F1F8 1F1ED
+🇸🇮 Slovenia                       1F1F8 1F1EE
+🇸🇯 Svalbard & Jan Mayen           1F1F8 1F1EF
+🇸🇰 Slovakia                       1F1F8 1F1F0
+🇸🇱 Sierra Leone                   1F1F8 1F1F1
+🇸🇲 San Marino                     1F1F8 1F1F2
+🇸🇳 Senegal                        1F1F8 1F1F3
+🇸🇴 Somalia                        1F1F8 1F1F4
+🇸🇷 Suriname                       1F1F8 1F1F7
+🇸🇸 South Sudan                    1F1F8 1F1F8
+🇸🇹 São Tomé & Príncipe            1F1F8 1F1F9
+🇸🇻 El Salvador                    1F1F8 1F1FB
+🇸🇽 Sint Maarten                   1F1F8 1F1FD
+🇸🇾 Syria                          1F1F8 1F1FE
+🇸🇿 Eswatini                       1F1F8 1F1FF
+🇹🇦 Tristan da Cunha               1F1F9 1F1E6
+🇹🇨 Turks & Caicos Islands         1F1F9 1F1E8
+🇹🇩 Chad                           1F1F9 1F1E9
+🇹🇫 French Southern Territories    1F1F9 1F1EB
+🇹🇬 Togo                           1F1F9 1F1EC
+🇹🇭 Thailand                       1F1F9 1F1ED
+🇹🇯 Tajikistan                     1F1F9 1F1EF
+🇹🇰 Tokelau                        1F1F9 1F1F0
+🇹🇱 Timor-Leste                    1F1F9 1F1F1
+🇹🇲 Turkmenistan                   1F1F9 1F1F2
+🇹🇳 Tunisia                        1F1F9 1F1F3
+🇹🇴 Tonga                          1F1F9 1F1F4
+🇹🇷 Turkey                         1F1F9 1F1F7
+🇹🇹 Trinidad & Tobago              1F1F9 1F1F9
+🇹🇻 Tuvalu                         1F1F9 1F1FB
+🇹🇼 Taiwan                         1F1F9 1F1FC
+🇹🇿 Tanzania                       1F1F9 1F1FF
+🇺🇦 Ukraine                        1F1FA 1F1E6
+🇺🇬 Uganda                         1F1FA 1F1EC
+🇺🇲 U.S. Outlying Islands          1F1FA 1F1F2
+🇺🇳 United Nations                 1F1FA 1F1F3
+🇺🇸 United States                  1F1FA 1F1F8
+🇺🇾 Uruguay                        1F1FA 1F1FE
+🇺🇿 Uzbekistan                     1F1FA 1F1FF
+🇻🇦 Vatican City                   1F1FB 1F1E6
+🇻🇨 St. Vincent & Grenadines       1F1FB 1F1E8
+🇻🇪 Venezuela                      1F1FB 1F1EA
+🇻🇬 British Virgin Islands         1F1FB 1F1EC
+🇻🇮 U.S. Virgin Islands            1F1FB 1F1EE
+🇻🇳 Vietnam                        1F1FB 1F1F3
+🇻🇺 Vanuatu                        1F1FB 1F1FA
+🇼🇫 Wallis & Futuna                1F1FC 1F1EB
+🇼🇸 Samoa                          1F1FC 1F1F8
+🇽🇰 Kosovo                         1F1FD 1F1F0
+🇾🇪 Yemen                          1F1FE 1F1EA
+🇾🇹 Mayotte                        1F1FE 1F1F9
+🇿🇦 South Africa                   1F1FF 1F1E6
+🇿🇲 Zambia                         1F1FF 1F1F2
+🇿🇼 Zimbabwe                       1F1FF 1F1FC
+℃  Degrees Celius                   2103
+℉  Degrees Fahrenheit               2109
+°  Degrees                          00B0
+

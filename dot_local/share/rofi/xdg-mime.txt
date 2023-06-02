@@ -1,0 +1,13 @@
+Determine a file's MIME type:
+
+$ xdg-mime query filetype photo.jpeg
+image/jpeg
+
+Determine the default application for a MIME type:
+
+$ xdg-mime query default image/jpeg
+gimp.desktop
+
+Change the default application for a MIME type:
+
+$ xdg-mime default feh.desktop image/jpeg

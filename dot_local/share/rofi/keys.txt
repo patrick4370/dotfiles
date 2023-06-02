@@ -1,0 +1,97 @@
+i3wm Key Bindings
+
+$mod = Windows Key
+
+$mod+0                  Go to Workspace 10
+$mod+1                  Go to Workspace 1
+$mod+2                  Go to Workspace 2
+$mod+3                  Go to Workspace 3
+$mod+4                  Go to Workspace 4
+$mod+5                  Go to Workspace 5
+$mod+6                  Go to Workspace 6
+$mod+7                  Go to Workspace 7
+$mod+8                  Go to Workspace 8
+$mod+9                  Go to Workspace 9
+$mod+Down               Focus Down
+$mod+F1                 Help Menu
+$mod+F11                Select Window to Screenshot 
+$mod+F12                Screenshot
+$mod+Left               Focus Left
+$mod+Page_down          Show the Window from Scratchpad
+$mod+Page_up            Move Current Window to Scratchpad
+$mod+Period             Emoji Selector
+$mod+Return             launch terminal
+$mod+Right              Focus Right
+$mod+Semicolon          focus right
+$mod+Space              Focus Mode Toggle
+$mod+Up                 Focus Up
+$mod+a                  Focus Parent
+$mod+b                  Bitwarden Menu
+$mod+c                  Clipboard Menu
+$mod+d                  Application Launcher
+$mod+e                  Layout Toggle Split
+$mod+f                  Full Screen Toggle
+$mod+h                  Split Horizontally
+$mod+j                  Focus Left
+$mod+k                  Focus Down
+$mod+l                  Focus Up
+$mod+m                  Music Player
+$mod+n                  Newsboat
+$mod+q                  Kill current Process
+$mod+s                  Layout Stacked
+$mod+t                  Split Toggle
+$mod+u                  Scratch Pad Terminal
+$mod+v                  Split Vertically
+$mod+w                  Tabbed Layout
+$mod+x                  Focus on Urgent Workspace
+
+$mod+Shift+0            Move Window to Workspace 10
+$mod+Shift+1            Move Window to Workspace 1
+$mod+Shift+2            Move Window to Workspace 2
+$mod+Shift+3            Move Window to Workspace 3
+$mod+Shift+4            Move Window to Workspace 4
+$mod+Shift+5            Move Window to Workspace 5
+$mod+Shift+6            Move Window to Workspace 6
+$mod+Shift+7            Move Window to Workspace 7
+$mod+Shift+8            Move Window to Workspace 8
+$mod+Shift+9            Move Window to Workspace 9
+$mod+Shift+Down         Focus Down
+$mod+Shift+F12          Select Area for Screenshot
+$mod+Shift+Left         Focus Left
+$mod+Shift+Right        Focus Right
+$mod+Shift+Semicolon    Move Window Up
+$mod+Shift+Space        Floating Toggle
+$mod+Shift+Up           Focus Up
+$mod+Shift+c            Reload i3wm Configuration
+$mod+Shift+d            Screenshot with Delay
+$mod+Shift+g            Open Google Keep
+$mod+Shift+j            Move Window Left
+$mod+Shift+k            Move Window Down
+$mod+Shift+l            Move Window Right
+$mod+Shift+r            Restart i3wm in Place
+$mod+Shift+t            BashTop Scratchpad Window
+$mod+Shift+w            Change Wallpaper
+$mod+Shift+x            Initiate Lock Screen
+
+Ctrl+Shift+d            Workplace Switcher
+Ctrl+Shift+e            Edit menu for Configuration Files
+Ctrl+Shift+n            Simple Note
+Ctrl+Shift+r            Ranger File Manager
+Ctrl+Shift+t            Window Switcher
+
+Ctrl+Alt+Delete         Exit - Power off - Reboot Menu
+
+$mod+Down               Resize Shrink Height by 1 Pixel
+$mod+Left               Resize Grow Width by 1 Pixel
+$mod+Right              Resize Shrink Width by 1 Pixel
+$mod+Up                 Resize Grow Height by 1 Pixel
+
+$mod+Shift+Down         Move Floating Window Down
+$mod+Shift+Left         Move Floating Window Left
+$mod+Shift+Right        Move Floating Window Right
+$mod+Shift+Up           Move Floating Window Up
+
+$mod+Ctrl+Shift+Down    Resize Shrink Height by 10 Pixel
+$mod+Ctrl+Shift+Left    Resize Grow Width by 10 Pixel
+$mod+Ctrl+Shift+Right   Resize Shrink Width by 10 Pixel
+$mod+Ctrl+Shift+Up      Resize Grow Height by 10 Pixel

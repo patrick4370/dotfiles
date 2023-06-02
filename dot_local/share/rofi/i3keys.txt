@@ -1,0 +1,94 @@
+
+Mod1 = Alt  Mod4 = Super
+
+Mod4+F1             Help
+Mod4+F11            Screenshoot Window
+Mod4+F12            Screenshoot Desktop
+
+Mod4+1              Go to Workspace 1
+Mod4+2              Go to Workspace 2
+Mod4+3              Go to Workspace 3
+Mod4+4              Go to Workspace 4
+Mod4+5              Go to Workspace 5
+Mod4+6              Go to Workspace 6
+Mod4+7              Go to Workspace 7
+Mod4+8              Go to Workspace 8
+Mod4+9              Go to Workspace 9
+Mod4+0              Go to Workspace 10
+
+Mod4+PgUp           Move window to scratchpad
+Mod4+PgDn           Show window in scratchpad
+
+Mod4+Tab            Toggle status bar Show/Hide
+
+Mod4+q              Kill Window
+Mod4+w              Make layout Tabbed
+Mod4+e              Toggle split layout
+Mod4+r              Show Rofi SSH Window
+Mod4+t              split Toggle
+Mod4+u              Scratchpad 
+Mod4+i              Show Insync
+Mod4+a              Focus Parent
+Mod4+s              Layout stacked
+Mod4+d              Show Rofi Run menu
+Mod4+f              Fullscreen Toggle
+Mod4+g              Focus marked Window
+Mod4+h              Split horizontally
+Mod4+j              Focus left
+Mod4+k              Focus down
+Mod4+l              Focus up
+Mod4+;              Focus right
+Mod4+Enter          Open Terminal
+Mod4+x              Focus 'Urgent' Window
+Mod4+c              Open Clipmenu
+Mod4+v              Split vertically
+Mod4+b              Open Bitwarden
+Mod4+m              Open ncmpcpp Visualizer
+Mod4+Period         Open Unicode Character script
+Mod4+Space          Focus mode_toggle
+Mod4+Up             Focus Up
+Mod4+Down           Focus Down
+Mod4+Left           Focus Left
+Mod4+Right          Focus Right
+
+Mod1+Mod4+Left      Previous Workspace
+Mod1+Mod4+Right     Next workspace
+
+Mod4+Ctrl+f         Focus parent & Fullscreen & Focus child
+Mod4+Ctrl+Up        Resize Grow Height by 10px
+Mod4+Ctrl+Down      Resize Shrink Height by 10px
+Mod4+Ctrl+Left      Resize Grow Width by 10px
+Mod4+Ctrl+Right     Resize Shrink Width by 10px
+
+Mod4+Shift+F12      Interactively screenshoot window/selection
+Mod4+Shift+1        Move container to workspace 1
+Mod4+Shift+2        Move container to workspace 2
+Mod4+Shift+3        Move container to workspace 3
+Mod4+Shift+4        Move container to workspace 4
+Mod4+Shift+5        Move container to workspace 5
+Mod4+Shift+6        Move container to workspace 6
+Mod4+Shift+7        Move container to workspace 7
+Mod4+Shift+8        Move container to workspace 8
+Mod4+Shift+9        Move container to workspace 9
+Mod4+Shift+0        Move container to workspace 10
+Mod4+Shift+q        Create QR code
+Mod4+Shift+w        Change to random wallpaper
+Mod4+Shift+r        Restart i3wm 
+Mod4+Shift+t        Show btop monitoring program
+Mod4+Shift+i        Hide Insync 
+Mod4+Shift+d        Screenshoot with delay
+Mod4+Shift+j        Move left 
+Mod4+Shift+k        Move down 
+Mod4+Shift+l        Move up 
+Mod4+Shift+;        Move right 
+Mod4+Shift+x        Lock screen 
+Mod4+Shift+c        Reload i3wm configuration
+Mod4+Shift+m        Create mark 
+Mod4+Shift+Space    Float/unfloat window 
+Mod4+Shift+Up       Move up 
+Mod4+Shift+Down     Move down
+Mod4+Shift+Left     Move left 
+Mod4+Shift+Right    Move right
+
+Ctrl+Mod1+Del       Power Menu
+
