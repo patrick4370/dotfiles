@@ -83,9 +83,9 @@ export cdpath=($HOME/Documents $HOME/Downloads $HOME/Pictures $HOME/Videos)
 export LANG=en_AU.UTF-8
 
 # Load and merge changes in ~/.Xresouces
-if (( ${+DISPLAY}  )); then
-    [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
-fi
+# if (( ${+DISPLAY}  )); then
+#     [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
+# fi
 
 # Plugin Manager
 
