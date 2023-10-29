@@ -14,89 +14,105 @@ bakup()
 	cp $1{,.bak}
 }	
 
-be()
-{
-    myfiles=( \
-             ~/.bashrc \
-             ~/.bash_alias \
-             ~/.bash_profile \
-             ~/.bash_logout \
-             ~/.inputrc \
-             ~/.profile \
-            )
-
-    du -a  ${myfiles[*]} | \
-        awk '{print $2}' | uniq | sort -r \
-        | fzf --cycle --exact --height 40% --bind="ctrl-space:toggle-preview" --preview-window=:hidden \
-        --layout=reverse-list --border --prompt="Select Script(s) To Edit: " \
-        --preview='bat --force-colorization --line-range 1:60 {}' \
-        --header="The BASH dot file Editor" --preview-window=right,50% --multi | \
-        xargs -or $EDITOR;
-
-}
+# be()
+# {
+#     myfiles=( \
+#              ~/.bashrc \
+#              ~/.bash_alias \
+#              ~/.bash_profile \
+#              ~/.bash_logout \
+#              ~/.inputrc \
+#              ~/.profile \
+#             )
+# 
+#     du -a  ${myfiles[*]} | \
+#         awk '{print $2}' | uniq | sort -r \
+#         | fzf --cycle --exact --height 40% --bind="ctrl-space:toggle-preview" --preview-window=:hidden \
+#         --layout=reverse-list --border --prompt="Select Script(s) To Edit: " \
+#         --preview='bat --force-colorization --line-range 1:60 {}' \
+#         --header="The BASH dot file Editor" --preview-window=right,50% --multi | \
+#         xargs -or $EDITOR;
+# 
+# }
 
 se() 
 {  
+        # This function has been modified from a function written by Luke
+        # Smith. I didn't like the use of du piping into awk etc, I have
+        # minimised the amount of pipes by redirecting the array into fzf by
+        # using '< <(printf "%s\n" "${myscripts[@]}"'. This works extremely
+        # well. Date: 06-06-2023 09:02 +1000
+
         myscripts=(~/.local/bin/*)
-
-        selected_file=$(fzf --tac --exact --height 40% --cycle \
-        --layout=reverse-list --border --prompt="Select Script(s) To Edit: " \
-        --preview='bat --force-colorization --line-range 1:60 {}' \
-        --header="The Script Editor" --preview-window=right,50% --multi< <(printf "%s\n" "${myscripts[@]}" | sort -r))
-
-        if [ -n "$selected_file" ]; then
-            nvim $selected_file
-        fi
+        
+        local string=" The Script Editor "
+        
+        fzf --height 40% --cycle --border-label="$string" \
+        --layout=reverse-list --border --color=label:italic:white --prompt="Select Script(s) To Edit: " \
+        --preview='bat --force-colorization --line-range 1:100 {}' \
+        --preview-window=right,70% --multi< <(printf "%s\n" "${(@nO)myscripts}") | xargs -ro vim
 }
 
 ze()
 {
-    myzsh=(
-            ~/.zshenv
-            ~/.config/zsh/.zshrc
-            ~/.config/zsh/.functions.zsh
-            ~/.config/zsh/.alias.zsh
-           )
+        # This function has been modified from a function written by Luke
+        # Smith. I didn't like the use of du piping into awk etc, I have
+        # minimised the amount of pipes by redirecting the array into fzf by
+        # using '< <(printf "%s\n" "${myscripts[@]}"'. This works extremely
+        # well. Date: 06-06-2023 09:02 +1000
 
-        selected_file=$(fzf --tac --exact --height 40% --cycle \
-        --layout=reverse-list --border --prompt="Select Script(s) To Edit: " \
-        --preview='bat --force-colorization --line-range 1:60 {}' \
-        --header="The Script Editor" --preview-window=right,50% --multi< <(printf "%s\n" "${myzsh[@]}"))
+        myzsh=(
+                ~/.zshenv
+                $XDG_CONFIG_HOME/zsh/.zshrc
+                $XDG_CONFIG_HOME/zsh/.zle.zsh
+                $XDG_CONFIG_HOME/zsh/.functions.zsh
+                $XDG_CONFIG_HOME/zsh/.alias.zsh
+                $XDG_CONFIG_HOME/zsh/.zlogin
+                $XDG_CONFIG_HOME/zsh/.zlogout
+               )
 
-        if [ -n "$selected_file" ]; then
-            nvim $selected_file
-        fi
+        local string=" The ZSH Config Editor "
+
+        fzf --exact --height 40% --cycle --border-label="$string" \
+        --layout=reverse-list --border --color=label:italic:white --prompt="Select ZSH configs To Edit: " \
+        --preview='bat --force-colorization --line-range 1:100 {}' \
+        --preview-window=right,70% --multi< <(printf "%s\n" "${(@nO)myzsh}")  | xargs -ro vim
 }
 
 ce() 
 {  
-    myconfigs=(
-             ~/.config/zathura/zathurarc
-             ~/.config/weechat/*.conf 
-             ~/.config/tmux/tmux.conf
-             ~/.config/rofi/config.rasi 
-             ~/.config/ranger/rc.conf 
-             ~/.config/picom/picom.conf
-             ~/.config/nvim/init.vim 
-             ~/.config/nsxiv/* 
-             ~/.config/ncmpcpp/config
-             ~/.config/mpv/mpv.conf 
-             ~/.config/mpd/mpd.conf
-             ~/.config/lsd/* 
-             ~/.config/i3status-rust/config.toml 
-             ~/.config/i3/config
-             ~/.config/dunst/dunstrc 
-             ~/.config/alacritty/alacritty.yml 
-           )
+        # This function has been modified from a function written by Luke
+        # Smith. I didn't like the use of du piping into awk etc, I have
+        # minimised the amount of pipes by redirecting the array into fzf by
+        # using '< <(printf "%s\n" "${myscripts[@]}"'. This works extremely
+        # well. Date: 06-06-2023 09:02 +1000
 
-           selected_file=$(fzf --tac --exact --height 40% --cycle \
-           --layout=reverse-list --border --prompt="Select Script(s) To Edit: " \
-           --preview='bat --force-colorization --line-range 1:60 {}' \
-           --header="The Script Editor" --preview-window=right,50% --multi< <(printf "%s\n" "${myconfigs[@]}"))
+        myconfigs=(
+                 $XDG_CONFIG_HOME/zathura/zathurarc
+                 $XDG_CONFIG_HOME/weechat/*.conf 
+                 $XDG_CONFIG_HOME/tmux/tmux.conf
+                 $XDG_CONFIG_HOME/rofi/config.rasi 
+                 $XDG_CONFIG_HOME/ranger/rc.conf 
+                 $XDG_CONFIG_HOME/picom/picom.conf
+                 $XDG_CONFIG_HOME/nsxiv/* 
+                 $XDG_CONFIG_HOME/ncmpcpp/config
+                 $XDG_CONFIG_HOME/mpv/mpv.conf 
+                 $XDG_CONFIG_HOME/mpd/mpd.conf
+                 $XDG_CONFIG_HOME/lsd/* 
+                 $XDG_CONFIG_HOME/i3status-rust/config.toml 
+                 $XDG_CONFIG_HOME/i3/config
+                 $XDG_CONFIG_HOME/dunst/dunstrc 
+                 $XDG_CONFIG_HOME/alacritty/alacritty.yml 
+                 $XDG_CONFIG_HOME/starship/starship.toml
+               )
 
-       if [ -n "$selected_file" ]; then
-           nvim $selected_file
-       fi
+        local string=" Config Editor ~/.config "
+
+        fzf --exact --height 40% --cycle --border-label="$string" \
+        --layout=reverse-list --border --color=label:italic:white --prompt="Select Configs(s) To Edit: " \
+        --preview='bat --force-colorization --line-range 1:100 {}' \
+        --preview-window=right,70% --multi< <(printf "%s\n" "${(@nO)myconfigs}")  | xargs -ro vim
+
 }
 
 # Last pacman update
@@ -117,7 +133,7 @@ vplay()
 }
 
 # Returns the local IP address
-localip()
+local_ip()
 {
     local MY_IP=$(ip -4 -j a | jq -r '.[] | select(.operstate=="UP") | .addr_info[].local')
     echo $MY_IP
@@ -142,8 +158,8 @@ mkcd()
 	cd $1
 }
 
-# Returns the local IP address
-myip()
+# Returns the public IP address
+public_ip()
 {
     local MY_IP=$(curl http://ipecho.net/plain 2>/dev/null; echo)
     echo $MY_IP
@@ -154,7 +170,7 @@ myip()
 orphans() 
 {
   if [[ ! -n $(pacman -Qdt) ]]; then
-    echo No orphan packages to remove!
+    printf  "%s\n\n" "No Unused Dependencies to remove"
   else
     sudo pacman -Rs $(pacman -Qdtq)
   fi
@@ -168,13 +184,25 @@ pac_pkgdep()
 	echo -e "\n"
 }
 
-r()
+# Exit ranger to current directory
+r() 
 {
     if [[ -z ${1} ]]; then
         ranger $(pwd) --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR" 2>/dev/null
     else
         ranger ${1} --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR" 2>/dev/null
     fi
+}
+
+# Cursor colours
+zvm_config() {
+  # Retrieve default cursor styles
+  local ncur=$(zvm_cursor_style $ZVM_NORMAL_MODE_CURSOR)
+  local icur=$(zvm_cursor_style $ZVM_INSERT_MODE_CURSOR)
+
+  # Append your custom color for your cursor
+  ZVM_INSERT_MODE_CURSOR=$icur'\e\e]12;#FFD700\a'
+  ZVM_NORMAL_MODE_CURSOR=$ncur'\e\e]12;\a'
 }
 
 # Uses FZF to present a list of files to edit
@@ -263,6 +291,73 @@ ssh-fix()
         echo -e "No parameter passed\nssh-fix <hostname|IP Address>"
     else
         ssh-keygen -f "/home/patrick/.ssh/known_hosts" -R "$1"  
+    fi
+}
+
+function _suto_prompt () {
+  if [[ $(_suto) == 0 ]]; then
+    echo $1
+  else
+    echo $2
+  fi
+}
+
+function _suto () {
+  sudo -n true &> /dev/null
+  r=$?
+  echo $r
+}
+
+getPublicIP() {
+    data_path="$HOME/.config/neofetch/data-public-ip.txt"
+    duration=604800
+
+    if [[ -e "$data_path" ]]; then
+        public_ip_date="$(stat -c '%Y' $data_path)"
+        current_date="$(date +%s)"
+        date_diff=$(($current_date - $public_ip_date))
+
+        if [ $date_diff -ge $duration ]; then
+            get_public_ip
+            savePublicIP
+        else
+            savePublicIP
+        fi
+    else
+        get_public_ip
+        savePublicIP
+    fi
+
+    showPublicIP
+}
+savePublicIP() {
+    if [[ "${#public_ip}" -gt 0 ]]; then
+        echo "$public_ip" > "$data_path"
+    else
+        public_ip="$(cat $data_path)"
+    fi
+}
+showPublicIP() {
+   print "Public IP" "$public_ip"
+}
+
+get_public_ip() {
+    if [[ ! -n "$public_ip_host" ]] && type -p dig >/dev/null; then
+        public_ip="$(dig +time=1 +tries=1 +short myip.opendns.com @resolver1.opendns.com)"
+       [[ "$public_ip" =~ ^\; ]] && unset public_ip
+    fi
+
+    if [[ ! -n "$public_ip_host" ]] && [[ -z "$public_ip" ]] && type -p drill >/dev/null; then
+        public_ip="$(drill myip.opendns.com @resolver1.opendns.com | \
+                     awk '/^myip\./ && $3 == "IN" {print $5}')"
+    fi
+
+    if [[ -z "$public_ip" ]] && type -p curl >/dev/null; then
+        public_ip="$(curl -L --max-time "$public_ip_timeout" -w '\n' "$public_ip_host")"
+    fi
+
+    if [[ -z "$public_ip" ]] && type -p wget >/dev/null; then
+        public_ip="$(wget -T "$public_ip_timeout" -qO- "$public_ip_host")"
     fi
 }
 

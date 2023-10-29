@@ -1,0 +1,368 @@
+: 1698472184:0;l $HISTFILE
+: 1698473313:0;free -h
+: 1698474008:0;less "${HISTFILE}"\
+
+: 1698474439:0;git clone git clone --recursive https://github.com/pszynk/zsh-dircolors ~/.config/zsh/zsh-dircolors
+: 1698474488:0;git clone --recursive https://github.com/pszynk/zsh-dircolors ~/.config/zsh/zsh-dircolors
+: 1698474668:0;source .zsh/zsh-dircolors-solarized/zsh-dircolors-solarized.plugin.zsh
+: 1698474808:0;git clone --recursive https://github.com/pszynk/zsh-dircolors ~/.zsh/zsh-dircolors
+: 1698474956:0;. .zsh/zsh-dircolors/zsh-dircolors.plugin.zsh
+: 1698474995:0;lcd ~
+: 1698475140:0;lsdircolors
+: 1698475155:0;setupdircolors
+: 1698475317:0;setupsolarized
+: 1698475335:0;ls
+: 1698475628:0;lssolarized
+: 1698475643:0;setupsolarized dircolors.ansi-universal
+: 1698475655:0;setupsolarized dircolors.ansi-dark
+: 1698475667:0;setupsolarized dircolors.256dark
+: 1698490736:0;cd /usr/share/awk
+: 1698490762:0;pikaur -Ss gawk
+: 1698490869:0;pikaur -Ss zsh-history
+: 1698491165:0;pikaur -Ql gawk
+: 1698491794:0;bookmark 'awk'
+: 1698491805:0;jump awk
+: 1698491840:0;jump etc
+: 1698491848:0;zramctl
+: 1698491874:0;l .bookmarks
+: 1698491881:0;cat .bookmarks
+: 1698491935:0;showmarks Documents
+: 1698491987:0;cd etc
+: 1698492012:0;jump Documents
+: 1698492078:0;zman history
+: 1698492368:0;git clone https://github.com/fcambus/ansiweather
+: 1698492375:0;cd ansiweather
+: 1698492416:0;cp ansiweatherrc.example ~/.ansiweatherrc
+: 1698492439:0;v ../.ansiweatherrc
+: 1698492503:0;./ansiweather
+: 1698492622:0;checkrebuild -v
+: 1698494402:0;man dd
+: 1698494723:0;man less
+: 1698494996:0;git clone https://github.com/hcgraf/zsh-sudo ~/.config/zsh
+: 1698495012:0;git clone https://github.com/hcgraf/zsh-sudo 
+: 1698495020:0;cd zsh-sudo
+: 1698495049:0;cp sudo.plugin.zsh ~/.config/zsh
+: 1698495583:0;pikaur -Ql alacritty
+: 1698495624:0;thermald
+: 1698495728:0;pikaur -Fl alacritty-themes
+: 1698495931:0;pikaur -Ql alacritty-themes
+: 1698496002:0;pikaur -Ql alacritty-themes | grep /usr/bin
+: 1698496020:0;pikaur -Rsn alacritty-themes
+: 1698496036:0;pikaur -Ss alacritty theme
+: 1698496092:0;pikaur -Ss alacritty-theme-git
+: 1698496106:0;pikaur -Sl alacritty-theme-git
+: 1698496830:0;git clone https://github.com/toggle-corp/alacritty-colorscheme
+: 1698496928:0;pip install --user alacritty-colorscheme
+: 1698496971:0;pacman -Ss alacritty
+: 1698497022:0;cd alacritty-colorscheme
+: 1698497037:0;cd alacritty_colorscheme
+: 1698497068:0;python colorscheme.py
+: 1698497116:0;alacritty_colorscheme
+: 1698497137:0;alacritty-colorscheme
+: 1698497151:0;./alacritty_colorscheme/__init__.py
+: 1698497304:0;pikaur -Ss decritty
+: 1698497386:0;git clone https://github.com/djorborn/alacritty-theme-switcher
+: 1698497404:0;./alacritty-theme-switcher
+: 1698497474:0;git clone https://github.com/Andreiash/almod
+: 1698497484:0;cd almod
+: 1698497511:0;bash almod.sh -b
+: 1698497523:0;bash almod.sh --help
+: 1698497588:0;bash almod.sh -d
+: 1698497600:0;bash almod.sh -c
+: 1698497636:0;chmod +x almod.sh
+: 1698497646:0;./almod.sh -c
+: 1698497676:0;./almod.sh -f
+: 1698497741:0;./almod.sh -h
+: 1698531214:0;cat <ls> cat
+: 1698531237:0;cat < ls > cat
+: 1698531259:0;cat 1>2 2>1 cat
+: 1698532154:0;l .config/alacritty/alacritty.yml
+: 1698532189:0;cp alacritty.yml.1698495980331.bak alacritty.yml
+: 1698532255:0;cd ~/.config/zsh
+: 1698532294:0;v sudo-prepend.plugin.zsh
+: 1698532305:0;mccd ~
+: 1698532629:0;cat .config/zsh/sudo-prepend.plugin.zsh
+: 1698532676:0;v .config/zsh/sudo-prepend.plugin.zsh
+: 1698532877:0;sed -e '/import/,+1d' ~/.config/alacritty/alacritty.yml
+: 1698532897:0;v ~/.config/alacritty/alacritty.yml
+: 1698532946:0;sed -e '/import\:/,+1d' ~/.config/alacritty/alacritty.yml
+: 1698532957:0;cat ~/.config/alacritty/alacritty.yml
+: 1698533071:0;sed '/import:/' ~/.config/alacritty/alacritty.yml
+: 1698533082:0;sed -e '/import:/' ~/.config/alacritty/alacritty.yml
+: 1698533133:0;sed -e '/import:/p' ~/.config/alacritty/alacritty.yml
+: 1698533170:0;sed -e '/import:/,+1d' ~/.config/alacritty/alacritty.yml
+: 1698533187:0;sed -e '/import:/,+2d' ~/.config/alacritty/alacritty.yml
+: 1698533224:0;sed -e '/import:/,nd' ~/.config/alacritty/alacritty.yml
+: 1698533244:0;sed -e '/import:/{n;d}' ~/.config/alacritty/alacritty.yml
+: 1698533620:0;sed  '/\[import:\]/a - ~/.config/alacritty/themes/thetheme.yml' ~/.config/alacritty/alacritty.yml
+: 1698533728:0;awk '1;/import:/{ print "- ~/.config/alacritty/themes/yaml.yml"}' ~/.config/alacritty/alacritty.yml 
+: 1698533742:0;awk '1;/import:/{ print "\t- ~/.config/alacritty/themes/yaml.yml"}' ~/.config/alacritty/alacritty.yml 
+: 1698533755:0;awk '1;/import:/{ print "  - ~/.config/alacritty/themes/yaml.yml"}' ~/.config/alacritty/alacritty.yml 
+: 1698533778:0;awk '1;/import:/{ print "  - /home/patrick/.config/alacritty/themes/yaml.yml"}' ~/.config/alacritty/alacritty.yml 
+: 1698533823:0;git clone https://github.com/alacritty/alacritty-theme
+: 1698533905:0;neofetch
+: 1698533922:0;networkctl status eno1
+: 1698533945:0;networkctl status wlp2s0
+: 1698534058:0;pikaur -S alacritty-theme-git
+: 1698534096:0;pikaur -Ql alacritty-theme-git
+: 1698534113:0;pikaur -Rsn alacritty-theme-git
+: 1698534138:0;pikaur -S alacritty-colorscheme-git
+: 1698534229:0;pikaur -S alacritty-colorscheme
+: 1698534279:0;pikaur -Rsn alacritty-colorscheme
+: 1698534302:0;pikaur -S alacritty
+: 1698534345:0;pikaur -S alacritty-themes
+: 1698534363:0;pikaur -S alacritty-themes --rebuild
+: 1698534398:0;pikaur -Ql alacritty-themes 
+: 1698534413:0;alacritty-themes
+: 1698534454:0;pikaur -Rsn alacritty-themes 
+: 1698534461:0;pikaur -Ss alacritty
+: 1698534497:0;pikaur -S pycritty
+: 1698534540:0;l .config/alacritty/themes
+: 1698534551:0;pycritty -t bloodmoon.yaml
+: 1698534575:0;pycritty -t ~/.config/alacritty/themes/bloodmoon.yaml
+: 1698534584:0;pycritty -t ~/.config/alacritty/themes/tango.yaml
+: 1698534596:0;pycritty
+: 1698534694:0;pycritty ls
+: 1698534727:0;pycritty install
+: 1698534750:0;pycritty install -c https://github.com/alacritty/alacritty-theme/blob/master/themes/Cobalt2.yaml
+: 1698534878:0;pycritty -h install
+: 1698534887:0;pycritty install -h
+: 1698534933:0;pycritty install -c 
+: 1698534947:0;pycritty install -c https://github.com/eendroroy/alacritty-theme/blob/master/themes/Cobalt2.yaml
+: 1698534959:0;pycritty install -c "https://github.com/eendroroy/alacritty-theme/blob/master/themes/Cobalt2.yaml"
+: 1698534984:0;pycritty install -c ~/alacritty-theme/themes/zenburn.yaml
+: 1698534994:0;pikaur -Rsn pycritty
+: 1698535064:0;npm install -g alacritty-theme-switch
+: 1698535082:0;sudo npm install -g alacritty-theme-switch
+: 1698535125:0;alacritty-theme-switcher 
+: 1698535130:0;alacritty-theme-switcher --config
+: 1698535197:0;ats --config
+: 1698535245:0;alacritty-theme-switcher
+: 1698539421:0;pikaur -Ss gruvbox
+: 1698539752:0;cat -v
+: 1698539756:0;\cat -v
+: 1698540356:0;man sudo
+: 1698540387:0;sudo pikaur -Syu
+: 1698540404:0;sudo -n
+: 1698540426:0;sudo -n ls
+: 1698540430:0;echo $?
+: 1698540473:0;vim .bashrc:10
+: 1698540480:0;vim .bashrc 10
+: 1698540530:0;vim +20 .bashrc
+: 1698540647:0;cd /usr/share/doc
+: 1698540667:0;bookmark 'Docs'
+: 1698540673:0;showmarks Docs
+: 1698540692:0;v .bookmarks
+: 1698540714:0;cd Documents
+: 1698540728:0;bookmark 'Documents'
+: 1698540730:0;showmarks
+: 1698541026:0;l .config/alacritty/
+: 1698541035:0;alacritty-switch-theme --config ~/.config/alacritty/alacritty.yml
+: 1698541061:0;ats --config ~/.config/alacritty/alacritty.yml
+: 1698541239:0;awk '1' .bashrc
+: 1698541300:0;rm 1 2 3q
+: 1698541307:0;rm :wq
+: 1698541316:0;cat awkvars.out
+: 1698542062:0;\\
+ze
+: 1698542130:0;v +199 /home/patrick/.config/zsh/.zshrc
+: 1698542500:0;v +204 /home/patrick/.config/zsh/.zshrc
+: 1698542704:0;v ~/.config/zsh/zshrc.sh
+: 1698542730:0;source .config/zsh/zshrc.sh
+: 1698542873:0;source ~/.config/zsh/zshrc.sh
+: 1698543019:0;pikaur -Ss stack
+: 1698543038:0;pikaur -Ss haskell stack
+: 1698543109:0;pikaur -S stack
+: 1698543322:0;cd .config/alacritty/themes
+: 1698543343:0;wget https://github.com/alacritty/alacritty-theme/blob/master/themes/xterm.yaml -o xterm.yaml
+: 1698543373:0;v xterm.yaml
+: 1698543395:0;ats
+: 1698543408:0;pikaur -Ql stack
+: 1698543458:0;git clone https://github.com/olivierverdier/zsh-git-prompt
+: 1698543463:0;cd zsh-git-prompt
+: 1698543477:0;stack setup
+: 1698543533:0;stack build && stack install
+: 1698543683:0;export GIT_PROMPT_EXECUTABLE="haskell"
+: 1698543694:0;/home/patrick/zsh-git-prompt/src/.bin/gitstatus
+: 1698543726:0;cp zshrc.sh ~/.config/zsh
+: 1698543823:0;git clone --depth=1 https://github.com/romkatv/gitstatus.git 
+: 1698543853:0;git clone --depth=1 https://github.com/romkatv/gitstatus.git ~/gitstatus
+: 1698543859:0;cd gitstatus
+: 1698543869:0;echo 'source ~/gitstatus/gitstatus.prompt.zsh' >>! ~/.zshrc
+: 1698544046:0;cd alacritty-theme-switcher
+: 1698544068:0;cd .local/share/chezmoi
+: 1698545224:0;chezmoi target-path
+: 1698545253:0;chezmoi cd
+: 1698545275:0;chezmoi apply
+: 1698545332:0;chezmoi git
+: 1698545369:0;chezmoi git add README.md
+: 1698545400:0;chezmoi git 
+: 1698545422:0;chezmoi git commit
+: 1698545455:0;chezmoi git status
+: 1698545487:0;chezmoi git push
+: 1698545539:0;cat .git-credentials
+: 1698545546:0;cat .gitconfig
+: 1698545574:0;curl https://raw.githubusercontent.com/alacritty/alacritty-theme/master/themes/xterm.yaml
+: 1698545582:0;man curl
+: 1698545605:0;curl https://raw.githubusercontent.com/alacritty/alacritty-theme/master/themes/xterm.yaml -o xterm.yaml
+: 1698545610:0;cat xterm.yaml
+: 1698545761:0;pikaur -Ss exa
+: 1698545830:0;pikaur -S exa
+: 1698545844:0;eza
+: 1698545847:0;eza -l
+: 1698546018:0;eza --icons always
+: 1698546023:0;man eza
+: 1698546061:0;eza --icons always -l
+: 1698546072:0;pikaur -Rsn eza exa
+: 1698546075:0;pikaur -Rsn eza
+: 1698546088:0;type orphans
+: 1698546120:0;man echo
+: 1698546199:0;orphans
+: 1698546214:0;man lsd
+: 1698546262:0;v .config/lsd/config.yaml
+: 1698546270:0;lsd
+: 1698546298:0;v
+: 1698546385:0;pikaur -Ss zsh-
+: 1698546428:0;pikaur -S zsh-completions 
+: 1698546451:0;pikaur -Ql zsh-history-substring-search
+: 1698546479:0;pikaur -Rsn zsh-history-substring-search
+: 1698546525:0;git clone https://github.com/zsh-users/zsh-history-substring-search
+: 1698546631:0;bindkey '^[[A' history-substring-search-up\
+bindkey '^[[B' history-substring-search-down
+: 1698546671:0;cd zsh-history-substring-search
+: 1698546672:0;source zsh-history-substring-search.plugin.zsh
+: 1698546674:0;bindkey -M vicmd 'k' history-substring-search-up\
+bindkey -M vicmd 'j' history-substring-search-down
+: 1698546703:0;source zsh-history-substring-search.zsh
+: 1698547149:0;man ls
+: 1698547360:0;ZVM_VI_HIGHLIGHT_FOREGROUND=green             # Color name\
+ZVM_VI_HIGHLIGHT_FOREGROUND=#008800           # Hex value\
+ZVM_VI_HIGHLIGHT_BACKGROUND=red               # Color name\
+ZVM_VI_HIGHLIGHT_BACKGROUND=#ff0000           # Hex value\
+ZVM_VI_HIGHLIGHT_EXTRASTYLE=bold,underline    # bold and underline
+: 1698547572:0;zman
+: 1698547647:0;run-help zstyle
+: 1698547678:0;zman zstyle
+: 1698548219:0;cd
+: 1698549234:0;flflf
+: 1698549543:0;ce
+: 1698549555:0;i3-get-window-criteria
+: 1698549635:0;ddd
+: 1698550418:0;r
+: 1698550664:0;\
+kaur""
+: 1698550677:0;pikaur -S zsh-vi-mode-git
+: 1698551088:0;MODE_CURSOR_VIINS="#00ff00 blinking bar"\
+MODE_CURSOR_REPLACE="$MODE_CURSOR_VIINS #ff0000"\
+MODE_CURSOR_VICMD="green block"\
+MODE_CURSOR_SEARCH="#ff00ff steady underline"\
+MODE_CURSOR_VISUAL="$MODE_CURSOR_VICMD steady bar"\
+MODE_CURSOR_VLINE="$MODE_CURSOR_VISUAL #00ffff"
+: 1698551423:0;D\
+pikaur -S zsh-vi-mode-git
+: 1698551828:0;pikaur -S "zsh-vi-mode-git"
+: 1698551909:0;zcomet list
+: 1698551920:0;zcomet compinit
+: 1698551924:0;zcomet listcd ~
+: 1698551924:0;cd ~
+: 1698552008:0;zcomet update
+: 1698552127:0;function zle-line-init zle-keymap-select {\
+    RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"\
+    RPS2=$RPS1\
+    zle reset-prompt\
+}\
+\
+zle -N zle-line-init\
+zle -N zle-keymap-select
+: 1698552137:0;c
+: 1698552141:0;i
+: 1698552159:0;zle-keymap-select () {\
+  case $KEYMAP in\
+    vicmd) print -rn -- $terminfo[cvvis];; # block cursor\
+    viins|main) print -rn -- $terminfo[cnorm];; # less visible cursor\
+  esac\
+}
+: 1698552196:0;zle-keymap-select () {\
+if [ $KEYMAP = vicmd ]; then\
+    printf "\033[2 q"\
+else\
+    printf "\033[6 q"\
+fi\
+}\
+zle -N zle-keymap-select\
+zle-line-init () {\
+zle -K viins\
+printf "\033[6 q"\
+}\
+zle -N zle-line-init\
+bindkey -v\
+
+: 1698552336:0;function zle-line-init zle-keymap-select {\
+    case ${KEYMAP} in\
+        (vicmd)      PROMPT=$'%{\e[0;32m%}%~%{\e[0m%} %{\e[0;31m%}$%{\e[0m%} ' ;;\
+        (main|viins) PROMPT=$'%{\e[0;32m%}%~%{\e[0m%} $ ' ;;\
+        (*)          PROMPT=$'%{\e[0;32m%}%~%{\e[0m%} $ ' ;;\
+    esac\
+    zle reset-prompt\
+}\
+\
+zle -N zle-line-init\
+zle -N zle-keymap-select\
+
+: 1698552351:0;\
+ad
+: 1698552473:0;pikaur -Ss zsh-vi
+: 1698552489:0;pikaur -Rsn zsh-vi-mode-git
+: 1698552590:0;function zle-line-init zle-keymap-select {\
+    VIM_PROMPT="%{$fg_bold[yellow]%} [% NORMAL]% %{$reset_color%}"\
+    RPS1="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/} $(git_custom_status) $EPS1"\
+    zle reset-prompt\
+}
+: 1698552853:0;v .config/zsh/.zshrc
+: 1698552858:0;vim .config/zsh/.zshrc
+: 1698552872:0;exec zsh
+: 1698553191:0;vim (.config/zsh/.zshrc)
+: 1698553197:0;l
+: 1698553292:0;ZVM_INSERT_MODE_CURSOR=$ZVM_CURSOR_BEAM\
+ZVM_NORMAL_MODE_CURSOR=$ZVM_CURSOR_BLOCK\
+ZVM_OPPEND_MODE_CURSOR=$ZVM_CURSOR_UNDERLINE
+: 1698553324:0;zvm_config() {\
+  # Retrieve default cursor styles\
+  local ncur=$(zvm_cursor_style $ZVM_NORMAL_MODE_CURSOR)\
+  local icur=$(zvm_cursor_style $ZVM_INSERT_MODE_CURSOR)\
+\
+  # Append your custom color for your cursor\
+  ZVM_INSERT_MODE_CURSOR=$icur'\e\e]12;red\a'\
+  ZVM_NORMAL_MODE_CURSOR=$ncur'\e\e]12;#008800\a'\
+}
+: 1698553393:0;ZVM_NORMAL_MODE_CURSOR=ZVM_CURSOR_BEAM
+: 1698553762:0;function zvm_after_select_vi_mode() {\
+  case $ZVM_MODE in\
+    $ZVM_MODE_NORMAL)\
+      # Something you want to do...\
+    ;;\
+    $ZVM_MODE_INSERT)\
+      # Something you want to do...\
+    ;;\
+    $ZVM_MODE_VISUAL)\
+      # Something you want to do...\
+    ;;\
+    $ZVM_MODE_VISUAL_LINE)\
+      # Something you want to do...\
+    ;;\
+    $ZVM_MODE_REPLACE)\
+      # Something you want to do...\
+    ;;\
+  esac\
+}
+: 1698553882:0;plug "zap-zsh/vim"
+: 1698553896:0;zcomet zap-zsh/vim
+: 1698553901:0;zcomet load zap-zsh/vim
+: 1698554008:0;mc
+: 1698554124:0;ze
+: 1698554151:0;reload
+: 1698554240:0;chezmoi cd
+: 1698554244:0;l
+: 1698554258:0;cat dot_config/zsh
+: 1698554270:0;cat dot_config/zsh/dot_zshrc
+: 1698554290:0;chezmoi add ~/.config/zsh

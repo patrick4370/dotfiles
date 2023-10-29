@@ -1,0 +1,4 @@
+_sys_all_units=( ${(Q)"${(z)$(<<\EO:_sys_all_units
+'timeshift-boot.service' 'time-set.target' 'time-sync.target' 'timers.target' 'timeshift-boot.timer'
+EO:_sys_all_units
+)}"} )
