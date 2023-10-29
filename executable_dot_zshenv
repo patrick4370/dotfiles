@@ -5,7 +5,7 @@ export CM_HISTLENGTH=20
 export CM_LAUNCHER='/usr/bin/rofi'
 export DIFFPROG='/usr/bin/vimdiff'
 export DIRSTACKSIZE='20'
-export EDITOR='/usr/bin/nvim'
+export EDITOR='/usr/bin/vim'
 export GROFF_NO_SGR=0
 export FZF_ALT_C_COMMAND='fd --type d . --color=never --hidden'
 export FZF_ALT_C_OPTS="--cycle --tac --sort --layout=reverse --preview 'tree -C {} | head -50'"
@@ -21,8 +21,6 @@ export GTK_IM_MODULE=ibus
 export LANG='en_AU.UTF-8'
 export LESS='-Rixj5'
 export LIBVA_DRIVER_NAME=i965
-export LS_COLORS="$(vivid generate gruvbox-dark)"
-export MANPAGER="less -s -M +Gg"
 export MANROFFOPT="-c"
 export MINICOM='-c on'
 export PAGER="most"
