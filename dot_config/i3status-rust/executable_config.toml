@@ -1,6 +1,6 @@
 # i3status-rs Configuration
 #
-# Fri 03-03-2023 16:45 +1000 
+# 29-10-2023 17:05 +1000 
 #
 # New Version i3status-rs 0.30.4 (commit f4490035 2023-02-28)
 icons_format = "{icon}"
