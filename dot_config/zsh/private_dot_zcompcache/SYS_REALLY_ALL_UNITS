@@ -1,4 +1,0 @@
-_sys_really_all_units=( ${(Q)"${(z)$(<<\EO:_sys_really_all_units
-'timeshift-boot.service' 'time-set.target' 'time-sync.target' 'timers.target' 'timeshift-boot.timer' 'timeshift-hourly.service' 'timeshift-hourly.timer'
-EO:_sys_really_all_units
-)}"} )
