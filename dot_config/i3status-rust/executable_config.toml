@@ -9,7 +9,7 @@ icons_format = "{icon}"
 theme = "solarized-dark"
 
 [icons]
-icons = "material"
+icons = "awesome5"
 
 [[block]]
 # Network Module
@@ -17,7 +17,7 @@ block = "net"
 format = " $icon ^icon_net_down $speed_down.eng(prefix:K) ^icon_net_up $speed_up.eng(prefix:K) "
 format_alt = " $icon {$signal_strength $ssid|Ethernet} $device $ip " 
 [block.theme_overrides]
-idle_bg = "#005FFF"
+idle_bg = "#005f00"
 idle_fg = "#ffffff"
 [block.icons_overrides]
 net_wireless = "\uf1eb"
@@ -124,7 +124,7 @@ warning = 85
 format = " $icon $average avg "
 format_alt = " $icon $min min, $max max, $average avg "
 [block.theme_overrides]
-good_bg = "#005FFF"
+good_bg = "#005f00"
 good_fg = "#ffffff"
 warning_bg = "#ff0000"
 warning_fg = "#ffffff"
@@ -148,7 +148,7 @@ command = "echo -e \uf011"
 button = "left"
 cmd = "~/.local/bin/rofi-power 'i3-msg exit'"
 [block.theme_overrides]
-idle_bg = "#005fff"
+idle_bg = "#005f00"
 idle_fg = "#ffffff"
 
 [[block]]
@@ -156,7 +156,7 @@ idle_fg = "#ffffff"
 block = "bluetooth"
 mac = "1D:8F:1C:24:74:3C"
 disconnected_format = ""
-format = " $icon {$percentage|} "
+format = " $icon {$percentage|} $battery_icon  "
 [block.battery_state]
 "0..20" = "critical"
 "21..70" = "warning"
@@ -167,6 +167,17 @@ format = " $icon {$percentage|} "
 block = "bluetooth"
 mac = "F4:BC:DA:93:AD:D6"
 disconnected_format = ""
+format = " $icon {$percentage|} $battery_icon "
+[block.battery_state]
+"0..20" = "critical"
+"21..70" = "warning"
+"71..100" = "good"
+
+[[block]]
+# Meredo Sound Bar
+block = "bluetooth"
+mac = "41:42:AB:7B:BB:63"
+disconnected_format = ""
 format = " $icon {$percentage|} "
 [block.battery_state]
 "0..20" = "critical"
@@ -174,22 +185,11 @@ format = " $icon {$percentage|} "
 "71..100" = "good"
 
 [[block]]
-# BlueAnt Pump Zone Headphones
+# Microsoft Mouse
 block = "bluetooth"
-mac = "00:1C:D8:ED:E8:AC"
+mac = "D7:D7:79:49:A0:62"
 disconnected_format = ""
-format = " $icon {$percentage|}  "
-[block.battery_state]
-"0..20" = "critical"
-"21..70" = "warning"
-"71..100" = "good"
-
-[[block]]
-# Mouse
-block = "bluetooth"
-mac = "D7:C9:87:3B:A0:62"
-disconnected_format = ""
-format = " $icon {$percentage|} "
+format = " $icon {$percentage|} $battery_icon "
 [block.battery_state]
 "0..20" = "critical"
 "21..70" = "warning"
