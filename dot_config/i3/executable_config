@@ -10,6 +10,7 @@ font pango:Inconsolata:Mono:Bold 9, FontAwesome 10
 
 # Variables
 set $mod mod4
+set $mod1 Alt
 set $ct Ctrl
 set $gaps 5
 set $term --no-startup-id $TERMINAL
@@ -17,13 +18,11 @@ set $term --no-startup-id $TERMINAL
 # Autostart
 exec --no-startup-id /usr/bin/ibus-daemon -drxR
 exec --no-startup-id /usr/bin/pkill -SIGUSR2 i3status-rs
-exec --no-startup-id /usr/bin/syncthingtray qt-widgets-gui --single-instance
 exec --no-startup-id /usr/bin/lxpolkit
 exec --no-startup-id /usr/bin/mpDris2
 exec --no-startup-id /usr/bin/pasystray
 exec --no-startup-id /usr/bin/udiskie -nt
 exec --no-startup-id killall -q /usr/lib/xfce4/notifyd/xfce4-notifyd
-exec --no-startup-id gtk-launch onedrivegui.desktop
 exec --no-startup-id setxkbmap -option caps:escape
 exec --no-startup-id systemctl --user import-environment DISPLAY
 exec --no-startup-id xidlehook --detect-sleep --not-when-audio --not-when-fullscreen --timer 600 '~/.local/bin/i3lockscript.sh' -
@@ -35,11 +34,9 @@ exec --no-startup-id clipmenud
 exec --no-startup-id insync start 
 exec --no-startup-id insync hide 
 exec --no-startup-id xinput set-prop 12 "Device Enabled" 0
-exec --no-startup-id rm ~/.zplug/log/job.lock
 exec --no-startup-id xinput set-prop 13 "Device Enabled" 0
 exec_always --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpapers/*
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
-exec_always --no-startup-id /usr/bin/i3-autolayout autolayout
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -106,7 +103,7 @@ assign [class="Raven Reader" instance="raven reader"]   $ws8
 assign [class="TeXworks" instance="texworks"]           $ws8
 assign [class="Zathura"]                                $ws10
 assign [class="odysee-nativefier-58e76e"]               $ws7
-assign [class="thunderbird"]                            $ws2
+assign [class="betterbird"]                             $ws2
 assign [class="tm"]                                     $ws5
 
 # Floating windows & Layouts
@@ -117,8 +114,8 @@ for_window [class="GoogleKeep"] floating enable, resize set 1450 900, move posit
 for_window [class="Lightdm-gtk-greeter-settings"] floating enable, move position center
 for_window [class="Lxappearance"] floating enable, resize set 800 600, move position center
 for_window [class="Pavucontrol" title="Volume Control"] floating enable
-for_window [class="thunderbird"] layout tabbed
-for_window [class="thunderbird" window_role="About"] floating enable, move position center
+for_window [class="betterbird"] layout tabbed
+for_window [class="betterbird" window_role="About"] floating enable, move position center
 for_window [class="Usbimager" instance="usbimager"] floating enable
 for_window [class="Xarchiver"] floating enable, resize set 1024 768, move position center
 for_window [class="Yad"] floating enable, move position center
@@ -138,8 +135,8 @@ for_window [class="instagram-nativefier-51e18f"] floating enable, move position 
 for_window [class="Zathura"] focus
 
 # Move through workspaces
-bindsym Mod1+$mod+Right workspace next
-bindsym Mod1+$mod+Left workspace prev
+bindsym $mod1+$mod+Right workspace next
+bindsym $mod1+$mod+Left workspace prev
 
 # Kill window with $mod + mouse button two
 bindsym --whole-window $mod+button2 kill
@@ -193,12 +190,6 @@ bindsym $mod+q kill
 
 # Help system using rofi and yad
 bindsym $mod+F1 exec --no-startup-id ~/.local/bin/rofi-help.sh
-
-# Rofi for editing home system files
-bindsym Ctrl+Shift+e exec --no-startup-id ~/.local/bin/rofi-edit.sh
-
-# Open google keep
-bindsym $mod+Shift+g exec --no-startup-id /usr/bin/googlekeep
 
 # change focus
 bindsym $mod+j focus left
@@ -261,7 +252,7 @@ bindsym --release $mod+Shift+d exec --no-startup-id escrotum --delay 8 '~/Pictur
 bindsym --release $mod+F11 exec --no-startup-id escrotum -x $(xwininfo -int | awk '/Window id:/ {print $4}') '~/Pictures/Screenshots/%Y-%m-%d-%H%M%S_$wx$h_escrotum.png' && notify-send "Window screenshot saved"
 
 # exit i3 (logs you out of your X session)
-bindsym Ctrl+Mod1+Delete exec --no-startup-id ~/.local/bin/rofi-power "i3-msg exit"
+bindsym $ct+$mod1+Delete exec --no-startup-id ~/.local/bin/rofi-power "i3-msg exit"
 
 # Resizing windows by 10
 bindsym $mod+Ctrl+Right resize shrink width 10 px or 10 ppt
@@ -311,7 +302,7 @@ bindsym $mod+Tab bar mode toggle
 # Start i3status-rust with configuration & colours
 bar 
 {
-    font pango:Inconsolata Mono Bold 9, FontAwesome 9 
+    font pango:Inconsolata Mono Bold 10, FontAwesome 10 
 	position top
 	status_command /usr/bin/i3status-rs 
     workspace_buttons yes
