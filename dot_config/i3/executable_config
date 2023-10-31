@@ -158,7 +158,7 @@ bindsym $mod+Shift+x exec --no-startup-id ~/.local/bin/i3lockscript.sh
 bindsym $mod+a focus parent
 
 # Bitwarden Menu
-bindsym $mod+b exec /usr/bin/bwmenu
+bindsym $mod+b exec /home/patrick/.local/bin/rofi-rbw
 
 # Clipboard
 bindsym $mod+c exec clipmenu -dmenu
