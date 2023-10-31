@@ -1,9 +1,0 @@
-# pack-refs with: peeled fully-peeled sorted 
-8ddddf33c2994944a545c5fe08cad1dbb89a5973 refs/remotes/origin/develop
-0a5f5173b6e4695511168ce605501a461c82695d refs/remotes/origin/gh-pages
-3272f87cb87a1420892c102bf89e983242ada662 refs/remotes/origin/github
-f98546a924d2797e3eb02dd27d01da0b111d3cd7 refs/remotes/origin/local
-acc7f921ef26c90205309d196b12dc7c06af1679 refs/remotes/origin/master
-77f3e4f9269119b6aa598eda15e640342c9c5904 refs/remotes/origin/standards
-68f2057423511686a4652d66f07b38ab23f34a71 refs/remotes/origin/without-namedirs
-a53dcff06551f7767ae4b04bf63181ce58e2ef4c refs/remotes/origin/zsh-bench

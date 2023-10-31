@@ -1,8 +1,0 @@
-~*
-*.zwc
-*.zwc.old
-foo.zsh
-cache/
-.ztap/
-.venv/
-zsh_html.tar.gz
