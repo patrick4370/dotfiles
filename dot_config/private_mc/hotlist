@@ -1,0 +1,7 @@
+GROUP "SFTP"
+  ENTRY "pxe machine" URL "sftp://pxe/home/patrick"
+  ENTRY "dns machine" URL "sftp://pidns/home/patrick"
+ENDGROUP
+ENTRY "Documents" URL "/home/patrick/Documents"
+ENTRY "etc" URL "/etc"
+ENTRY "Pictures" URL "/home/patrick/Pictures"
