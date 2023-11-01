@@ -17,6 +17,8 @@ setopt INC_APPEND_HISTORY                               # Write to the history f
 setopt PROMPT_SUBST
 setopt SHARE_HISTORY                                    # Share history between all sessions.
 
+#-----
+
 export HISTFILE="${XDG_CONFIG_HOME}/zsh/zsh/histfile"   # Where the history file is saved
 export HISTSIZE=1000000                                 # Size of History file
 export SAVEHIST=$HISTSIZE                               # Allows history to be saved
