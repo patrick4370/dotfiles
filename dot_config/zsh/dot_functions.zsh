@@ -17,27 +17,6 @@ bakup()
 	cp $1{,.bak}
 }	
 
-# be()
-# {
-#     myfiles=( \
-#              ~/.bashrc \
-#              ~/.bash_alias \
-#              ~/.bash_profile \
-#              ~/.bash_logout \
-#              ~/.inputrc \
-#              ~/.profile \
-#             )
-# 
-#     du -a  ${myfiles[*]} | \
-#         awk '{print $2}' | uniq | sort -r \
-#         | fzf --cycle --exact --height 40% --bind="ctrl-space:toggle-preview" --preview-window=:hidden \
-#         --layout=reverse-list --border --prompt="Select Script(s) To Edit: " \
-#         --preview='bat --force-colorization --line-range 1:60 {}' \
-#         --header="The BASH dot file Editor" --preview-window=right,50% --multi | \
-#         xargs -or $EDITOR;
-# 
-# }
-
 se() 
 {  
         # This function has been modified from a function written by Luke
