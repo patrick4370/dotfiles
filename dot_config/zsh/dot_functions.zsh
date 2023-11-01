@@ -32,7 +32,7 @@ se()
         fzf --height 40% --cycle --border-label="$string" \
         --layout=reverse-list --border --color=label:italic:white --prompt="Select Script(s) To Edit: " \
         --preview='bat --force-colorization --line-range 1:100 {}' \
-        --preview-window=right,70% --multi< <(printf "%s\n" "${(@nO)myscripts}") | xargs -ro vim
+        --preview-window=right,70% --multi< <(printf "%s\n" "${(@nO)myscripts}") | xargs -ro chezmoi edit --apply
 }
 
 ze()
@@ -58,7 +58,7 @@ ze()
         fzf --exact --height 40% --cycle --border-label="$string" \
         --layout=reverse-list --border --color=label:italic:white --prompt="Select ZSH configs To Edit: " \
         --preview='bat --force-colorization --line-range 1:100 {}' \
-        --preview-window=right,70% --multi< <(printf "%s\n" "${(@nO)myzsh}")  | xargs -ro vim
+        --preview-window=right,70% --multi< <(printf "%s\n" "${(@nO)myzsh}")  | xargs -ro chezmoi edit --apply
 }
 
 ce() 
@@ -93,7 +93,7 @@ ce()
         fzf --exact --height 40% --cycle --border-label="$string" \
         --layout=reverse-list --border --color=label:italic:white --prompt="Select Configs(s) To Edit: " \
         --preview='bat --force-colorization --line-range 1:100 {}' \
-        --preview-window=right,70% --multi< <(printf "%s\n" "${(@nO)myconfigs}")  | xargs -ro vim
+        --preview-window=right,70% --multi< <(printf "%s\n" "${(@nO)myconfigs}")  | xargs -ro chezmoi edit --apply
 
 }
 
