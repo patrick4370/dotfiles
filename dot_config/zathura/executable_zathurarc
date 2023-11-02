@@ -63,7 +63,7 @@ map <C-i> zoom in
 map <C-o> zoom out
 map <C-r> zoom expand
 map I recolor
-map p print
+map <C-p> print
 map s toggle_statusbar
 map i toggle_inputbar
 
