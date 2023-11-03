@@ -10,8 +10,6 @@ font pango:Inconsolata:Mono:Bold 9, FontAwesome 10
 
 # Variables
 set $mod mod4
-set $mod1 Alt
-set $ct Ctrl
 set $gaps 5
 set $term --no-startup-id $TERMINAL
 
@@ -216,6 +214,9 @@ bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
 bindsym $mod+h split h
+
+# Rofi Power Menu
+bindsym Control+Mod1+Delete exec --no-startup-id rofi -show power-menu -modi power-menu:rofi-power-menu
 
 # SSH
 bindsym $mod+r exec --no-startup-id rofi -show ssh

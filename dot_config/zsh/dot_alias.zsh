@@ -19,7 +19,6 @@ alias feh='feh -. -d -Z --fontpath $HOME/.local/share/fonts --font "MesloLGS NF 
 alias free='free -ht --si'
 alias ftp='ftp -v'
 alias gc='git clone'
-alias gs='git status'
 alias grep='grep --color=always'
 alias history="fc -lE 1"
 alias hy=" fc -ln 0 | awk '!a[\$0]++' | fzf --tac | xclip -selection clipboard"
