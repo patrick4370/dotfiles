@@ -224,7 +224,7 @@ fi
 #     /usr/bin/numlockx on
 #     setxkbmap -option caps:escape
 # fi
-
+bindkey -v
 # Command Prompt
 if [ -z $SSH_CONNECTION ]; then
     export PROMPT='%F{240}[%f%F{33}%n%f%F{11}@%f%F{208}%m%f%F{240}]$(_suto_prompt "%F{240}[%{$fg_no_bold[red]%}%f%F{240}]%f" "%F{240}[%{$fg_no_bold[yellow]%}%f%F{240}]%f")%F{240}[%F{213}%~%f%F{240}]%f
