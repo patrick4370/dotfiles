@@ -216,7 +216,7 @@ bindsym $mod+Shift+Right move right
 bindsym $mod+h split h
 
 # Rofi Power Menu
-bindsym Control+Mod1+Delete exec --no-startup-id rofi -show power-menu -modi power-menu:rofi-power-menu
+bindsym Control+Mod1+Delete exec --no-startup-id ~/.local/bin/rofi-power exit
 
 # SSH
 bindsym $mod+r exec --no-startup-id rofi -show ssh
