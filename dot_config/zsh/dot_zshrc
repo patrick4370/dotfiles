@@ -82,7 +82,7 @@ setopt PUSHD_IGNORE_DUPS                                # Don't push multiple co
 export cdpath=($HOME/Documents $HOME/Downloads $HOME/Pictures $HOME/Videos)
 
 # Export LANG
-export LANG=en_AU.UTF-8
+# export LANG=en_AU.UTF-8
 export LC_CTYPE="en_AU.UTF-8"
 export LC_NUMERIC="en_AU.UTF-8"
 export LC_TIME="en_AU.UTF-8"
