@@ -123,6 +123,7 @@ zcomet load jocelynmallon/zshmarks                      # ZSH directory bookmark
 zcomet load ael-code/zsh-colored-man-pages              # Coloured man pages
 zcomet load zdharma-continuum/fast-syntax-highlighting  # Feature rich syntax highlighting for Zsh.
 zcomet load jeffreytse/zsh-vi-mode
+zcomet load xylous/gitstatus
 
 # Run compinit and compile its cache
 zcomet compinit
@@ -145,7 +146,6 @@ eval $(keychain --quiet ~/.ssh/pidns_ecdsa ~/.ssh/pxe_ecdsa ~/.ssh/id_ed25519_gi
 [[ -f "/usr/share/doc/pkgfile/command-not-found.zsh" ]] && source "/usr/share/doc/pkgfile/command-not-found.zsh"
 [[ -f "~/.keychain/bella-sh" ]] && source "/home/patrick/.keychain/bella-sh"
 [[ -f "/usr/share/fzf/key-bindings.zsh" ]] && source "/usr/share/fzf/key-bindings.zsh"
-[[ -f "~/gitstatus/gitstatus.prompt.zsh" ]] && source "~/gitstatus/gitstatus.prompt.zsh"
 
 # Custom completion directories
 fpath=($HOME/.local/share/zsh/prompt $fpath)
@@ -228,10 +228,10 @@ fi
 if [ -z $SSH_CONNECTION ]; then
     export PROMPT='%F{240}[%f%F{33}%n%f%F{11}@%f%F{208}%m%f%F{240}]$(_suto_prompt "%F{240}[%{$fg_no_bold[red]%}%f%F{240}]%f" "%F{240}[%{$fg_no_bold[yellow]%}%f%F{240}]%f")%F{240}[%F{213}%~%f%F{240}]%f
 %F{240}[%f%(?.%B%F{70}%f%b.%B%F{196}%?%f)%f%b%F{240}]%f %F{39}>%f '
-export RPROMPT='$GITSTATUS_PROMPT'
+export RPROMPT='$(gitstatus -i)'
 else
     export PROMPT='%F{240}[%f%F{33}%n%f%F{11}@%f%F{208}%m%f%F{240}]$(_suto_prompt "%F{240}[%{$fg_no_bold[red]%}%f%F{240}]%f" "%F{240}[%{$fg_no_bold[yellow]%}%f%F{240}]%f")%F{240}[%f%F{160}%f%F{240}]%f%F{240}[%F{213}%~%f%F{240}]%f  
  %F{240}[%f%(?.%B%F{70}%f%b.%F{94}%?%f)%F{240}]%f %F{39}>%f '
-export RPROMPT='$GITSTATUS_PROMPT'
+export RPROMPT='$(gitstatus -i)'
 fi
 
