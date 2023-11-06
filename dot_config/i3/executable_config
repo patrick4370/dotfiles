@@ -32,6 +32,7 @@ exec --no-startup-id clipmenud
 exec --no-startup-id rclone mount --daemon gdrive: /home/patrick/gdrive
 exec --no-startup-id xinput set-prop 12 "Device Enabled" 0
 exec --no-startup-id xinput set-prop 13 "Device Enabled" 0
+exec --no-startup-id thunar --daemon
 exec_always --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpapers/*
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 
