@@ -92,7 +92,6 @@ key_bindings:
   mods: Control|Shift
 
 live_config_reload: true
-draw_bold_text_with_bright_colors: true
 
 multiplier: 10
 
@@ -113,5 +112,5 @@ window:
     y: 5 
 
 import:
-  - /home/patrick/.config/alacritty/themes/xterm.yaml
+  - /home/patrick/.config/alacritty/themes/purity.yaml
 

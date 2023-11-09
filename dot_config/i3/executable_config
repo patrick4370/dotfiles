@@ -14,27 +14,12 @@ set $gaps 5
 set $term --no-startup-id $TERMINAL
 
 # Autostart
-exec --no-startup-id /usr/bin/ibus-daemon -drxR
-exec --no-startup-id /usr/bin/pkill -SIGUSR2 i3status-rs
-exec --no-startup-id /usr/bin/lxpolkit
-exec --no-startup-id /usr/bin/mpDris2
-exec --no-startup-id /usr/bin/pasystray
-exec --no-startup-id /usr/bin/udiskie -nt
-exec --no-startup-id killall -q /usr/lib/xfce4/notifyd/xfce4-notifyd
-exec --no-startup-id setxkbmap -option caps:escape
-exec --no-startup-id systemctl --user import-environment DISPLAY
-exec --no-startup-id xidlehook --detect-sleep --not-when-audio --not-when-fullscreen --timer 600 '~/.local/bin/i3lockscript.sh' -
-exec --no-startup-id xinput set-prop 13 "Device Enabled" 0
-exec --no-startup-id xinput set-prop 14 "Device Enabled" 0
-exec --no-startup-id xset +dpms dpms 900 900 900
-exec --no-startup-id ~/.screenlayout/screenlayout.sh 
-exec --no-startup-id clipmenud
-exec --no-startup-id rclone mount --daemon gdrive: /home/patrick/gdrive
+# exec --no-startup-id /usr/bin/ibus-daemon -drxR
+exec --no-startup-id dex --autostart --environment i3
+exec_always --no-startup-id /usr/bin/picom --config ~/.config/picom/picom.conf
 exec --no-startup-id xinput set-prop 12 "Device Enabled" 0
 exec --no-startup-id xinput set-prop 13 "Device Enabled" 0
-exec --no-startup-id thunar --daemon
-exec_always --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpapers/*
-exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
+exec --no-startup-id xinput set-prop 14 "Device Enabled" 0
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -133,8 +118,8 @@ for_window [class="instagram-nativefier-51e18f"] floating enable, move position 
 for_window [class="Zathura"] focus
 
 # Move through workspaces
-bindsym $mod1+$mod+Right workspace next
-bindsym $mod1+$mod+Left workspace prev
+bindsym Mod1+$mod+Right workspace next
+bindsym Mod1+$mod+Left workspace prev
 
 # Kill window with $mod + mouse button two
 bindsym --whole-window $mod+button2 kill
@@ -216,9 +201,6 @@ bindsym $mod+Shift+Right move right
 # split in horizontal orientation
 bindsym $mod+h split h
 
-# Rofi Power Menu
-bindsym Control+Mod1+Delete exec --no-startup-id ~/.local/bin/rofi-power exit
-
 # SSH
 bindsym $mod+r exec --no-startup-id rofi -show ssh
 
@@ -253,7 +235,7 @@ bindsym --release $mod+Shift+d exec --no-startup-id escrotum --delay 8 '~/Pictur
 bindsym --release $mod+F11 exec --no-startup-id escrotum -x $(xwininfo -int | awk '/Window id:/ {print $4}') '~/Pictures/Screenshots/%Y-%m-%d-%H%M%S_$wx$h_escrotum.png' && notify-send "Window screenshot saved"
 
 # exit i3 (logs you out of your X session)
-bindsym $ct+$mod1+Delete exec --no-startup-id ~/.local/bin/rofi-power "i3-msg exit"
+bindsym Ctrl+Mod1+Delete exec --no-startup-id ~/.local/bin/rofi-power "i3-msg exit"
 
 # Resizing windows by 10
 bindsym $mod+Ctrl+Right resize shrink width 10 px or 10 ppt

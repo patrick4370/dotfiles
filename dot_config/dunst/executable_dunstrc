@@ -146,7 +146,7 @@
     # Paths to default icons.
     icon_path = "/usr/share/icons/Adwaita/16x16/status/:/usr/share/icons/Adwaita/16x16/devices/:/usr/share/icons/Adwaita/16x16/legacy/"
 
-    icon_theme = "Breeze Dark"
+    icon_theme = "Adwaita"
 
     enable_recursive_icon_lookup = true
 
@@ -275,7 +275,7 @@
     foreground = "#ffffff"
     frame_color = "#f66151"
     timeout = 0
-    icon = "~/.local/share/icons/dunst/attention.png"
+    icon = "dialog-error"
 
 [fullscreen]
     fullscreen = show
