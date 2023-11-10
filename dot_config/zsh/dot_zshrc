@@ -31,15 +31,6 @@ promptinit
 autoload -Uz +X bashcompinit && bashcompinit
 autoload -U colors && colors
 
-autoload -Uz vcs_info
-zstyle ':vcs_info:*' enable git svn
-precmd() {
-    vcs_info
-}
-
-zstyle ':vcs_info:git*' formats "%{$fg[grey]%}%s %{$reset_color%}%r/%S%{$fg[grey]%} %{$fg[blue]%}%b%{$reset_color%}%m%u%c%{$reset_color%} "
-setopt prompt_subst
-
 # Move these files to the cache directory
 compinit -d "${XDG_CACHE_HOME}/zsh/zcompdump-$ZSH_VERSION"
 zstyle ':completion::complete:*' cache-path ${XDG_CACHE_HOME}/zsh/zcompdump-$ZSH_VERSION
@@ -119,10 +110,9 @@ zcomet load zsh-users/zsh-autosuggestions               # It suggests commands a
 zcomet load joshskidmore/zsh-fzf-history-search         # FZF History Search
 zcomet load joel-porquet/zsh-dircolors-solarized        # Solarized dircolors plugin for zsh.
 zcomet load jocelynmallon/zshmarks                      # ZSH directory bookmarks
-zcomet load ael-code/zsh-colored-man-pages              # Coloured man pages
 zcomet load zdharma-continuum/fast-syntax-highlighting  # Feature rich syntax highlighting for Zsh.
 zcomet load jeffreytse/zsh-vi-mode
-# zcomet load xylous/gitstatus
+zcomet load olivierverdier/zsh-git-prompt 
 
 # Run compinit and compile its cache
 zcomet compinit
@@ -227,10 +217,10 @@ fi
 if [ -z $SSH_CONNECTION ]; then
     export PROMPT='%F{240}[%f%F{33}%n%f%F{11}@%f%F{208}%m%f%F{240}]$(_suto_prompt "%F{240}[%{$fg_no_bold[red]%}%f%F{240}]%f" "%F{240}[%{$fg_no_bold[yellow]%}%f%F{240}]%f")%F{240}[%F{213}%~%f%F{240}]%f
 %F{240}[%f%(?.%B%F{70}%f%b.%B%F{196}%?%f)%f%b%F{240}]%f %F{39}>%f '
-export RPROMPT='${vcs_info_msg_0_}'
+export RPROMPT='$(git_super_status)'
 else
     export PROMPT='%F{240}[%f%F{33}%n%f%F{11}@%f%F{208}%m%f%F{240}]$(_suto_prompt "%F{240}[%{$fg_no_bold[red]%}%f%F{240}]%f" "%F{240}[%{$fg_no_bold[yellow]%}%f%F{240}]%f")%F{240}[%f%F{160}%f%F{240}]%f%F{240}[%F{213}%~%f%F{240}]%f  
  %F{240}[%f%(?.%B%F{70}%f%b.%F{94}%?%f)%F{240}]%f %F{39}>%f '
-export RPROMPT='${vcs_info_msg_0_}'
+export RPROMPT='$(git_super_status)'
 fi
 
