@@ -1,0 +1,16 @@
+[user]
+	email = patrick4370@bigpond.com
+	name = Patrick Heffernan
+[credential]
+	helper = store
+[core]
+	pager = less -FX
+[init]
+	defaultBranch = main
+[color]
+	ui = auto
+[alias]
+	l = log --relative-date --graph --abbrev-commit -10
+	ll = log --relative-date --graph --abbrev-commit
+[format]
+	pretty = format:%C(yellow)%h %C(blue)%>(12)%ad %C(green)%<(7) %aN%Cred%d %Creset%s
