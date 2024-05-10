@@ -12,5 +12,6 @@
 [alias]
 	l = log --relative-date --graph --abbrev-commit -10
 	ll = log --relative-date --graph --abbrev-commit
+    s = status
 [format]
 	pretty = format:%C(yellow)%h %C(blue)%>(12)%ad %C(green)%<(7) %aN%Cred%d %Creset%s
