@@ -21,7 +21,7 @@ right_format = """
 $git_status\
 """
 [username]
-style_user = 'green bold'
+style_user = '34 bold'
 style_root = 'red bold'
 format = '[\[](237)[$user]($style)[@](15)'
 disabled = false
@@ -77,7 +77,7 @@ ahead = '🏎💨'
 behind = '😰'
 diverged = '😵'
 up_to_date = '✓'
-untracked = '🤷'
+rntracked = '🤷'
 stashed = '📦'
 modified = '📝'
 staged = '[++\($count\)](green)'
