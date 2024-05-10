@@ -1,4 +1,4 @@
-" myvimrc
+" myvimrc /home/patrick/.vimrc 
 " 10-05-2024 15:48 +1000 
 "
 " New .vimrc file that has been through a huge tidy up
