@@ -1,0 +1,10 @@
+[Unit]
+Description=Backs up home directory at 19:00 (7:00pm)
+
+[Timer]
+OnCalendar=Mon,Tue,Wed,Thu,Fri,Sat,Sun 19:00
+Persistent=true
+Unit=backup.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,10 @@
+[Unit]
+Description=Runs update-notifier.service every hour
+
+[Timer]
+OnBootSec=3min
+OnUnitActiveSec=1h
+Unit=update-notifier.service
+
+[Install]
+WantedBy=timers.target

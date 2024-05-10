@@ -1,0 +1,10 @@
+[Unit]
+Description=Runs siggy.sh every 5 minutes
+
+[Timer]
+OnBootSec=6min
+OnUnitActiveSec=6h
+Unit=apod.service
+
+[Install]
+WantedBy=timers.target

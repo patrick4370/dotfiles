@@ -1,0 +1,10 @@
+[Unit]
+Description=Runs ~/.local/bin/wallpaper.sh every 30 minutes
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=30min
+Unit=wall.service
+
+[Install]
+WantedBy=timers.target

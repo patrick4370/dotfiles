@@ -1,0 +1,7 @@
+[Unit]
+Description=Check and notify about pacman and AUR updates
+
+[Service]
+Type=simple
+ExecStart=/home/patrick/.local/bin/dunst_update.sh
+

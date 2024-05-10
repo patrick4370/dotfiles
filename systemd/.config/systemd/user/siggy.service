@@ -1,0 +1,6 @@
+[Unit]
+Description=Creates new .signature file in the home directory
+
+[Service]
+Type=simple
+ExecStart=/home/patrick/.local/bin/siggen.sh
