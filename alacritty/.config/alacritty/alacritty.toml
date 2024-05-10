@@ -45,7 +45,7 @@ end = { foreground = "#181818", background = "#ac4242"  }
 [colors.normal]
 black = "#181818"
 red = "#ac4242"
-green = "#90a959"
+green = "#00af00"
 yellow = "#f4bf75"
 blue = "#6a9fb5"
 magenta = "#aa759f"

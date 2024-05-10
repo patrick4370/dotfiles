@@ -85,7 +85,7 @@ ce()
                  $XDG_CONFIG_HOME/i3/config
                  $XDG_CONFIG_HOME/dunst/dunstrc 
                  $XDG_CONFIG_HOME/alacritty/alacritty.toml 
-                 $XDG_CONFIG_HOME/starship/starship.toml
+                 $XDG_CONFIG_HOME/starship.toml
                  $HOME/.vimrc
                )
 
