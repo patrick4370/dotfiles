@@ -1,5 +1,5 @@
 " myvimrc
-" 29-10-2023 16:10 +1000 
+" 10-05-2024 15:48 +1000 
 "
 " New .vimrc file that has been through a huge tidy up
 "
@@ -120,9 +120,6 @@ let g:Hexokinase_optInPatterns = [
 \     'colour_names'
 \ ]
 
-" Latex Previewer
-let g:livepreview_previewer = 'zathura'
-
 " vimwiki 
 " let wiki_1 = {}
 " let wiki_1.path = '~/onedrive/Vimwiki/vimwiki/'
@@ -157,22 +154,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline_solarized_bg='dark'
 
-" Markdown Plugin
-let g:vim_markdown_math = 1
-let g:vim_markdown_strikethrough = 1
-let g:vim_markdown_conceal = 2
-let g:vim_markdown_folding_disabled = 0
-let g:vim_markdown_frontmatter = 1
-let g:vim_markdown_toml_frontmatter = 1
-
-" Markdown Preview
-let g:mkdp_auto_start = 1
-let g:mkdp_auto_close=1
-let g:mkdp_refresh_slow=0
-let g:mkdp_markdown_css='~/.local/lib/github-markdown-css/github-markdown.css'
-let g:mkdp_browser = '/usr/bin/librewolf'
-
-"" Trigger configuration. You need to change this to something other than <tab> if you use one of the following:
+" Trigger configuration. You need to change this to something other than <tab> if you use one of the following:
 " - https://github.com/Valloric/YouCompleteMe
 " - https://github.com/nvim-lua/completion-nvim
 let g:UltiSnipsExpandTrigger="<tab>"
@@ -265,19 +247,7 @@ nmap <C-Down> :m  .+1<CR>
 " Bubble multiple lines
 vnoremap <silent> <C-Up>  @='"zxk"zP`[V`]'<CR>
 vnoremap <silent> <C-Down>  @='"zx"zp`[V`]'<CR>
-
-"nmap <C-s> <Plug>MarkdownPreview
-nmap <M-s> <Plug>MarkdownPreviewStop
-nmap <C-p> <Plug>MarkdownPreviewToggle Markdown Preview
-nmap <silent> <F8> <Plug>MarkdownPreview
-
-" This is an example of trying to make something work, and typing to get to
-" the next buffer
-map <leader>, :bn<CR>
-map <leader>. :bp<CR>
-map <leader>l :ls<CR>
-map <leader>d :bd<CR>
-
+ 
 " Zoom for Splits
 noremap Zz <c-w>_ \| <c-w>\|
 noremap Zo <c-w>=
@@ -290,12 +260,11 @@ nmap <Leader>v :e $MYVIMRC<CR>
 
 " Add filename and path in insert mode 
 inoremap <Leader>fn <C-R>=expand("%:p")<CR> 
-
+ 
 " Open file under cursor with Ctrl-o
 map <C-o> :let mycurf=expand("<cfile>")<cr><c-w> w :execute("e ".mycurf)<cr><c-w>p
 
 " Auto Commands
-
 au BufNewFile,BufRead *.md,*.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn  set ft=markdown
 
 " Vimwiki
@@ -414,3 +383,4 @@ command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
 
 ab ph Patrick Heffernan
 ab em Patrick Heffernan <patrick4370@bigpond.com>
+
