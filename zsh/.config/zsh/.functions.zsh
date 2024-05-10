@@ -84,8 +84,9 @@ ce()
                  $XDG_CONFIG_HOME/i3status-rust/config.toml 
                  $XDG_CONFIG_HOME/i3/config
                  $XDG_CONFIG_HOME/dunst/dunstrc 
-                 $XDG_CONFIG_HOME/alacritty/alacritty.yml 
+                 $XDG_CONFIG_HOME/alacritty/alacritty.toml 
                  $XDG_CONFIG_HOME/starship/starship.toml
+                 $HOME/.vimrc
                )
 
         local string=" Config Editor ~/.config "
