@@ -1,0 +1,120 @@
+# Alacritty - TOML configuration file format.
+# 10-05-2024 13:27 +1000
+
+import = ["~/.config/alacritty/themes/xterm.toml"]
+live_config_reload = true
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font Mono", style = "regular" }
+bold = { family = "JetBrainsMono Nerd Font Mono", style = "bold" }
+italic = { family = "JetBrainsMono Nerd Font Mono", style = "italic" }
+bold_italic = { family = "JetBrainsMono Nerd Font Mono", style = "bold_italic" }
+size = 12.00
+builtin_box_drawing = true 
+
+[shell]
+program = "/usr/bin/zsh"
+args = ["-l"]
+
+[window]
+opacity = 0.85
+blur = true 
+padding = { x = 5, y = 5  }
+
+[scrolling]
+history = 10000
+multiplier = 10
+
+[colors]
+cursor = { text = "CellBackground", cursor = "CellForeground" }
+footer_bar = { foreground = "#ffffff", background = "#0087d7"  }
+selection = { text = "#ffffff", background = "#0087d7"  }
+line_indicator = { foreground = "#ffffff", background = "#800000"  }
+transparent_background_colors = false
+draw_bold_text_with_bright_colors = true
+
+[colors.search]
+matches = { foreground = "#181818", background = "#ac4242" }
+focused_match = { foreground = "#181818", background = "#f4bf75" }
+
+[colors.hints]
+start = { foreground = "#181818", background = "#f4bf75" }
+end = { foreground = "#181818", background = "#ac4242"  }
+
+[colors.normal]
+black = "#181818"
+red = "#ac4242"
+green = "#90a959"
+yellow = "#f4bf75"
+blue = "#6a9fb5"
+magenta = "#aa759f"
+cyan = "#75b5aa"
+white = "#d8d8d8"
+
+[colors.bright]
+black = "#6b6b6b"
+red = "#c55555"
+green = "#aac474"
+yellow = "#feca88"
+blue = "#82b8c8"
+magenta = "#c28cb8"
+cyan = "#93d3c3"
+white = "#f8f8f8"
+
+[colors.dim]
+black = "#0f0f0f"
+red = "#712b2b"
+green = "#5f6f3a"
+yellow = "#a17e4d"
+blue = "#456877"
+magenta = "#704d68"
+cyan = "#4d7770"
+white = "#8e8e8e"
+
+[bell]
+animation = "Linear"
+duration = 0
+#color = "#ffffff"
+#command = "None"
+
+[selection]
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+save_to_clipboard = true
+
+[cursor]
+style = { shape = "Beam", blinking = "Off" }
+unfocused_hollow = true
+thickness = 0.15
+
+[mouse]
+hide_when_typing = true
+bindings = [
+{ mouse = "Right", mods = "Control", action = "Paste"  },
+]
+
+[[hints.enabled]]
+command = "xdg-open" # On Linux/BSD
+hyperlinks = true
+post_processing = true
+persist = false
+mouse.enabled = true
+binding = { key = "?", mods = "Control|Shift"  }
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`]+"
+
+[keyboard]
+bindings = [
+{ key = "N", mods = "Control|Shift", action = "CreateNewWindow" },
+{ key = "V", mods = "Control|Shift", action = "Paste" },
+{ key = "C", mods = "Control|Shift", action = "Copy" },
+{ key = "Key0", mods = "Control", action = "ResetFontSize" },
+{ key = "=", mods = "Control", action = "IncreaseFontSize" },
+{ key = "NumpadAdd", mods = "Control", action = "IncreaseFontSize" },
+{ key = "Minus", mods = "Control", action = "DecreaseFontSize" },
+{ key = "-", mods = "Control", action = "DecreaseFontSize" },
+{ key = "Return", mods = "Control|Shift", action = "SpawnNewInstance" },
+{ key = "Minus", mods = "Control", action = "DecreaseFontSize" },
+{ key = "Minus", mods = "Control", action = "DecreaseFontSize" },
+{ key = "F", mods = "Control", action = "ToggleFullScreen" },
+{ key = ".", mods = "Control", action ="ClearSelection" },
+{ key = "v", mods = "Control", action = "ToggleViMode" },
+]
