@@ -1,0 +1,119 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "display": {
+      "binaryPrefix": "iec",
+      "brightColor": true,
+      "percent": {
+          "type": 3,
+          "ndigits": 2
+      },
+      "size": {
+          "ndigits": 2
+      },
+      "temp": {
+          "unit": "C",
+          "ndigits": 2
+      },
+  },
+  "modules": [
+        
+    {
+        "type": "custom", // HardwareStart
+        "format": "\u001b[1;31m────────────\u001b[1;32m Hardware Information\u001b[1;31m ────────────" // `\u001b` is `\033`, or `\e`                                       Property format is not allowed.
+    },
+   "break",
+   {
+       "type": "bios",
+       "key": "BIOS"
+   },
+   {
+       "type": "board",
+       "key": "MOBO"
+   },
+   {
+        "type": "cpu",
+        "temp": false
+   },
+   {
+       "type": "cpuusage",
+       "separate": true
+   },
+   "gpu",
+    {
+        "type": "memory",
+        "key": "RAM"
+    },
+    {
+        "type": "display",
+        "preciseRefreshRate": true
+    },
+   "battery",
+    {
+        "type": "sound",
+        "soundType": "main",
+        "format": "{2} {3}"
+    },
+    {
+        "type": "disk",
+        "showHidden": false,
+        "showExternal": false,
+        "showSubvolumes": false,
+        "folders": "/:/home:/boot:/run/media/patrick/D923-4A19:/run/media/patrick/VIDEO"
+    },
+    "physicaldisk",
+    "swap",
+    "break",    
+    {
+        "type": "custom", // SoftwareStart
+        "format": "\u001b[1;31m ──────────── \u001b[1;32mSoftware Information\u001b[1;31m ────────────" // `\u001b` is `\033`, or `\e`                                       Property format is not allowed.
+    },
+  "break", 
+   {
+          "type": "title",
+          "format": "{2}",
+          "key": "Hostname"
+      }, 
+    "kernel",
+    {
+        "type": "lm",
+        "key": "Login Manager"
+    },
+    "packages",
+    "shell",
+    "de",
+    "wm",
+    "terminal",
+        {
+        "type": "localip",
+        "showIp4": true,
+        "showMac": true,
+        "namePrefix": true,
+        "defaultRoute": true,
+        "format": "\u001b[1;31mIP: \u001b[0m{1} \u001b[1;31mMAC: \u001b[0m{3?}"
+    },
+    {
+        "type": "netio",
+        "format": "\u001b[1;32m \u001b[0m{1?} \u001b[1;32m \u001b[0m{2?}"
+    },
+    
+    {
+        "type": "title",
+        "key": "Current User",
+        "format": "{1} \u001b[1;33m{3}"
+
+    },
+    "locale",
+    "version",
+    {
+        "type": "weather",
+        "location": "Warwick+QLD",
+        "outputFormat": ":%t+|+:%h+|+::%p+|+::%P+|+::%w+|+::%c+|+::%l"   
+    },
+    "break",
+    {
+        "type": "custom",
+        "format": "\u001b[1;31m───────────────────────────────────────────────"
+    }
+
+  ]
+}

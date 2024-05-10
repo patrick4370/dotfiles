@@ -1,0 +1,128 @@
+#                    _   _
+#           ______ _| |_| |__  _   _ _ __ __ _
+#           |_  / _` | __| '_ \| | | | '__/ _` |
+#            / / (_| | |_| | | | |_| | | | (_| |
+#           /___\__,_|\__|_| |_|\__,_|_|  \__,_|
+#
+# Defines the sandbox mode to use for the seccomp syscall filter.
+set sandbox					"none"
+
+# Defines the horizontal padding of the statusbar and notificationbar.
+set statusbar-h-padding		"0"
+
+# Defines the vertical padding of the statusbar and notificationbar.
+set statusbar-v-padding		"0"
+
+# The page padding defines the gap in pixels between each rendered page.
+set page-padding			"5"
+
+# Defines the X clipboard into which mouse-selected data will be written.
+set selection-clipboard		"clipboard"
+
+# Defines the database backend to use for bookmarks and input history.
+set database				"sqlite"
+
+# zoom and scroll step size
+set zoom-step 20
+set scroll-step 80
+
+# enable incremental search
+set incremental-search true
+
+# Defines if hidden files and directories should be displayed in completion.
+set show-hidden				"true"
+
+# Open Zathura in inverted mode
+set recolor					"false"
+
+# Open masterpdfeditor4 to edit file - Ctrl+e to open.
+map <C-e> feedkeys ":exec masterpdfeditor4 $FILE<Return>"
+
+# Map 'Ctrl-l' to open Bookmark list. 
+map <C-l> focus_inputbar ":blist "
+
+# Map 'Ctrl-b' to create bookmarks
+map <C-b> focus_inputbar ":bmark "
+
+# Map 'Ctrl-d' to delete bookmarks
+map <C-d> focus_inputbar ":bdelete "
+
+# Map 'Ctrl-i' to show document information
+map <C-I> focus_inputbar ":info" 
+
+map C set "first-page-column 1:1"
+map <C-c> set "first-page-column 1:2" 
+
+# Key Bindings
+map u scroll				"half-up"
+map d scroll				"half-down"
+map D toggle_page_mode
+map r reload
+map R rotate
+map <C-i> zoom in
+map <C-o> zoom out
+map <C-r> zoom expand
+map I recolor
+map <C-p> print
+map s toggle_statusbar
+map i toggle_inputbar
+
+# Defines which auto adjustment mode should be used if a document is loaded.
+set adjust-open				"width"
+
+# Defines if a notification should be displayed after selecting text.
+set selection-notification	"true"
+
+# Font to use.
+set font					"JetBrains Mono 12"
+
+# Use basename of the file in the statusbar.
+set statusbar-basename		"false"
+
+# Display a short version of the file path, which replaces $HOME with ~, in the statusbar.
+set statusbar-home-tilde	"true"
+
+# Shows  or  hides  GUI elements.
+set guioptions				"shv"
+
+set notification-error-bg       "#282828" # bg
+set notification-error-fg       "#fb4934" # bright:red
+set notification-warning-bg     "#282828" # bg
+set notification-warning-fg     "#fabd2f" # bright:yellow
+set notification-bg             "#282828" # bg
+set notification-fg             "#b8bb26" # bright:green
+
+set completion-bg               "#504945" # bg2
+set completion-fg               "#ebdbb2" # fg
+set completion-group-bg         "#3c3836" # bg1
+set completion-group-fg         "#928374" # gray
+set completion-highlight-bg     "#83a598" # bright:blue
+set completion-highlight-fg     "#504945" # bg2
+
+# Define the color in index mode
+set index-bg                    "#504945" # bg2
+set index-fg                    "#ebdbb2" # fg
+set index-active-bg             "#83a598" # bright:blue
+set index-active-fg             "#504945" # bg2
+
+set inputbar-bg                 "#282828" # bg
+set inputbar-fg                 "#ebdbb2" # fg
+
+set statusbar-bg                "#504945" # bg2
+set statusbar-fg                "#ebdbb2" # fg
+
+set highlight-color             "rgba(0, 128, 0, 0.5)" 
+set highlight-active-color      "rgba(255, 251, 0, 0.6)"
+set highlight-fg                "#000000"
+
+set default-bg                  "#282828" # bg
+set default-fg                  "#ebdbb2" # fg
+set render-loading              "true"
+set render-loading-bg           "#282828" # bg
+set render-loading-fg           "#ebdbb2" # fg
+
+# Recolor book content's color
+set recolor-lightcolor          "#8B4513" # bg
+set recolor-darkcolor           "#ebdbb2" # fg
+# set recolor                     "true"
+# set recolor-keephue             "true"      # keep original color

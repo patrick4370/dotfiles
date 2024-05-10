@@ -1,0 +1,9 @@
+! ~/.Xresources file
+! Sun 11-12-2022 14:42 +1000
+
+#include ".Xresources.d/xterm"
+#include ".Xresources.d/xcursor"
+#include ".Xresources.d/xft"
+#include ".Xresources.d/colours"
+#include ".Xresources.d/urxvt"
+#include ".Xresources.d/nsxiv"

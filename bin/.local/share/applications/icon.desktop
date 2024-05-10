@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=GTK3 Icon Viewer
+Comment=GTK3 Icon Viewer
+MimeType=image/x-icon
+Exec=gtk3-icon-browser
+Icon=image-x-generic
+Type=Application
+Terminal=false
+Categories=Utility;
+Hidden=false
+StartupNotify=false

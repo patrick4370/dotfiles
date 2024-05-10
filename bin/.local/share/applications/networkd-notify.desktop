@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=networkd-notify
+Comment=desktop notification integration for networkd
+Exec=networkd-notify
+Terminal=false
+Hidden=true

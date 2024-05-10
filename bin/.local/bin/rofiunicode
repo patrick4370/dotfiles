@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# Give dmenu list of all unicode characters to copy.
+# Shows the selected character in dunst if running.
+# shellcheck disable=SC2001
+# Must have xclip installed to even show menu.
+xclip -h 2>/dev/null || exit
+
+if [ -e ~/.local/share/rofi/emoji_v2 ]; then
+    chosen=$(grep -v "#" -h ~/.local/share/rofi/emoji_v2 | rofi -theme-str 'window {width: 40%;}' -i -l 10 -dmenu -p "Emoji's")
+fi
+
+[ "$chosen" != "" ] || exit
+
+c=$(echo "${chosen}" | sed "s/ .*//")
+echo "${c}" | tr -d '\n' | xclip -selection clipboard
+notify-send "'${c}' copied to clipboard." &
+
+echo "$c"
+
+s=$(echo "$chosen" | sed "s/.*; //" | awk '{print $1}')
+echo "${s}" | tr -d '\n' | xclip -selection primary
+notify-send "'${s}' copied to primary." &
+
+echo "${s}"

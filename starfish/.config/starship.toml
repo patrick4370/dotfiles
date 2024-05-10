@@ -1,0 +1,86 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# Replace the '❯' symbol in the prompt with '➜'
+
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$line_break\
+$status\
+$sudo\
+$character\
+"""
+
+right_format = """
+$git_status\
+"""
+[username]
+style_user = 'green bold'
+style_root = 'red bold'
+format = '[\[](237)[$user]($style)[@](15)'
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+ssh_symbol = '  '
+format = '[$hostname](bold #1793D1)[$ssh_symbol](bold red)[\]](237)'
+disabled = false
+
+[directory]
+format = '[\[](237)[$path](246)[\]](237)'
+home_symbol = '~'
+truncation_symbol = '../'
+truncation_length = 4
+
+[git_branch]
+symbol = ' '
+format = '[\[](237)[$symbol](71)[branch:](white)[$branch](104)[\]](237) '
+
+[line_break]
+disabled = false
+
+[character] # The name of the module we are configuring is 'character'
+success_symbol = '[\[](237)[>](bold 112)[\]](237)'
+error_symbol = '[\[](237)[>](bold red)[\]](237)'
+vimcmd_symbol = '[\[](237)[](bold red)[\]](237)' 
+disabled = false
+
+[status]
+style = 'bold red'
+success_symbol = ''
+symbol = '💣 '
+not_executable_symbol =	'🚫'
+not_found_symbol = '🔍'
+sigint_symbol =	'🧨'
+signal_symbol = '💀'
+recognize_signal_code =	true
+map_symbol = true
+disabled = false
+format = '[\[](237)[$symbol - [$status](white)](bold $style)[\]](237)'
+
+[sudo]
+style = 'bold green'
+format = '[\[](237)[$symbol]($style)[\]](237)'
+symbol = '🔓'
+disabled = false
+
+[git_status]
+conflicted = '🏳'
+ahead = '🏎💨'
+behind = '😰'
+diverged = '😵'
+up_to_date = '✓'
+untracked = '🤷'
+stashed = '📦'
+modified = '📝'
+staged = '[++\($count\)](green)'
+renamed = '👅'
+deleted = '🗑'
+format = '[\[](237)([$all_status[:](22)[$untracked](20)$ahead_behind](green))[\]](237)'

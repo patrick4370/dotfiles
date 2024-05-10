@@ -1,0 +1,18 @@
+# Show directories first
+sorting:
+  column: extension
+  dir-grouping: first
+
+# == Permission ==
+# Specify the format of the permission column
+permission: rwx
+
+# == Icons ==
+icons:
+  when: always
+  theme: fancy
+  separator: "  "
+
+color:
+  when: always
+  theme: default

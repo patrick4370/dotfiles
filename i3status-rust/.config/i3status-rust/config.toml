@@ -1,0 +1,210 @@
+# i3status-rs Configuration
+#
+# Updated: 01-11-2023 14:58 +1000 
+#
+# New Version i3status-rs 0.30.4 (commit f4490035 2023-02-28)
+icons_format = "{icon}"
+
+[theme]
+theme = "gruvbox-light"
+
+[icons]
+icons = "awesome5"
+
+[[block]]
+block = "custom"
+command= "echo -e \uf013 "
+[[block.click]]
+button = "left"
+cmd = "rofi -show window"
+[block.theme_overrides]
+idle_bg = "#744622"
+idle_fg = "#ffffff"
+
+[[block]]
+block = "xrandr"
+format = " $icon $brightness "
+[block.theme_overrides]
+idle_bg = "#005f00"
+idle_fg = "#fffff5"
+
+[[block]]
+# Memory Module
+block = "memory"
+format = "  $icon   $mem_total_used.eng(w:1)/$mem_total.eng(w:1) "
+format_alt = " $icon_swap  Buffers: $buffers Cached: $cached "
+interval = 30
+warning_mem = 80.0
+[block.icons_overrides]
+memory_mem = "\uf538"
+memory_swap = "\uf837"
+[block.theme_overrides]
+critical_bg = "#744622"
+critical_fg = "#ffffff"
+info_bg = "#744622"
+info_fg = "#dadada"
+good_bg = "#744622"
+good_fg = "#ffffff"
+warning_bg = "#744622"
+warning_fg = "#ffffff"
+idle_bg = "#744622"
+idle_fg = "#ffffff"
+
+[[block]]
+# CPU Module
+block = "cpu"
+interval = 1
+format = " $icon { $boost|} $frequency  "
+[block.icons_overrides]
+cpu = "\uf4bc"
+cpu_boost_on = "\uf205"
+cpu_boost_off = "\uf204"
+[block.theme_overrides]
+idle_bg = "#005f00"
+idle_fg = "#fffff5"
+good_bg = "#005fff"
+good_fg = "#fffff5"
+info_bg = "#005fff"
+info_fg = "#fffff5"
+warning_bg = "#ffaf00"
+warning_fg = "#262626"
+critical_bg = "#ff0000"
+critical_fg = "#ffffff"
+# 
+[[block]]
+# Battery Module
+block = "battery"
+format = "  $icon $percentage {$time |} $power  "
+full_format = " $icon - $percentage "
+empty_format = " $icon - $percentage "
+not_charging_format = " $icon - $percentage "
+driver = "upower"
+interval = 10
+full_threshold = 95
+critical = 20
+warning = 65
+good = 70
+info = 80
+[block.theme_overrides]
+idle_bg = "#744622"
+idle_fg = "#dadada"
+good_bg = "#ff0000"
+good_fg = "#dadada"
+info_bg = "#ff3333"
+info_fg = "#dadada"
+warning_bg = "#ffbf00"
+warning_fg = "#303030"
+critical_bg = "#d70000"
+critical_fg = "#bcbcbc"
+[block.icons_overrides]
+bat_charging = "\uf0e7"
+bat = "\uf244"
+
+[[block]]
+# Exchange rate
+block = "custom"
+command = "/home/patrick/.local/bin/exchange.sh"
+interval = 14400
+shell = "/bin/bash"
+[[block.click]]
+button = "left"
+cmd = "librewolf --new-tab http://www.exchangerate.com/currency-converter/USD/AUD/1.00/?XR-QuickConverter=convert&calc_short_from_iso=239&calc_short_to_iso=15"
+[block.theme_overrides]
+idle_bg = "#005f00"
+idle_fg = "#ffffff"
+ 
+[[block]]
+# Time and Date
+block = "time"
+interval = 60
+[[block.click]]
+button = "left"
+cmd = '/usr/bin/gsimplecal'
+[block.format]
+full = " $icon $timestamp.datetime(f:'%R', l:en_AU) "
+[block.theme_overrides]
+idle_bg = "#744622 "
+idle_fg = "#ffffff"
+ 
+[[block]]
+# System Temperature
+block = "temperature"
+interval = 10
+idle = 45
+good = 70
+scale = "celsius"
+warning = 85
+format = " $icon $average avg "
+format_alt = " $icon $min min, $max max, $average avg "
+[block.theme_overrides]
+good_bg = "#005f00"
+good_fg = "#ffffff"
+warning_bg = "#ff0000"
+warning_fg = "#ffffff"
+ 
+[[block]]
+# Rofi Bluetooth Menu
+block = "custom"
+command = "echo -e \uf293"
+[[block.click]]
+button = "left"
+cmd = "/usr/bin/rofi-bluetooth"
+[block.theme_overrides]
+idle_bg = "#744622"
+idle_fg="#FFFFFF"
+
+[[block]]
+# Rofi Power Menu
+block = "custom"
+command = "echo -e \uf011"
+[[block.click]]
+button = "left"
+cmd = "~/.local/bin/rofi-power 'i3-msg exit'"
+[block.theme_overrides]
+idle_bg = "#005f00"
+idle_fg = "#ffffff"
+
+[[block]]
+# BlueAnt X0 Speaker
+block = "bluetooth"
+mac = "1D:8F:1C:24:74:3C"
+disconnected_format = ""
+format = " $icon {$percentage|} $battery_icon  "
+[block.battery_state]
+"0..20" = "critical"
+"21..70" = "warning"
+"71..100" = "good"
+
+[[block]]
+# JBL TUNE500BT Headphones
+block = "bluetooth"
+mac = "F4:BC:DA:93:AD:D6"
+disconnected_format = ""
+format = " $icon {$percentage|} $battery_icon "
+[block.battery_state]
+"0..20" = "critical"
+"21..70" = "warning"
+"71..100" = "good"
+
+[[block]]
+# Meredo Sound Bar
+block = "bluetooth"
+mac = "41:42:AB:7B:BB:63"
+disconnected_format = ""
+format = " $icon {$percentage|} "
+[block.battery_state]
+"0..20" = "critical"
+"21..70" = "warning"
+"71..100" = "good"
+
+[[block]]
+# Microsoft Mouse
+block = "bluetooth"
+mac = "D7:D8:78:4A:A0:62"
+disconnected_format = ""
+format = " $icon {$percentage|} $battery_icon "
+[block.battery_state]
+"0..20" = "critical"
+"21..70" = "warning"
+"71..100" = "good"
+

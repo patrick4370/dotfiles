@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=ARandR
+GenericName=Screen Settings
+GenericName[de]=Bildschirmeinstellungen
+Icon=gnome-monitor
+Exec=arandr
+Terminal=false
+Type=Application
+Categories=Settings;HardwareSettings;
+StartupNotify=true
+Hidden=false
+MimeType=application/x-executable

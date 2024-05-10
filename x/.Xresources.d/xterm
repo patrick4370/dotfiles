@@ -1,0 +1,50 @@
+! Xterm Settings ====================================================
+
+XTerm.termName: xterm-256color
+XTerm.ttyModes: erase ^?
+XTerm.vt100.backarrowKey: false
+XTerm.vt100.faceName: Inconsolata Nerd Font:style=Regular:antialias=true
+XTerm.vt100.faceSize: 10
+XTerm.vt100.geometry: 80x24
+XTerm.vt100.locale: true
+XTerm.vt100.metaSendsEscape: true
+XTerm.vt100.saveLines: 10000
+XTerm.vt100.selectToClipboard: true
+Xterm*background: black
+Xterm*loginShell: true
+xterm*multiScroll: on
+xterm*rightScrollBar: true
+XTerm*internalBorder: 10
+XTerm*fullscreen: never
+XTerm*renderFont: true
+XTerm*utf8: 1
+
+! Cursor ====================================================
+! pointer and cursor (blinking and color)
+XTerm*pointerColor: blue
+XTerm*pointerColorBackground: black
+XTerm*cursorColor: green
+XTerm*cursorBlink: true
+
+!! Selecting Text ========================================================
+! Only select text
+XTerm*highlightSelection: true
+! Remove trailing spaces
+XTerm*trimSelection: true
+
+!! Keybindings ========================================================
+XTerm.vt100.translations: #override \n\
+    Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+    Ctrl Shift <Key>V: insert-selection(CLIPBOARD) \n\
+    Ctrl <Key>minus: smaller-vt-font() \n\
+    Ctrl <Key>plus: larger-vt-font() \n\
+    Ctrl <Key>0: set-vt-font(d) \n\
+    Shift <Btn1Up>: exec-formatted("xdg-open '%t'", PRIMARY) \n\
+    <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0) \n\
+    <Btn2Up>: insert-selection(PRIMARY)
+
+! double-click to select whole URLs 
+! https://scarygliders.net/2011/12/01/customize-xterm-the-original-and-best-terminal/
+XTerm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+
+

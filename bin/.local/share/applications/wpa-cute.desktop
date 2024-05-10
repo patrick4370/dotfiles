@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=wpaCute
+Comment=Graphical Qt user interface for wpa_supplicant
+Exec=env QT_STYLE_OVERRIDE=kvantum wpa-cute -q
+Icon=wpa-cute
+GenericName=WLAN Config
+Terminal=false
+Type=Application
+Categories=Qt;Network;
+Keywords=wlan;wifi;

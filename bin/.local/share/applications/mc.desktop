@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=Midnight Commander
+Comment=The best CLI file Manager
+MimeType=inode/directory
+Exec=env LC_ALL=en_AU.UTF8 alacritty -e mc --nosubshell
+Icon=file-manager
+Type=Application
+Terminal=false
+Categories=Utility;
+Hidden=false
+StartupNotify=false

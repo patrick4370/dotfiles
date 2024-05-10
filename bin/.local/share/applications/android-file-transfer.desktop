@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Android File Transfer (MTP)
+Comment=Transfer files from/to MTP devices
+Exec=env QT_STYLE_OVERRIDE=kvantum android-file-transfer
+Icon=phone-samsung-galaxy-s
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=Utility;System;FileTools;Filesystem;Qt;
+Hidden=false

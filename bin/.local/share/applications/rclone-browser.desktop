@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Rclone Browser
+Comment=Simple cross-platform GUI for rclone
+Exec=env QT_STYLE_OVERRIDE=kvantum rclone-browser
+Icon=drive-harddisk
+Terminal=false
+Type=Application
+Categories=Network;
+StartupNotify=false
+Hidden=false

@@ -1,0 +1,23 @@
+configuration {
+	modi: "window,windowcd,run,ssh,drun,keys,combi";
+	font: "CommitMono Nerd Font 16";
+	terminal: "/usr/bin/xterm";	
+	ssh-client: "/usr/bin/ssh";
+	ssh-command: "{terminal} -e "{ssh-client} {host}"";
+	run-shell-command: "{terminal} {cmd}";
+	window-command: "wmctrl -i -R {window}";
+	case-sensitive: false;
+    display-drun: "🚀 Launch";
+    drun-display-format: "{icon} {name}";
+    show-icons: true;
+    sort: true;
+    }
+
+//@theme "/home/patrick/.local/share/rofi/themes/Pat-Rofi.rasi"
+//@theme "/home/patrick/.local/share/rofi/themes/Pat-Rofi.rasi"
+//@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
+//@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
+//@theme "/home/patrick/.local/share/rofi/themes/Patrick.rasi"
+//@theme "/home/patrick/.local/share/rofi/themes/Pat-Rofi.rasi"
+//@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
+@theme "/home/patrick/.local/share/rofi/themes/Pat-Rofi.rasi"

@@ -1,0 +1,28 @@
+URxvt*letterSpace:              -1
+URxvt.background:               [75]#000000
+URxvt.depth:                    32
+URxvt.fading:                   0
+URxvt.font:                     xft:Inconsolata Nerd Font:size=10
+URxvt.geometry:                 90x30
+URxvt.internalBorder:           3
+URxvt.keysym.Control-Shift-Tab: perl:tabbedex:prev_tab
+URxvt.keysym.Control-Tab:       perl:tabbedex:next_tab
+URxvt.keysym.Control-t:         perl:tabbedex:new_tab
+URxvt.keysym.F11:               perl:fullscreen:switch
+URxvt.keysym.M-u:               perl:url-select:select_next
+URxvt.lineSpace:                0
+URxvt.matcher.button:           1
+URxvt.matcher.rend.0:           Uline Bold fg5
+URxvt.perl-ext-common:          default,matcher,tabbedex,fullscreen,resize-font
+URxvt.scrollBar:                true
+URxvt.tabbedex.autohide:        false
+URxvt.tabbedex.new-button:      true
+URxvt.tabbedex.reopen-on-close: no
+URxvt.tabbedex.tab-bg:          1
+URxvt.tabbedex.tab-fg:          7
+URxvt.tabbedex.tabbar-bg:       0 
+URxvt.tabbedex.tabbar-fg:       2
+URxvt.urgentOnBell:             true
+URxvt.url-launcher:             /usr/bin/xdg-open
+URxvt.url-select.underline:     true
+URxvt.visualBell:               true

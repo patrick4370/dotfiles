@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=Select Default Application
+GenericName=Select Default Application
+Comment=Allows you to easily select default application to open files.
+Categories=Utility;
+TryExec=selectdefaultapplication
+Exec=env QT_STYLE_OVERRIDE=kvantum selectdefaultapplication
+Icon=selectdefaultapplication
+Terminal=false
+Hidden=false
+MimeType=application/x-executable
