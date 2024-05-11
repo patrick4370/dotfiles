@@ -209,6 +209,6 @@ mods = "Control"
 action = "ClearSelection"
 
 [[keyboard.bindings]]
-key = "v"
+key = "p"
 mods = "Control"
 action = "ToggleViMode"

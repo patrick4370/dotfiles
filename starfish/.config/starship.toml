@@ -21,6 +21,7 @@ $character\
 right_format = """
 $git_status\
 $git_commit\
+$git_metrics\
 """
 
 [username]
@@ -33,7 +34,7 @@ show_always = true
 [hostname]
 ssh_only = false
 ssh_symbol = '  '
-format = '[$hostname](bold #1793D1)[$ssh_symbol](bold red)[\]](237)'
+format = '[$hostname](bold #00afff)[$ssh_symbol](bold red)[\]](237)'
 disabled = false
 
 [directory]
@@ -50,9 +51,10 @@ format = '[\[](237)[$symbol](71)[branch:](white)[$branch](104)[\]](237) '
 disabled = false
 
 [cmd_duration]
-show_milliseconds = false
+show_milliseconds = true
 format = '[\[](237)[$duration]($style)[\]](237)'
-style = 'bold #5f87af'
+style = 'bold #5f87d7'
+min_time = 2
 
 [character] # The name of the module we are configuring is 'character'
 success_symbol = '[\[](237)[>](bold 112)[\]](237)'
@@ -80,20 +82,15 @@ symbol = '🔓'
 disabled = false
 
 [git_status]
-conflicted = '🏳'
-ahead = '🏎💨'
-behind = '😰'
-diverged = '😵'
-up_to_date = '✓'
-untracked = '🤷'
-stashed = '📦'
-modified = '📝'
-staged = '[++\($count\)](green)'
-renamed = '👅'
-deleted = '🗑'
-format = '[\[](237)([$all_status[:](22)[$untracked](20)$ahead_behind](green))[\]](237)'
+modified = '  \($count\)'
+format = '[\[](237)[$untracked$staged[:](white)$modified](bold blue)[\]](237) '
+staged = '[+\($count\)](green) '
+ahead = '⇡${count}'
+diverged = '⇕⇡${ahead_count}⇣${behind_count}'
+behind = '⇣${count}'
 
 [git_commit]
 commit_hash_length = 7
 tag_symbol = '🔖 '
+style = "bold #875fff"
 format = '[\[](237)[\($hash$tag\)]($style)[\]](237) '
