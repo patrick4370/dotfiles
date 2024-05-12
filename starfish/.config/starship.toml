@@ -83,7 +83,7 @@ disabled = false
 
 [git_status]
 modified = '  \($count\)'
-format = '([\[](237)[$untracked$staged $modified[:](bold bright-white)[$ahead_behind](bold green)](bold blue)[\]](237)) '
+format = '([\[](237)[($untracked)($staged) ($modified)[:](bold bright-white)[$ahead_behind](bold green)](bold blue)[\]](237)) '
 staged = '[+\($count\)](green) '
 ahead = '⇡${count}'
 diverged = '⇕⇡${ahead_count}⇣${behind_count}'

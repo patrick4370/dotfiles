@@ -129,7 +129,7 @@ let g:Hexokinase_optInPatterns = [
 " let wiki_2.path = '~/onedrive/Vimwiki/private/'
 " let wiki_2.path_html = '~/onedrive/Vimwiki/private_html/'
 "
-let g:vimwiki_list = [{'path': '~/Vimwiki_md/', 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_list = [{'path': '~/Documents/Vimwiki_md/', 'syntax': 'markdown', 'ext': '.md'}]
 let g:vimwiki_global_ext = 0
 
 " let g:vimwiki_list = [wiki_1, wiki_2]
