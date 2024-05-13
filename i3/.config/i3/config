@@ -19,7 +19,6 @@ set $launcher-clipboard-remove clipcat-menu remove
 exec --no-startup-id /usr/bin/ibus-daemon -drxR
 exec --no-startup-id dex --autostart --environment i3
 exec_always --no-startup-id /usr/bin/picom --config ~/.config/picom/picom.conf
-# exec_always --no-startup-id /usr/bin/ibus-daemon -rxRd
 exec --no-startup-id /usr/bin/setxkbmap -option "caps:escape_shifted_capslock"
 exec --no-startup-id xinput --set-prop "AlpsPS/2 ALPS DualPoint TouchPad" "Device Enabled" 0
 exec --no-startup-id xinput --set-prop "AT Translated Set 2 keyboard" "Device Enabled" 0
@@ -27,10 +26,8 @@ exec --no-startup-id xinput --set-prop "AlpsPS/2 ALPS DualPoint Stick" "Device E
 exec --no-startup-id /home/patrick/.screenlayout/screenlayout.sh
 exec --no-startup-id /usr/bin/autotiling
 exec --no-startup-id /usr/bin/rclone mount --daemon gdrive: /home/patrick/gdrive
-exec --no-startup-id /usr/bin/pasystray
 exec --no-startup-id xidlehook --not-when-audio --not-when-fullscreen --timer 360 "~/.local/bin/i3lockscript.sh" "" &
 exec --no-startup-id xset dpms 3600 7200 0
-# exec --no-startup-id ibus-daemon -d
 exec --no-startup-id /usr/lib/mate-polkit/polkit-mate-authentication-agent-1
 exec --no-startup-id /usr/bin/xfce4-power-manager --daemon
 exec --no-startup-id /usr/bin/numlockx 
@@ -122,7 +119,7 @@ for_window [class="^.*"] border pixel 1
 for_window [class="feh"] floating enable, move position center
 for_window [class="LibreWolf" window_role="About"] floating enable, move position center
 for_window [class="mpv" instance="gl"] floating enable, move position center
-for_window [instance="pikaur"] sticky enable, floating enable, resize set 1200 600, border pixel 1, move position center
+for_window [instance="paru"] sticky enable, floating enable, resize set 1200 600, border pixel 1, move position center
 for_window [class="GParted"] floating enable, resize set 1120 700, move position center
 for_window [instance="ncmpcpp"] floating enable, resize set 1200 700, move position center
 for_window [class="Imager" instance="rpi-imager"] floating enable

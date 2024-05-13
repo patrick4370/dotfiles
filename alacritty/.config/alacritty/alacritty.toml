@@ -143,72 +143,19 @@ enabled = true
 key = "?"
 mods = "Control|Shift"
 
-[[keyboard.bindings]]
-key = "N"
-mods = "Control|Shift"
-action = "CreateNewWindow"
-
-[[keyboard.bindings]]
-key = "V"
-mods = "Control|Shift"
-action = "Paste"
-
-[[keyboard.bindings]]
-key = "C"
-mods = "Control|Shift"
-action = "Copy"
-
-[[keyboard.bindings]]
-key = "Key0"
-mods = "Control"
-action = "ResetFontSize"
-
-[[keyboard.bindings]]
-key = "="
-mods = "Control"
-action = "IncreaseFontSize"
-
-[[keyboard.bindings]]
-key = "NumpadAdd"
-mods = "Control"
-action = "IncreaseFontSize"
-
-[[keyboard.bindings]]
-key = "Minus"
-mods = "Control"
-action = "DecreaseFontSize"
-
-[[keyboard.bindings]]
-key = "-"
-mods = "Control"
-action = "DecreaseFontSize"
-
-[[keyboard.bindings]]
-key = "Return"
-mods = "Control|Shift"
-action = "SpawnNewInstance"
-
-[[keyboard.bindings]]
-key = "Minus"
-mods = "Control"
-action = "DecreaseFontSize"
-
-[[keyboard.bindings]]
-key = "Minus"
-mods = "Control"
-action = "DecreaseFontSize"
-
-[[keyboard.bindings]]
-key = "F"
-mods = "Control"
-action = "ToggleFullScreen"
-
-[[keyboard.bindings]]
-key = "."
-mods = "Control"
-action = "ClearSelection"
-
-[[keyboard.bindings]]
-key = "p"
-mods = "Control"
-action = "ToggleViMode"
+[keyboard]
+bindings = [
+{ key = "N",            mods = "Control|Shift", action = "CreateNewWindow"  },
+{ key = "V",            mods = "Control|Shift", action = "Paste"            },
+{ key = "C",            mods = "Control|Shift", action = "Copy"             },
+{ key = "Key0",         mods = "Control",       action = "ResetFontSize"    },
+{ key = "0",            mods = "Control",       action = "ResetFontSize"    },
+{ key = "=",            mods = "Control",       action = "IncreaseFontSize" },
+{ key = "NumpadAdd",    mods = "Control",       action = "IncreaseFontSize" },
+{ key = "Minus",        mods = "Control",       action = "DecreaseFontSize" },
+{ key = "-",            mods = "Control",       action = "DecreaseFontSize" },
+{ key = "Return",       mods = "Control|Shift", action = "SpawnNewInstance" },
+{ key = "F",            mods = "Control",       action = "ToggleFullScreen" },
+{ key = ".",            mods = "Control",       action = "ClearSelection"   },
+{ key = "t",            mods = "Control|Shift",       action = "ToggleViMode"     },
+]

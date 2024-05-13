@@ -2,6 +2,7 @@
 # export FONTPREVIEW_FG_COLOR='#ffffff'
 # export QT_QPA_PLATFORMTHEME="qt5ct"
 export AUR_USER=patrick4370
+export BW_SESSION="hXtFQyWEQ3LizI1bLu/OLbox+9Rr5mukTmku2yiMnIeoHzdcoPw3WtBxxWgMKWJsvabbbkDmWqod8c5PcQGicA=="
 export CDPATH='.:/:~/:..:../..:~/Documents:~/Pictures:/etc:~/Videos/:~/Pictures/Screenshots/'
 export CM_HISTLENGTH=20
 export CM_LAUNCHER='/usr/bin/rofi'
@@ -20,9 +21,11 @@ export GREP_COLORS='ms=0;32'
 export GROFF_NO_SGR=0
 export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
 export GTK_IM_MODULE=ibus
+export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND="fg="#ffffff",bg="#005fd7",bold"
 export LANG='en_AU.UTF-8'
 export LESS='-Rixj5'
 export LIBVA_DRIVER_NAME=i965
+export LS_COLORS="$(vivid generate molokai)"
 export MANPAGER="less"
 export MANROFFOPT="-c"
 export MINICOM='-c on'

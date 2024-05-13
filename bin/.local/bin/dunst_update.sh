@@ -34,7 +34,7 @@ handle_dismiss()
 #-------------------------------------------------------------------------------
 update_action()
 {
-    alacritty --class pikaur -e /usr/bin/pikaur -Syu
+    alacritty --class paru -e /usr/bin/paru -Syu
 }
 
 #-------------------------------------------------------------------------------
@@ -42,12 +42,12 @@ update_action()
 #-------------------------------------------------------------------------------
 
 pac_num=$(checkupdates 2>/dev/null | wc -l) 
-aur_num=$(pikaur -Qua 2>/dev/null | wc -l)
+aur_num=$(paru -Qua 2>/dev/null | wc -l)
 
 if [ "${pac_num}" -gt 0 ] || [ "${aur_num}" -gt 0 ]; then
 
     ACTION=$(dunstify --appname="Updater" --urgency=critical --icon=~/.local/share/icons/dunst/arch_icon.png \
-           --replace=123456 --action="Update,update_action" "System Updates" "\(Pacman\): $pac_num   \(AUR\): $aur_num")
+           -h string:x-dunst-stack-tag:update --action="Update,update_action" "System Updates" "\(Pacman\): $pac_num   \(AUR\): $aur_num")
 
     case "$ACTION" in
         "Update")
