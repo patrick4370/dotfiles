@@ -25,8 +25,8 @@ $git_metrics\
 """
 
 [username]
-style_user = 'green bold'
-style_root = 'red bold'
+style_user = 'green'
+style_root = 'red'
 format = '[\[](237)[$user]($style)[@](15)'
 disabled = false
 show_always = true
@@ -34,11 +34,11 @@ show_always = true
 [hostname]
 ssh_only = false
 ssh_symbol = '  '
-format = '[$hostname](bold #00afff)[$ssh_symbol](bold red)[\]](237)'
+format = '[$hostname](#00afff)[$ssh_symbol](red)[\]](237)'
 disabled = false
 
 [directory]
-format = '[\[](237)[$path](246)[\]](237)'
+format = '[\[](237)[$path](252)[\]](237)'
 home_symbol = '~'
 truncation_symbol = '../'
 truncation_length = 4
@@ -53,17 +53,17 @@ disabled = false
 [cmd_duration]
 show_milliseconds = true
 format = '[\[](237)[$duration]($style)[\]](237)'
-style = 'bold #5f87d7'
+style = '#5f87d7'
 min_time = 2
 
 [character] # The name of the module we are configuring is 'character'
-success_symbol = '[\[](237)[>](bold 112)[\]](237)'
-error_symbol = '[\[](237)[>](bold red)[\]](237)'
-vimcmd_symbol = '[\[](237)[](bold red)[\]](237)' 
+success_symbol = '[\[](237)[>]( 112)[\]](237)'
+error_symbol = '[\[](237)[>]( red)[\]](237)'
+vimcmd_symbol = '[\[](237)[]( red)[\]](237)' 
 disabled = false
 
 [status]
-style = 'bold red'
+style = ' red'
 success_symbol = ''
 symbol = '💣 '
 not_executable_symbol =	'🚫'
@@ -73,17 +73,17 @@ signal_symbol = '💀'
 recognize_signal_code =	true
 map_symbol = true
 disabled = false
-format = '[\[](237)[$symbol - [$status](white)](bold $style)[\]](237)'
+format = '[\[](237)[$symbol - [$status](white)]( $style)[\]](237)'
 
 [sudo]
-style = 'bold green'
+style = ' green'
 format = '[\[](237)[$symbol]($style)[\]](237)'
 symbol = '🔓'
 disabled = false
 
 [git_status]
 modified = '  \($count\)'
-format = '([\[](237)[($untracked)($staged) ($modified)[:](bold bright-white)[$ahead_behind](bold green)](bold blue)[\]](237)) '
+format = '([\[](237)[($untracked)($staged) ($modified)[:]( bright-white)[$ahead_behind]( green)]( blue)[\]](237)) '
 staged = '[+\($count\)](green) '
 ahead = '⇡${count}'
 diverged = '⇕⇡${ahead_count}⇣${behind_count}'
@@ -92,5 +92,5 @@ behind = '⇣${count}'
 [git_commit]
 commit_hash_length = 7
 tag_symbol = '🔖 '
-style = "bold #875fff"
+style = " #875fff"
 format = '[\[](237)[\($hash$tag\)]($style)[\]](237) '

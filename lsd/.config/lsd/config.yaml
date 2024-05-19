@@ -11,7 +11,7 @@ permission: rwx
 icons:
   when: always
   theme: fancy
-  separator: "  "
+  separator: " "
 
 color:
   when: always

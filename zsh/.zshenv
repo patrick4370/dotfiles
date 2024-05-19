@@ -1,6 +1,7 @@
 # export FONTPREVIEW_BG_COLOR='#383c4a'*/
 # export FONTPREVIEW_FG_COLOR='#ffffff'
 # export QT_QPA_PLATFORMTHEME="qt5ct"
+export _ZO_RESOLVE_SYMLINKS='1'
 export AUR_USER=patrick4370
 export BW_SESSION="hXtFQyWEQ3LizI1bLu/OLbox+9Rr5mukTmku2yiMnIeoHzdcoPw3WtBxxWgMKWJsvabbbkDmWqod8c5PcQGicA=="
 export CDPATH='.:/:~/:..:../..:~/Documents:~/Pictures:/etc:~/Videos/:~/Pictures/Screenshots/'
@@ -15,7 +16,7 @@ export FZF_CTRL_R_OPTS='--tac --sort --extended --cycle'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_CTRL_T_OPTS="--preview='bat -n --color=always {}' --height=100% --bind shift-up:preview-page-up,shift-down:preview-page-down"
 export FZF_DEFAULT_COMMAND='fd --hidden --type f'
-export FZF_DEFAULT_OPTS='--color=fg:bright-black,bg:#262626,hl:#005fff,border:#005fff --color=fg+:#005fff,bg+:#262626,hl+:bright-red --color=info:#afaf87,prompt:bright-green,pointer:bright-red,marker:green --color=header:bright-magenta,spinner:bright-magenta --prompt=":: " --border --info=inline --tac --pointer=" " --marker=" "'
+export FZF_DEFAULT_OPTS='--color=fg:bright-black,bg:#262626,hl:#005fff,border:#005fff --color=fg+:#005fff,bg+:#262626,hl+:bright-red --color=info:#afaf87,prompt:bright-green,pointer:bright-red,marker:green --color=header:bright-magenta,spinner:bright-magenta --prompt=":: " --border --info=inline --pointer=" " --marker=" "'
 export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
 export GREP_COLORS='ms=0;32'
 export GROFF_NO_SGR=0
@@ -45,7 +46,7 @@ export READER='/usr/bin/zathura'
 export RESTIC_PASSWORD_FILE="/etc/restic/pw.txt"
 export RESTIC_REPOSITORY="/run/media/patrick/D923-4A19/Restic_Backup/"
 export SAVEHIST=100000
-export TERM=xterm-256color
+export TERM='tmux-256color'
 export TERMINAL='/usr/bin/alacritty'
 export THEME_FONT_FACE="JetBrains Mono"
 export THEME_FONT_SIZE="12"
@@ -55,6 +56,7 @@ export XCURSOR_SIZE=40
 export XDG_CACHE_HOME="${XDG_CACHE_HOME:=$HOME/.cache}"
 export XDG_CONFIG_HOME="${XDG_CONFIG_HOME:=$HOME/.config}"
 export XDG_DATA_DIRS="${XDG_DATA_DIRS:=$HOME/.local/share/:/usr/local/share:/usr/share}"
+export XDG_DATA_HOME="$HOME/.local/share"
 export XMODIFIERS=@im=ibus
 export ZDOTDIR="${XDG_CONFIG_HOME}/zsh"
 export ZSH_TMUX_CONFIG="${XDG_CONFIG_HOME}/tmux/tmux.conf"

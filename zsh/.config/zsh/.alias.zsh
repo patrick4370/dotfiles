@@ -4,25 +4,18 @@ alias ..='cd ..'
 alias 0='exit'
 alias alsamixer='alsamixer -c 1'
 alias audio='yt-dlp --config-locations ~/.config/yt-dlp/audio'
-alias bak_ff='rsync -avq --delete /home/patrick/.mozilla/firefox/pyl72xbe.default-release/ /home/patrick/GoogleDrive/Firefox/'
-alias btr='sudo modprobe -r btusb ; sudo modprobe btusb'
 alias cat='bat'
 alias cd='z'
-alias chz='chezmoi '
-alias chmod='chmod -v '
-alias config='cd ~/.config'
+alias cls='clear'
 alias cp='cp -iv'
 alias d='dirs -v'
 alias dirs='dirs -v'
 alias dlnascan="minidlnad -f ~/.config/minidlna/minidlna.conf -R"
-alias dns_temp='ssh -t -p 549 patrick@pidns "/home/patrick/temp.py" 2> /dev/null'
-alias enc='nvim ~/.config/nvim/init.vim'
 alias feh='feh -. -d -Z --fontpath $HOME/.local/share/fonts --font "MesloLGS NF Bold/15" --sort mtime 2>/dev/null'
 alias free='free -ht --si'
-alias ftp='ftp -v'
 alias gc='git clone'
-alias gs='git status'
 alias grep='grep --color=always'
+alias gs='git status'
 alias history="fc -lE 1"
 alias hy=" fc -ln 0 | awk '!a[\$0]++' | fzf --tac | xclip -selection clipboard"
 alias i3save='i3-msg -t get_config > ~/i3config-backup'
@@ -39,7 +32,6 @@ alias merge='xrdb -load -I$HOME ~/.Xresources'
 alias mkdir='mkdir -pv'
 alias mux='tmuxinator'
 alias ncdu='ncdu -2 --extended --color dark-bg'
-alias neofetch='clear;neofetch'
 alias pac_explicit='pacman -Qent > ~/explicit.txt'
 alias pac_foreign='pacman -Qqm > ~/foreign.txt'
 alias pac_inup="grep --color=never "$(date +"%Y-%m-%d")" /var/log/pacman.log | grep -i 'installed\|upgraded'"
@@ -83,6 +75,7 @@ alias -s odt=zaread
 alias -s {yml,yaml,toml}=nvim
 alias -s tex=texmaker
 alias -s mkv=mpv
+alias -s mp4=mpv
 
 # Global Aliases
 alias -g G='| grep'

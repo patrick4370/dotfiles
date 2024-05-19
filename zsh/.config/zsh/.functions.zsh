@@ -1,6 +1,12 @@
 # Functions
 # 29-10-2023 16:44 +1000
 
+paste() 
+{
+    local file=${1:-/dev/stdin}
+    curl --data-binary @${file} https://paste.rs
+}
+
 showrepo()
 {
     if [ $# -eq 0 ]; then
@@ -56,7 +62,7 @@ ze()
         local string=" The ZSH Config Editor "
 
         fzf --exact --height 40% --cycle --border-label="$string" \
-        --layout=reverse-list --border --color=label:italic:white --prompt="Select ZSH configs To Edit: " \
+        --layout=reverse --tac --border --color=label:italic:white --prompt="Select ZSH configs To Edit: " \
         --preview='bat --force-colorization --line-range 1:100 {}' \
         --preview-window=right,70% --multi< <(printf "%s\n" "${(@nO)myzsh}")  | xargs -ro vim
 }
@@ -92,7 +98,7 @@ ce()
         local string=" Config Editor ~/.config "
 
         fzf --exact --height 40% --cycle --border-label="$string" \
-        --layout=reverse-list --border --color=label:italic:white --prompt="Select Configs(s) To Edit: " \
+        --layout=reverse --tac --border --color=label:italic:white --prompt="Select Configs(s) To Edit: " \
         --preview='bat --force-colorization --line-range 1:100 {}' \
         --preview-window=right,70% --multi< <(printf "%s\n" "${(@nO)myconfigs}")  | xargs -ro vim
 

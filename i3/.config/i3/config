@@ -119,7 +119,7 @@ for_window [class="^.*"] border pixel 1
 for_window [class="feh"] floating enable, move position center
 for_window [class="LibreWolf" window_role="About"] floating enable, move position center
 for_window [class="mpv" instance="gl"] floating enable, move position center
-for_window [instance="paru"] sticky enable, floating enable, resize set 1200 600, border pixel 1, move position center
+for_window [instance="paru"] sticky enable, floating enable, resize set 1300 600, border pixel 1, move position center
 for_window [class="GParted"] floating enable, resize set 1120 700, move position center
 for_window [instance="ncmpcpp"] floating enable, resize set 1200 700, move position center
 for_window [class="Imager" instance="rpi-imager"] floating enable

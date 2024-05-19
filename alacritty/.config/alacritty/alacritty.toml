@@ -8,19 +8,19 @@ size = 12
 builtin_box_drawing = true
 
 [font.normal]
-family = "JetBrainsMono Nerd Font Mono"
+family = "FiraCode Nerd Font Mono"
 style = "regular"
 
 [font.bold]
-family = "JetBrainsMono Nerd Font Mono"
+family = "FiraCode Nerd Font Mono"
 style = "bold"
 
 [font.italic]
-family = "JetBrainsMono Nerd Font Mono"
+family = "FiraCode Nerd Font Mono"
 style = "italic"
 
 [font.bold_italic]
-family = "JetBrainsMono Nerd Font Mono"
+family = "FiraCode Nerd Font Mono"
 style = "bold_italic"
 
 [shell]
@@ -157,5 +157,5 @@ bindings = [
 { key = "Return",       mods = "Control|Shift", action = "SpawnNewInstance" },
 { key = "F",            mods = "Control",       action = "ToggleFullScreen" },
 { key = ".",            mods = "Control",       action = "ClearSelection"   },
-{ key = "t",            mods = "Control|Shift",       action = "ToggleViMode"     },
+{ key = "t",            mods = "Control|Shift", action = "ToggleViMode"     },
 ]

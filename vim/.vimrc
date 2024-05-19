@@ -45,6 +45,7 @@ set splitright                                              " Splits open to the
 set tabstop=4                                               " Number of columns occupied by a tab character
 set termguicolors                                           " Allows 24 bit colour in the terminal 
 set textwidth=180
+set virtualedit+=all
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx,*.iso,*.zip,*.tar.gz,*.tgz,*.tar.xz,*.tar*,*.mp3,*.ttf
 set wildmenu                                                " Enhanced command line completion 
 set wildmode=longest:full,full                              " Get bash-like tab completions
@@ -87,6 +88,9 @@ Plug 'haya14busa/is.vim'                                                    " Au
 Plug 'vim-scripts/AutoComplPop'
 Plug 'nelstrom/vim-visual-star-search'                                      " This allows you to select some text using Vim's visual mode and then hit * " and # to search for it elsewhere in the file.
 Plug 'nightsense/carbonized'
+Plug 'nanotee/zoxide.vim'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'gyim/vim-boxdraw'
 
 call plug#end()
 
