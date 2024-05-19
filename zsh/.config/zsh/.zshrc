@@ -113,5 +113,5 @@ bindkey -s "^H" 'cd\n'
 
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
-eval $(keychain --eval --quiet --agents ssh pidns_ecdsa pxe_ecdsa)
+eval $(keychain --eval --quiet --agents ssh pidns_ecdsa pxe_ecdsa github_ed25519)
 clear
