@@ -7,6 +7,12 @@ ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 # Source/Load zinit
 source "${ZINIT_HOME}/zinit.zsh"
 
+# Add in zinit snippets
+zinit snippet OMZP::extract 1>/dev/null
+zinit snippet OMZP::archlinux
+zinit snippet OMZP::sudo
+zinit snippet OMZP::command-not-found
+
 # Zinit plugins
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
@@ -16,12 +22,6 @@ zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-history-substring-search
 zinit light ael-code/zsh-colored-man-pages
 zinit ice wait atload _history_substring_search_config
-
-# Add in zinit snippets
-zinit snippet OMZP::extract
-zinit snippet OMZP::archlinux
-zinit snippet OMZP::sudo
-zinit snippet OMZP::command-not-found
 
 # Zinit completions
 autoload -Uz _zinit
@@ -33,6 +33,9 @@ zmodload -i zsh/complist
 autoload -Uz edit-command-line; zle -N edit-command-line
 autoload -Uz history-substring-search-down; zle -N history-substring-search-down
 autoload -Uz history-substring-search-up; zle -N history-substring-search-up
+autoload bashcompinit
+bashcompinit
+source /usr/share/bash-completion/completions/pandoc
 
 # Replay all cached completions
 zinit cdreplay -q
@@ -82,7 +85,11 @@ setopt INC_APPEND_HISTORY_TIME  # append command to history file immediately aft
 setopt EXTENDED_HISTORY         # record command start time
 
 # setopt options
-setopt KSH_OPTION_PRINT
+setopt AUTO_PUSHD           # Push the current directory visited on the stack.
+setopt PUSHD_IGNORE_DUPS    # Do not store duplicates in the stack.
+setopt PUSHD_SILENT         # Do not print the directory stack after pushd or popd.
+setopt PUSHD_TO_HOME
+setopt PUSHD_IGNORE_DUPS
 
 # Keybindings
 bindkey '^p' history-search-backward
@@ -103,6 +110,12 @@ bindkey  "^[[3~"  delete-char
 bindkey -a '^[[3~' delete-char
 bindkey -M viins -r "^H"
 bindkey -s "^H" 'cd\n'
+bindkey -r '^L'
+bindkey -s '^L' 'clear^M'
+
+# setup key accordingly
+[[ -n "${key[Home]}" ]]  && bindkey  "${key[Home]}" beginning-of-line
+[[ -n "${key[End]}"  ]]  && bindkey  "${key[End]}"  end-of-line
 
 # Source files
 [ -f $HOME/.zshenv ] && source $HOME/.zshenv  || echo "$HOME/.zshenv not found"
@@ -114,4 +127,3 @@ bindkey -s "^H" 'cd\n'
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 eval $(keychain --eval --quiet --agents ssh pidns_ecdsa pxe_ecdsa github_ed25519)
-clear

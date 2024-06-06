@@ -8,10 +8,10 @@
 set sandbox					"none"
 
 # Defines the horizontal padding of the statusbar and notificationbar.
-set statusbar-h-padding		"0"
+set statusbar-h-padding		"5"
 
 # Defines the vertical padding of the statusbar and notificationbar.
-set statusbar-v-padding		"0"
+set statusbar-v-padding		"2"
 
 # The page padding defines the gap in pixels between each rendered page.
 set page-padding			"5"
@@ -68,7 +68,7 @@ map s toggle_statusbar
 map i toggle_inputbar
 
 # Defines which auto adjustment mode should be used if a document is loaded.
-set adjust-open				"width"
+set adjust-open				"best-fit"
 
 # Defines if a notification should be displayed after selecting text.
 set selection-notification	"true"
@@ -85,44 +85,5 @@ set statusbar-home-tilde	"true"
 # Shows  or  hides  GUI elements.
 set guioptions				"shv"
 
-set notification-error-bg       "#282828" # bg
-set notification-error-fg       "#fb4934" # bright:red
-set notification-warning-bg     "#282828" # bg
-set notification-warning-fg     "#fabd2f" # bright:yellow
-set notification-bg             "#282828" # bg
-set notification-fg             "#b8bb26" # bright:green
-
-set completion-bg               "#504945" # bg2
-set completion-fg               "#ebdbb2" # fg
-set completion-group-bg         "#3c3836" # bg1
-set completion-group-fg         "#928374" # gray
-set completion-highlight-bg     "#83a598" # bright:blue
-set completion-highlight-fg     "#504945" # bg2
-
-# Define the color in index mode
-set index-bg                    "#504945" # bg2
-set index-fg                    "#ebdbb2" # fg
-set index-active-bg             "#83a598" # bright:blue
-set index-active-fg             "#504945" # bg2
-
-set inputbar-bg                 "#282828" # bg
-set inputbar-fg                 "#ebdbb2" # fg
-
-set statusbar-bg                "#504945" # bg2
-set statusbar-fg                "#ebdbb2" # fg
-
-set highlight-color             "rgba(0, 128, 0, 0.5)" 
-set highlight-active-color      "rgba(255, 251, 0, 0.6)"
-set highlight-fg                "#000000"
-
-set default-bg                  "#282828" # bg
-set default-fg                  "#ebdbb2" # fg
-set render-loading              "true"
-set render-loading-bg           "#282828" # bg
-set render-loading-fg           "#ebdbb2" # fg
-
-# Recolor book content's color
-set recolor-lightcolor          "#8B4513" # bg
-set recolor-darkcolor           "#ebdbb2" # fg
-# set recolor                     "true"
-# set recolor-keephue             "true"      # keep original color
+# Theme
+include /home/patrick/.config/zathura/catppuccin-mocha-

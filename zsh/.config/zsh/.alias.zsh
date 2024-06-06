@@ -42,6 +42,8 @@ alias ping='ping -4 -c 4'
 alias pitemp="ssh -t -p 549 patrick@pidns 'vcgencmd measure_temp' 2> /dev/null" 
 alias pkgdep="pacman -Qq | fzf --preview 'pactree -lur {} | sort' --layout reverse --bind 'enter:execute(pactree -lu {} | sort | less)'"
 alias pkgowner='pacman -Qo' 
+alias popd='>/dev/null popd'
+alias pushd='>/dev/null pushd'
 alias reload='exec zsh && echo "zsh configuration files reloaded"'
 alias removekey='sed -i $1d ~/.ssh/known_hosts'
 alias rm='rm -I'
@@ -68,14 +70,15 @@ alias 8='cd -8'
 alias 9='cd -9'
 
 # Suffix Aliases
-alias -s txt=vim
-alias -s pdf=zathura
-alias -s sc=sc-im
-alias -s odt=zaread
-alias -s {yml,yaml,toml}=nvim
-alias -s tex=texmaker
+alias -s md=vim
 alias -s mkv=mpv
 alias -s mp4=mpv
+alias -s odt=zaread
+alias -s pdf=zathura
+alias -s sc=sc-im
+alias -s tex=texmaker
+alias -s txt=vim
+alias -s {yml,yaml,toml}=nvim
 
 # Global Aliases
 alias -g G='| grep'

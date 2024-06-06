@@ -36,7 +36,7 @@ se()
         local string=" The Script Editor "
         
         fzf --height 40% --cycle --border-label="$string" \
-        --layout=reverse-list --border --color=label:italic:white --prompt="Select Script(s) To Edit: " \
+        --layout=reverse --tac --border --color=label:italic:white --prompt="Select Script(s) To Edit: " \
         --preview='bat --force-colorization --line-range 1:100 {}' \
         --preview-window=right,70% --multi< <(printf "%s\n" "${(@nO)myscripts}") | xargs -ro vim
 }
@@ -77,6 +77,7 @@ ce()
 
         myconfigs=(
                  $XDG_CONFIG_HOME/zathura/zathurarc
+                 $XDG_CONFIG_HOME/yazi/*    
                  $XDG_CONFIG_HOME/weechat/*.conf 
                  $XDG_CONFIG_HOME/tmux/tmux.conf
                  $XDG_CONFIG_HOME/rofi/config.rasi 

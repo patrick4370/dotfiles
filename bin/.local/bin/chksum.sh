@@ -1,4 +1,12 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
+#
+#  Author: Patrick Heffernan <patrick4370@bigpond.com>
+#    Date: 04/June/2024 - 11:55
+# Purpose: Checksum on arch ISO
+#
+set -euo pipefail
+
+
 
 download_arch() {
    rm ~/Downloads/b2sums.txt    

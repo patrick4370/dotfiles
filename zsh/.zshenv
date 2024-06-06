@@ -3,7 +3,7 @@
 # export QT_QPA_PLATFORMTHEME="qt5ct"
 export _ZO_RESOLVE_SYMLINKS='1'
 export AUR_USER=patrick4370
-export BW_SESSION="hXtFQyWEQ3LizI1bLu/OLbox+9Rr5mukTmku2yiMnIeoHzdcoPw3WtBxxWgMKWJsvabbbkDmWqod8c5PcQGicA=="
+export BW_SESSION="y75cqThKvI1xzcj7ky+1rBtUiHadA/YLmLARtZYt4OYCLtysI3v1/3xknPMoyaViqoNOrzTmVvSIP4QzZVo9QQ=="
 export CDPATH='.:/:~/:..:../..:~/Documents:~/Pictures:/etc:~/Videos/:~/Pictures/Screenshots/'
 export CM_HISTLENGTH=20
 export CM_LAUNCHER='/usr/bin/rofi'
@@ -15,8 +15,9 @@ export FZF_ALT_C_OPTS="--cycle --tac --sort --layout=reverse --preview 'tree -C 
 export FZF_CTRL_R_OPTS='--tac --sort --extended --cycle' 
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_CTRL_T_OPTS="--preview='bat -n --color=always {}' --height=100% --bind shift-up:preview-page-up,shift-down:preview-page-down"
-export FZF_DEFAULT_COMMAND='fd --hidden --type f'
-export FZF_DEFAULT_OPTS='--color=fg:bright-black,bg:#262626,hl:#005fff,border:#005fff --color=fg+:#005fff,bg+:#262626,hl+:bright-red --color=info:#afaf87,prompt:bright-green,pointer:bright-red,marker:green --color=header:bright-magenta,spinner:bright-magenta --prompt=":: " --border --info=inline --pointer=" " --marker=" "'
+# export FZF_DEFAULT_COMMAND='fd --hidden --type f'
+export FZF_DEFAULT_COMMAND='rg --files --hidden'
+export FZF_DEFAULT_OPTS='--layout=reverse-list --color=fg:bright-black,bg:#262626,hl:#005fff,border:#005fff --color=fg+:#005fff,bg+:#262626,hl+:bright-red --color=info:#afaf87,prompt:bright-green,pointer:bright-red,marker:green --color=header:bright-magenta,spinner:bright-magenta --prompt=":: " --border --info=inline --pointer=" " --marker=" "'
 export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
 export GREP_COLORS='ms=0;32'
 export GROFF_NO_SGR=0
@@ -31,7 +32,7 @@ export MANPAGER="less"
 export MANROFFOPT="-c"
 export MINICOM='-c on'
 export PAGER="most"
-export PATH="$PATH:$HOME/.local/bin:$HOME/bin:$GEM_HOME/bin"
+export PATH="$PATH:$HOME/.local/bin:$HOME/bin:$GEM_HOME/bin:~/.nix-profile/bin"
 export PF_COL1=2
 export PF_COL2=6
 export PF_COL3=1
@@ -60,3 +61,5 @@ export XDG_DATA_HOME="$HOME/.local/share"
 export XMODIFIERS=@im=ibus
 export ZDOTDIR="${XDG_CONFIG_HOME}/zsh"
 export ZSH_TMUX_CONFIG="${XDG_CONFIG_HOME}/tmux/tmux.conf"
+
+if [ -e /home/patrick/.nix-profile/etc/profile.d/nix.sh ]; then . /home/patrick/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

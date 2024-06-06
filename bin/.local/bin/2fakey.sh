@@ -1,17 +1,11 @@
-#!/bin/env bash
-#===============================================================================
+#!/usr/bin/env bash
 #
-#          FILE: 2fakey.sh
+#  Author: Patrick Heffernan <patrick4370@bigpond.com>
+#    Date: 04/June/2024 - 11:52
+# Purpose: YAD File selection for browsing and selecting files
 #
-#         USAGE: ./2fakey.sh
-#
-#   DESCRIPTION: Extract the secret key from a 2FA QR Code, place it onto the clipboard
-#                ready for pasting into the TOTP field in Bitwarden.
-#
-#        AUTHOR: Patrick Heffernan (PH), pheffernan4370@gmail.com
-#  ORGANIZATION: Your Dog Needs a Coat
-#       CREATED: 14/11/20 10:43:52
-#===============================================================================
+set -euo pipefail
+
 
 finish() 
 {
@@ -41,8 +35,7 @@ yad --info --text="Secret key for $filebase will now be placed on the clipboard"
 # Place secret onto the clipboard
 zbarimg -q "$FILE" | grep -o -P '(?<=secret=).*?(?=&)' | xclip 
 
-
-exit="$?"
+myexit="$?"
 
 if [ "$myexit" != 0 ] 
 then

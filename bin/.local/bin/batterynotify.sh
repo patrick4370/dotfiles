@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
+#
+#  Author: Patrick Heffernan <patrick4370@bigpond.com>
+#    Date: 04/June/2024 - 11:54
+# Purpose: Notifies about battery usage
+#
+set -euo pipefail
 
-# Send a notification if the laptop battery is either low 
-# or is fully charged.
 
 export DISPLAY=:0
 export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"

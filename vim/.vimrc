@@ -1,117 +1,190 @@
-" myvimrc /home/patrick/.vimrc 
-" 10-05-2024 15:48 +1000 
+" myvimrc /home/patrick/.vimrc
+
+" 31/May/2024 21:54
 "
 " New .vimrc file that has been through a huge tidy up
 "
 " Author: Patrick Heffernan
 "  Email: <patrick4370@bigpond.com>
-"
+
 " [General Options]
-filetype plugin indent on                                   " Allows auto-indenting depending on file type
-" Smart wrapping
-set autoindent                                              " Indent a new line the same amount as the line just typed
-set backspace=indent,eol,start                              " Where in Insert mode the <BS> is allowed to delete the character in front of the cursor.
-set clipboard=unnamed                                       " System Clipboard - Allow pasting to/from other applications
-set complete+=kspell                                        " Use spelling in autocomplete
-set completeopt=menuone,noselect,preview,popup              " Comma-separated list of options for Insert mode completion
-set expandtab                                               " Converts tabs to white space
-set formatoptions-=cro                                      " Stops auto commenting
+filetype plugin indent on                                   
+runtime macros/matchit.vim
+packadd! matchit
+syntax on                                                   
+
+set autoindent                                              
+set backspace=indent,eol,start                              
+set clipboard^=unnamed,unnamedplus                          
+set complete+=kspell                                        
+set completeopt=menuone,noselect,preview,popup              
+set dictionary+=/usr/share/dict/british-english 
+set expandtab                                               
+set foldlevel=99
 set formatoptions+=t
-set hidden                                                  " Allow to switch between buffers without saving
-set hlsearch                                                " Highlight search results
-set ignorecase                                              " Case insensitive matching
-set incsearch                                               " Incremental search
-set laststatus=2                                            " Statusline
-set listchars=tab:‣\ ,trail:·,precedes:«,extends:»,eol:¬    " Show EOL, Tabs, etc
-set modeline                                                " Enable vim modelines
-set mouse=a                                                 " Paste using middle mouse button 
-set noshowcmd                                               " Disables showing commands under the status bar
-set noshowmode                                              " Disables bar under the status bar
-set nrformats+=alpha                                        " Add alpha characters to increment and decrement
-set number                                                  " Add line numbers
-set omnifunc=syntaxcomplete#Complete                        " 
-set pastetoggle=<F2>                                        " Toggle paste on/off
-set path+=**                                                " Fuzzy search
-set relativenumber                                          " Relative numbering 
-set shiftwidth=4                                            " Width for autoindents
-set shortmess+=F                                            " Shortens Vim's output messages   
-set showcmd                                                 " Display incomplete commands
-set showmatch                                               " Show matching brackets.
-set showtabline=0                                           " Don't show file tabs 
-set smartcase                                               " Override the 'ignorecase' option if the search pattern contains upper case characters
-set softtabstop=4                                           " Insert one TAB character
-set spelllang=en_au                                         " Spell Language 
-set splitright                                              " Splits open to the right 
-set tabstop=4                                               " Number of columns occupied by a tab character
-set termguicolors                                           " Allows 24 bit colour in the terminal 
-set textwidth=180
+set formatoptions-=cro                                      
+set hidden                                                  
+set history=500
+set hlsearch                                                
+set ignorecase                                              
+set incsearch                                               
+set laststatus=2                                            
+set listchars=trail:·,eol:¬,tab:>.                          
+set modeline                                                
+set noshowcmd                                               
+set noshowmode                                              
+set nrformats+=alpha                                        
+set number                                                  
+set omnifunc=syntaxcomplete#Complete                        
+set pastetoggle=<F2>                                        
+set path+=**                                                
+set relativenumber                                          
+set sessionoptions=blank,buffers,curdir,folds,globals,help,terminal
+set shiftwidth=4                                            
+set shortmess+=f                                            
+set showcmd                                                 
+set showmatch                                               
+set showtabline=0                                           
+set smartcase                                               
+set softtabstop=4                                           
+set spellfile=~/.vim/spell/en.utf-8.add
+set spellfile+=~/.vim/spell/jargon.utf-8.add
+set spelllang=en_au                                         
+set splitright                                              
+set tabstop=4                                               
+set showtabline=2
+set term=xterm-256color
+set termguicolors                                           
+set textwidth=75
 set virtualedit+=all
-set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx,*.iso,*.zip,*.tar.gz,*.tgz,*.tar.xz,*.tar*,*.mp3,*.ttf
-set wildmenu                                                " Enhanced command line completion 
-set wildmode=longest:full,full                              " Get bash-like tab completions
+set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe
+set wildmenu                                                
+set wildmode=full                                           
 set wrap linebreak nolist
-syntax on                                                   " Colour syntax in Perl,HTML,PHP etc
 
 " [Plugin Manager.] 
 call plug#begin()
 
-Plug 'junegunn/fzf'
-Plug 'junegunn/fzf.vim'
-Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
-Plug 'dhruvasagar/vim-table-mode'                                           " Table Mode for Markdown
-Plug 'farmergreg/vim-lastplace'                                             " Remember position in file
-Plug 'preservim/vim-markdown'
-Plug 'dhruvasagar/vim-table-mode'
-Plug 'jiangmiao/auto-pairs'
-Plug 'PotatoesMaster/i3-vim-syntax'                                         " i3 config file syntax and colours
-Plug 'tpope/vim-repeat'                                                     " enable repeating supported plugin maps with \".\"
-Plug 'tpope/vim-surround'                                                   " Surround text/words with \"'{}[]()
-Plug 'vim-airline/vim-airline'                                              " Status bar
-Plug 'vim-airline/vim-airline-themes'                                       " Themes for vim-airline
-Plug 'vimwiki/vimwiki'                                                      " Wiki for vim
-Plug 'scrooloose/nerdcommenter'                                             " For comments
-Plug 'prabirshrestha/vim-lsp'                                               " Language Server Protocol 
-Plug 'mattn/vim-lsp-settings'                                               " For adding LSP Servers
-Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'PotatoesMaster/i3-vim-syntax'                                                 
+Plug 'SirVer/ultisnips'                                         
+Plug 'ap/vim-buftabline'                                        
+Plug 'christoomey/vim-tmux-navigator'                           
+Plug 'dhruvasagar/vim-table-mode'                               
+Plug 'dhruvasagar/vim-table-mode'                               
+Plug 'farmergreg/vim-lastplace'                                 
+Plug 'haya14busa/is.vim'                                        
+Plug 'honza/vim-snippets'                                       
+Plug 'itchyny/vim-gitbranch'                                    
+Plug 'jannis-baum/vivify.vim'                                   
+Plug 'jiangmiao/auto-pairs'                                     
+Plug 'lambdalisue/fern.vim'                                     
+Plug 'lambdalisue/nerdfont.vim'                                 
+Plug 'lambdalisue/vim-fern-git-status'
+Plug 'lambdalisue/vim-fern-hijack'
+Plug 'lambdalisue/vim-fern-renderer-nerdfont'
+Plug 'lambdalisue/vim-suda'
+Plug 'mattn/vim-lsp-settings'                                   
+Plug 'nanotee/zoxide.vim'                                       
+Plug 'nelstrom/vim-visual-star-search'                          
+Plug 'pacha/vem-statusline'                                     
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
-Plug 'SirVer/ultisnips'                                                     " Ultisnips for snippets
-Plug 'honza/vim-snippets'
-Plug 'artempyanykh/marksman'
-Plug 'vim-pandoc/vim-pandoc'
-Plug 'vim-pandoc/vim-pandoc-syntax'
-Plug 'lambdalisue/fern.vim'
-Plug 'yuki-yano/fern-preview.vim'
-Plug 'lambdalisue/nerdfont.vim'
-Plug 'lambdalisue/fern-renderer-nerdfont.vim'
-Plug 'vim-scripts/vis'
-Plug 'haya14busa/is.vim'                                                    " Automatically clears search highlight when you move the cursor 
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/vim-lsp'                                               
+Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
+Plug 'sainnhe/sonokai'
+Plug 'scrooloose/nerdcommenter'                                             
+Plug 'skywind3000/asyncrun.vim'  " If you prefer async behaviour
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-repeat'                                                     
+Plug 'tpope/vim-surround'                                                   
 Plug 'vim-scripts/AutoComplPop'
-Plug 'nelstrom/vim-visual-star-search'                                      " This allows you to select some text using Vim's visual mode and then hit * " and # to search for it elsewhere in the file.
-Plug 'nightsense/carbonized'
-Plug 'nanotee/zoxide.vim'
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'gyim/vim-boxdraw'
+Plug 'vimwiki/vimwiki'                                                      
+Plug 'yuki-yano/fern-preview.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-unimpaired'
+Plug 'romainl/vim-qf'
 
 call plug#end()
 
-" [Statements]
-"
 " map leader
 let mapleader = ','
 
-" Colours
-colorscheme carbonized-dark
-set background=dark
+" Important!!
+if has('termguicolors')
+    set termguicolors
+endif
 
-hi clear SpellBad
-hi SpellBad ctermfg=9 
-hi clear SpellCap
-hi SpellCap ctermfg=14
-hi clear SpellRare	
-hi SpellRare ctermfg=12
-hi clear SpellLocal	
-hi SpellLocal ctermfg=10
-		
+" The configuration options should be placed before `colorscheme sonokai`.
+" Schemes : default, atlantis, andromeda, shusia, maia, espresso
+let g:sonokai_style = 'atlantis'
+let g:sonokai_better_performance = 1
+let g:sonokai_cursor='auto'
+
+" Colours
+set t_Co=256 
+colorscheme sonokai
+set background=dark
+                   
+" Change some colours to match what I want.
+highlight VemStatusLineBranch       cterm=none ctermfg=117 ctermbg=237 guifg=#1793D1 guibg=#3a3a3a gui=bold
+highlight VemStatusLineFileModified cterm=bold ctermfg=192 ctermbg=237 guifg=#d70000 guibg=#3a3a3a gui=bold
+highlight VemStatusLineFileRO       cterm=bold ctermfg=192 ctermbg=237 guifg=#d70000 guibg=#3a3a3a gui=bold
+highlight VemStatusLineMode         cterm=none ctermfg=141 ctermbg=237 guifg=#1793D1 guibg=#3a3a3a gui=bold
+highlight VemStatusLineModeInsert   cterm=none ctermfg=117 ctermbg=237 guifg=#1793D1 guibg=#3a3a3a gui=bold
+highlight VemStatusLinePosition     cterm=none ctermfg=34  ctermbg=237 guifg=#00af00 guibg=#3a3a3a gui=bold
+highlight VemStatusLineSeparator    cterm=none ctermfg=241 ctermbg=237 guifg=#626262 guibg=#3a3a3a gui=none
+
+highlight clear CursorColumn
+highlight clear CursorLine 
+highlight clear CursorLineNr
+highlight clear LineNr
+highlight clear SignColumn
+highlight clear SpellBad
+highlight clear SpellCap
+highlight clear SpellLocal
+highlight clear SpellRare
+highlight clear StatusLine
+highlight clear Visual
+highlight clear WildMenu
+
+highlight CursorColumn              ctermbg=240
+highlight CursorLine                ctermbg=240
+highlight CursorLineNr              ctermbg=236 ctermfg=15
+highlight LineNr                    ctermfg=7 ctermbg=236
+highlight SignColumn                ctermbg=236
+highlight SpellBad                  cterm=underline ctermfg=9
+highlight SpellCap                  ctermfg=14
+highlight SpellLocal                ctermfg=10
+highlight SpellRare                 ctermfg=12
+highlight StatusLine                guibg=#3a3a3a ctermbg=237
+highlight Visual                    cterm=none ctermbg=28
+highlight WildMenu                  ctermbg=26 ctermfg=15
+
+highlight BufTabLineCurrent         cterm=none ctermfg=15 ctermbg=26 
+highlight BufTabLineActive          cterm=none ctermfg=15 ctermbg=26
+highlight BufTabLineHidden          cterm=none ctermfg=15 ctermbg=240
+highlight BufTabLineFill            cterm=none ctermfg=0  ctermbg=236 
+highlight BufTabLineModifiedHidden  cterm=none ctermfg=15 ctermbg=26 
+highlight BufTabLineModifiedCurrent cterm=none ctermfg=15 ctermbg=26   
+highlight BufTabLineModifiedActive  cterm=none ctermfg=15 ctermbg=26 
+   
+" BufTabLine & Buffer key maps
+let buftabline_show=1
+let g:buftabline_numbers=1
+let g:buftabline_indicators=1
+let g:buftabline_separators=1
+let g:vem_statusline_filename_format='p'
+
+nnoremap <Leader>b :buffers<CR>:buffer<Space>
+ 
+" Close all buffers except the active one
+command BufOnly silent! execute "%bd|e#|bd#"
+nnoremap <silent> <leader>cb :BufOnly<CR>
+
+" Cycle through buffers
+nnoremap <silent> <C-N> :bnext<CR>
+nnoremap <silent> <C-P> :bprev<CR>
+
 " Hexokinase Plugin
 let g:Hexokinase_highlighters = [ 'foregroundfull' ]
 let g:Hexokinase_optInPatterns = [
@@ -125,20 +198,27 @@ let g:Hexokinase_optInPatterns = [
 \ ]
 
 " vimwiki 
-" let wiki_1 = {}
-" let wiki_1.path = '~/onedrive/Vimwiki/vimwiki/'
-" let wiki_1.path_html = '~/onedrive/Vimwiki/vimwiki_html/'
-"
-" let wiki_2 = {}
-" let wiki_2.path = '~/onedrive/Vimwiki/private/'
-" let wiki_2.path_html = '~/onedrive/Vimwiki/private_html/'
-"
-let g:vimwiki_list = [{'path': '~/Documents/Vimwiki_md/', 'syntax': 'markdown', 'ext': '.md'}]
-let g:vimwiki_global_ext = 0
-
-" let g:vimwiki_list = [wiki_1, wiki_2]
+let g:vimwiki_list = [{'path': '~/Documents/Vimwiki_md/', 'syntax': 'markdown', 'ext': '.md', 'links_space_char': '_'}]
 
 let g:vimwiki_listsyms = ' ✗○●✓'
+let g:vimwiki_markdown_link_ext = 1
+let g:vimwiki_global_ext = 0
+let g:vimwiki_automatic_nested_syntaxes = 1
+let g:vimwiki_dir_link = 'index'
+
+" Vimwiki Header Colours
+hi VimwikiHeader1 guifg=#2C97E9
+hi VimwikiHeader2 guifg=#2C97E9
+hi VimwikiHeader3 guifg=#2C97E9
+
+" Vimwiki
+command! Diary VimwikiDiaryIndex
+augroup vimwikigroup
+    autocmd!
+
+" automatically update links on read diary
+autocmd BufRead,BufNewFile diary.wiki VimwikiDiaryGenerateLinks
+augroup end
 
 " Set up persistent undo across all files
 set undofile
@@ -152,39 +232,21 @@ let &t_SI = "\<Esc>[6 q"
 let &t_SR = "\<Esc>[4 q"
 let &t_EI = "\<Esc>[2 q"
 
-" Status Bar Settings
-let g:airline_theme='tomorrow'
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1
-let g:airline_solarized_bg='dark'
-
-" Trigger configuration. You need to change this to something other than <tab> if you use one of the following:
-" - https://github.com/Valloric/YouCompleteMe
-" - https://github.com/nvim-lua/completion-nvim
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<Tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-Tab>"
-
-" If you want :UltiSnipsEdit to split your window.
-let g:UltiSnipsEditSplit="vertical"
-let g:UltiSnipsSnippetDirectories=["UltiSnips", "mysnippets"]
-
 " Autopairs Disable Alt-p
 execute "set <M-p>=\ep"
 let g:AutoPairsShortcutToggle = '<M-p>'
 
 " Add space in nerdcommenter
 let g:NERDSpaceDelims = 1
+let g:NERDTrimTrailingWhitespace = 1
+let g:NERDToggleCheckAllLines = 1
 
 set cursorline
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
 
-" [Mappings]
-"
-" Very Magic Regexes
-"nnoremap / /\v
-"vnoremap / /\v
+:map <Home> <esc>0a
+:imap <Home> <Esc>^i
 
 " Turn on Relative Line Numbering & Line Numbering
 nmap <F3> :set norelativenumber!<CR> " toggle relativenumber
@@ -200,33 +262,30 @@ nnoremap <leader>rc :%s///gc<left><left><left>
 xnoremap <leader>r :s///g<left><left>
 xnoremap <leader>rc :s///gc<left><left><left>
 
-" Source the ~/.vimrc file
-nnoremap <C-r> :source $MYVIMRC<CR>
+" Source the ~/.vimrc file after writing the buffer to file
+if has("autocmd")
+    autocmd BufWritePost .vimrc source $MYVIMRC
+endif
+
+" Markdown Preview Vivify
+nnoremap <C-F4> :Vivify<CR>
 
 " Toggle Hexokinase
-map <C-h> :HexokinaseToggle<CR>
+map <C-S-h> :HexokinaseToggle<CR>
 
 " Copy & Paste to/from external sources
 map <leader>c "+y
 map <leader>p "+p
 vmap <leader>c "+yi
 vmap <leader>x "+x
-"vmap <C-v> c<ESC>"+p
-"imap <C-v> <C-r><C-o>+
-
-" Allows to insert flags like -g into RipGrep commands
-command! -bang -nargs=* Rg call fzf#vim#grep("rg --column --line-number --no-heading --color=always --smart-case " . <q-args>, 1, <bang>0)
 
 " Insert date in normal and insert mode
-nnoremap <F5> "=strftime("%d-%m-%Y %H:%M %z")<Space><CR>P
-inoremap <F5> <C-R>=strftime("%d-%m-%Y %H:%M %z") <CR>
+nnoremap <F5> i<C-R>=strftime("%d/%B/%Y %H:%M")<CR><Space><ESC>
+inoremap <F5> <C-R>=strftime("%d/%B/%Y %H:%M")<CR><Space>
 
 " Spell Check Toggle
 nnoremap <silent> <F12> :setlocal spell!<CR>
 inoremap <F12> <C-O>:setlocal spell!<CR>
-
-" Show list of buffer 
-noremap <silent> <C-l> :ls<CR>
 
 " Wipereg to clear registers
 command! WipeReg for i in range(34,122) | silent! call setreg(nr2char(i), []) | endfor
@@ -244,60 +303,14 @@ nnoremap <leader>/ :set cursorcolumn! cursorcolumn?<CR>
 noremap j gj
 noremap k gk
 
-" Bubble single line
-nmap <C-Up> :m .-2<CR>
-nmap <C-Down> :m  .+1<CR>
-
-" Bubble multiple lines
-vnoremap <silent> <C-Up>  @='"zxk"zP`[V`]'<CR>
-vnoremap <silent> <C-Down>  @='"zx"zp`[V`]'<CR>
- 
-" Zoom for Splits
-noremap Zz <c-w>_ \| <c-w>\|
-noremap Zo <c-w>=
-
-" source $MYVIMRC reloads the saved $MYVIMRC
-nmap <leader>s :source $MYVIMRC<CR>
-
 " opens $MYVIMRC for editing, or use :tabedit $MYVIMRC
 nmap <Leader>v :e $MYVIMRC<CR>
 
 " Add filename and path in insert mode 
 inoremap <Leader>fn <C-R>=expand("%:p")<CR> 
- 
-" Open file under cursor with Ctrl-o
-map <C-o> :let mycurf=expand("<cfile>")<cr><c-w> w :execute("e ".mycurf)<cr><c-w>p
 
-" Auto Commands
+" Set filetype to Markdown
 au BufNewFile,BufRead *.md,*.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn  set ft=markdown
-
-" Vimwiki
-command! Diary VimwikiDiaryIndex
-augroup vimwikigroup
-    autocmd!
-
-" Navigate the complete menu items like CTRL+n / CTRL+p would.
-inoremap <expr> <Down> pumvisible() ? "<C-n>" :"<Down>"
-inoremap <expr> <Up> pumvisible() ? "<C-p>" : "<Up>"
-"
-" " Select the complete menu item like CTRL+y would.
-inoremap <expr> <Right> pumvisible() ? "<C-y>" : "<Right>"
-inoremap <expr> <CR> pumvisible() ? "<C-y>" :"<CR>"
-"
-" " Cancel the complete menu item like CTRL+e would.
-inoremap <expr> <Left> pumvisible() ? "<C-e>" : "<Left>""
-
-" Cycle through buffers
-nnoremap <silent> <S-Left> :bprevious<CR>
-nnoremap <silent> <S-Right> :bnext<CR>
-
-" Select buffer to go to
-execute "set <M-b>=\eb"
-nnoremap <M-b> :Buffers<CR>
-
-" automatically update links on read diary
-autocmd BufRead,BufNewFile diary.wiki VimwikiDiaryGenerateLinks
-augroup end
 
 " Set executable bit on scripts
 au BufWritePost * if getline(1) =~ "^#!" | if getline(1) =~ "/bin/" | silent execute "!chmod +x <afile>" | endif | endif
@@ -311,42 +324,47 @@ augroup END
 
 " FERN Initialisation and keybindings
 
-" Disable netrw
-"let g:loaded_netrw=1
-"let g:loaded_netrwPlugin=1
-"let g:loaded_netrwSettings=1
-"let g:loaded_netrwFileHandlers=1
-
-
-" Custom settings and mappings
+" Custom settings, mappings and highlights
 let g:fern#disable_default_mappings = 1
 let g:fern#renderer = "nerdfont"
+highlight FernRootText                  cterm=none ctermfg=202 ctermbg=236
+highlight FernMarkedText                cterm=none ctermfg=196 ctermbg=236
+highlight FernLeafText                  cterm=none ctermfg=15  ctermbg=236
+highlight FernBranchText                cterm=none ctermfg=15  ctermbg=236
+highlight FernWindowSelectStatusLine    cterm=none ctermfg=15  ctermbg=36
+highlight FernWindowSelectIndicator     cterm=none ctermfg=15  ctermbg=36
 
-noremap <silent> <leader>f :Fern . -drawer -reveal=% -width=30 -toggle<CR><C-w>=
+noremap <silent> <leader>f :Fern . -drawer -reveal=% -width=30 -toggle<CR>
 
 function! FernInit() abort
     nmap <buffer><expr>
                 \ <Plug>(fern-my-open-expand-collapse)
                 \ fern#smart#leaf(
-                \ "\<Plug>(fern-action-open:select)",
+                \ "<Plug>(fern-action-open:select)",
                 \ "\<Plug>(fern-action-expand)",
-                \ "\<Plug>(fern-action-collapse)",
+                \ "\<Plug>(fern-action-collapse)"
                 \ )
 
-nmap <buffer> <CR> <Plug>(fern-my-open-expand-collapse)
-nmap <buffer> <2-LeftMouse> <Plug>(fern-my-open-expand-collapse)
-nmap <buffer> o <Plug>(fern-action-open)
-nmap <buffer> n <Plug>(fern-action-new-path)
-nmap <buffer> d <Plug>(fern-action-remove)
-nmap <buffer> m <Plug>(fern-action-move)
-nmap <buffer> M <Plug>(fern-action-rename)
-nmap <buffer> h <Plug>(fern-action-hidden:toggle)
-nmap <buffer> r <Plug>(fern-action-reload)
-nmap <buffer> k <Plug>(fern-action-mark:toggle)
-nmap <buffer> b <Plug>(fern-action-open:split)
-nmap <buffer> v <Plug>(fern-action-open:vsplit)
-nmap <buffer> < <Plug>(fern-action-leave)
-nmap <buffer> > <Plug>(fern-action-enter)
+    nmap <buffer> <CR> <Plug>(fern-my-open-expand-collapse)
+    nmap <buffer> <2-LeftMouse> <Plug>(fern-my-open-expand-collapse)
+    nmap <buffer> < <Plug>(fern-action-leave)
+    nmap <buffer> > <Plug>(fern-action-enter)
+    nmap <buffer> <left> <Plug>(fern-action-leave)
+    nmap <buffer> <right> <Plug>(fern-action-enter)
+    nmap <buffer> R <Plug>(fern-action-rename)
+    nmap <buffer> H <Plug>(fern-action-open:split)
+    nmap <buffer> V <Plug>(fern-action-open:vsplit)
+    nmap <buffer> f <Plug>(fern-action-new-file)
+    nmap <buffer> D <Plug>(fern-action-new-dir)
+    nmap <buffer> h <Plug>(fern-action-hidden:toggle)
+    nmap <buffer> k <Plug>(fern-action-mark:toggle)
+    nmap <buffer> m <Plug>(fern-action-move)
+    nmap <buffer> c <Plug>(fern-action-copy)
+    nmap <buffer> o <Plug>(fern-action-open)
+    nmap <buffer> r <Plug>(fern-action-reload)
+    nmap <buffer> y <Plug>(fern-action-yank:path)
+    nmap <buffer> <space> <Plug>(fern-action-mark)
+    nmap <buffer> dd <Plug>(fern-action-trash)
 endfunction
 
 augroup FernGroup
@@ -366,6 +384,12 @@ augroup fern-settings
   autocmd FileType fern call s:fern_settings()
 augroup END
 
+nnoremap <Plug>(fern-close-drawer) :<C-u>FernDo close -drawer -stay<CR>
+nmap <buffer><silent> <Plug>(fern-action-open-and-close)
+      \ <Plug>(fern-action-open)
+      \ <Plug>(fern-close-drawer)
+
+" Vim Table Mode
 function! s:isAtStartOfLine(mapping)
   let text_before_cursor = getline('.')[0 : col('.')-1]
   let mapping_pattern = '\V' . escape(a:mapping, '\')
@@ -380,11 +404,44 @@ inoreabbrev <expr> __
           \ <SID>isAtStartOfLine('__') ?
           \ '<c-o>:silent! TableModeDisable<cr>' : '__'
 
-" Allow files to be saved as root when forgetting to start Vim using sudo.
-command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
+" Ultisnips
+let g:UltiSnipsSnippetDirectories=["UltiSnips"] 
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+let UltiSnipsEditSplit="vertical"
+
+nmap <leader>e :UltiSnipsEdit 
+
+" Window Zoom
+function! WindowUnzoom()
+  if !exists('w:zoomed')
+    echo 'Could not unzoom'
+  else
+    unlet w:zoomed
+    wincmd =
+  endif
+endfunction
+
+function! WindowZoom()
+  if exists('w:zoomed')
+    call WindowUnzoom()
+  else
+    let w:zoomed = 'TRUE'
+    wincmd |
+    wincmd _
+  endif
+endfunction
+
+autocmd  WinLeave,TabLeave * if exists('w:zoomed') | silent! call WindowUnzoom() | endif
+
+nnoremap <silent> <C-w>z :call WindowZoom()<CR>
+
+" Sudu - Sudo for vim
+let g:suda#prompt = 'Your password please: '
 
 " Abbreviations
-
 ab ph Patrick Heffernan
 ab em Patrick Heffernan <patrick4370@bigpond.com>
 
+command! -nargs=* Wrap set wrap linebreak nolist

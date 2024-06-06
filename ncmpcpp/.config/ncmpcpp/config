@@ -7,20 +7,16 @@ visualizer_data_source = "/tmp/mpd.fifo"
 visualizer_output_name = "my_fifo"
 visualizer_in_stereo = "yes"
 # buffer_time = "100000"
-visualizer_type = "ellipse"
+visualizer_type = "spectrum"
 visualizer_look = "+|"
 visualizer_color = "blue, cyan, green, yellow, magenta, red"
 
 # Notify of song changes
 execute_on_song_change = notify-send "Now Playing" "$(mpc --format '%title% \n%artist% - %album%' current)"
-# execute_on_song_change = songinfo
 
 # Colours and looks
 colors_enabled = "yes"
 user_interface = "alternative"
-
-# alternative_header_first_line_format = "$0$aqqu$/a {$8Artist $9$2%a$9 $8-$9 } {$8Title $9$5%t$9} $0$atqq$/a$9"
-# alternative_header_second_line_format = "{{[ $8Track $5%n $8Album - $9$6%b$9 ]}}"
  
 alternative_header_first_line_format = " {$8Artist: $9$2$b%a$/b$9 $8Title: $2$b%t$/b$9} "
 alternative_header_second_line_format = "{{$8Track: $5$b%N$/b $8Album: $9$5$b%b$/b$9}}"
@@ -73,3 +69,4 @@ follow_now_playing_lyrics = "yes"
 fetch_lyrics_for_current_song_in_background = "yes"
 space_add_mode = "add_remove"
 display_volume_level = "yes"
+lyrics_fetchers = "genius,azlyrics"

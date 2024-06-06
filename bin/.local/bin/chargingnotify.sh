@@ -1,8 +1,12 @@
 #!/usr/bin/env bash
+#
+#  Author: Patrick Heffernan <patrick4370@bigpond.com>
+#    Date: 04/June/2024 - 11:55
+# Purpose: 
+# tifies about battery usage
+#
+set -euo pipefail
 
-# Send a notification displaying that the battery is charging or discharging
-# Pass 1 as an argument for charging, 0 for discharging
-# Example usage: chargingnotify 1
 
 # Check if argument is passed
 [ $# != 1 ] && printf '0 or 1 must be passed as an argument.\nUsage: %s 0|1\n' "$0" && exit

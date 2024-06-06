@@ -130,6 +130,8 @@ for_window [class="Thunar"] floating enable, resize set 1200 1000, move position
 for_window [class="zenity"] floating enable, resize set 600 800, move position center
 for_window [class="Sound-juicer"] floating enable, move position center
 for_window [class="yazi"] floating enable, resize set 1700 1000, move position center
+for_window [class="Nsxiv"] floating enable
+for_window [class="pika-backup"] floating enable
 
 # Move through workspaces
 bindsym Mod1+$mod+Right workspace next
@@ -139,6 +141,9 @@ bindsym Mod1+$mod+Left workspace prev
 bindsym --whole-window $mod+button2 kill
 
 bindsym $mod+Ctrl+f focus parent; fullscreen; focus child
+
+# Clipcat Menu
+bindsym $mod+c exec /usr/bin/clipcat-menu
 
 # Volume control
 bindsym XF86AudioRaiseVolume exec --no-startup-id ponymix increase 5; exec pkill -SIGRTMIN+10 i3blocks      # increase sound volume
@@ -155,7 +160,7 @@ bindsym $mod+Shift+x exec --no-startup-id ~/.local/bin/i3lockscript.sh
 bindsym $mod+a focus parent
 
 # Bitwarden Menu
-bindsym $mod+b exec /usr/bin/rofi-rbw
+bindsym $mod+b exec /usr/bin/rofi-rbw 
 
 # Clipboard
 bindsym $mod+p exec $launcher-clipboard-insert

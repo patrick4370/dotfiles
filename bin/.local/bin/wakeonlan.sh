@@ -1,21 +1,10 @@
 #!/usr/bin/env bash
-#===============================================================================
 #
-#          FILE: wakeonlan.sh
+#  Author: Patrick Heffernan <patrick4370@bigpond.com>
+#    Date: 02/June/2024 - 13:59
+# Purpose: Wake on Lan
 #
-#         USAGE: ./wakeonlan.sh
-#
-#   DESCRIPTION: 
-#
-#       OPTIONS: ---
-#  REQUIREMENTS: ---
-#          BUGS: ---
-#         NOTES: ---
-#        AUTHOR: Patrick Heffernan (), <patrick4370@bigpond.com>
-#  ORGANIZATION: 
-#       CREATED: 23/07/23 16:40
-#      REVISION:  ---
-#===============================================================================
+set -euo pipefail
 
 lenovo="00:23:24:d5:a7:b7"
 pxe_mach="d8:cb:8a:95:a9:78"

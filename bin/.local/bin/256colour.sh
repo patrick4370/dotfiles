@@ -1,19 +1,11 @@
-#!/bin/env bash
-#===============================================================================
+#!/usr/bin/env bash
 #
-#          FILE: 256colour.sh
-#
-#         USAGE: ./256colour.sh
-#
-#   DESCRIPTION: 
-#
-#       OPTIONS:  
-#  REQUIREMENTS:  
-#        AUTHOR: Patrick Heffernan <patrick4370@bigpond.com>
-#       CREATED: 10/04/23 11:40
-#===============================================================================
+#  Author: Patrick Heffernan <patrick4370@bigpond.com>
+#    Date: 02/June/2024 - 13:50
+    # Purpose: Show all 256 colours
+    #
+set -euo pipefail
 
-# set -o nounset        # Treat unset variables as an error
 
 for i in {0..255} ; do
     # Black FG on color BG

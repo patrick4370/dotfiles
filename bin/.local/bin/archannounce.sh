@@ -1,4 +1,11 @@
 #!/usr/bin/env bash
+#
+#  Author: Patrick Heffernan <patrick4370@bigpond.com>
+#    Date: 01/June/2024 - 21:21
+# Purpose: Notifies through dunst about Arch Latest news.
+#
+set -euo pipefail
+
 
 subject=$1
 msgid=$2
