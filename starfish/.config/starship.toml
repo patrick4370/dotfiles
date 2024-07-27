@@ -25,41 +25,41 @@ $git_metrics\
 """
 
 [username]
-style_user = 'green'
+format = '[\[](244)[$user]($style)[@](bold green)'
+style_user = "bold cyan"
 style_root = 'red'
-format = '[\[](237)[$user]($style)[@](15)'
 disabled = false
 show_always = true
 
 [hostname]
 ssh_only = false
 ssh_symbol = '  '
-format = '[$hostname](#00afff)[$ssh_symbol](red)[\]](237)'
+format = '[$hostname](bold purple)[$ssh_symbol](red)[\]](244)'
 disabled = false
 
 [directory]
-format = '[\[](237)[$path](252)[\]](237)'
+format = '[\[](244)[$path](bold green)[\]](244)'
 home_symbol = '~'
 truncation_symbol = '../'
 truncation_length = 4
 
 [git_branch]
 symbol = ' '
-format = '[\[](237)[$symbol](71)[branch:](bright-white)[$branch](104)[\]](237) '
+format = '[\[](244)[$symbol](71)[branch:](bright-white)[$branch](104)[\]](244) '
 
 [line_break]
 disabled = false
 
 [cmd_duration]
 show_milliseconds = true
-format = '[\[](237)[$duration]($style)[\]](237)'
-style = '#5f87d7'
+format = '[\[](244)[$duration]($style)[\]](244)'
+style = 'bold yellow'
 min_time = 2
 
 [character] # The name of the module we are configuring is 'character'
-success_symbol = '[\[](237)[>]( 112)[\]](237)'
-error_symbol = '[\[](237)[>]( red)[\]](237)'
-vimcmd_symbol = '[\[](237)[]( red)[\]](237)' 
+success_symbol = '[\[](244)[>](bold green)[\]](244)'
+error_symbol = '[\[](244)[>](bold red)[\]](244)'
+vimcmd_symbol = '[\[](244)[](bold red)[\]](244)' 
 disabled = false
 
 [status]
@@ -73,17 +73,17 @@ signal_symbol = '💀'
 recognize_signal_code =	true
 map_symbol = true
 disabled = false
-format = '[\[](237)[$symbol - [$status](white)]( $style)[\]](237)'
+format = '[\[](244)[$symbol - [$status](white)]( $style)[\]](244)'
 
 [sudo]
 style = ' green'
-format = '[\[](237)[$symbol]($style)[\]](237)'
+format = '[\[](244)[$symbol]($style)[\]](244)'
 symbol = '🔓'
 disabled = false
 
 [git_status]
 modified = '  \($count\)'
-format = '([\[](237)[($untracked)($staged) ($modified)[:]( bright-white)[$ahead_behind]( green)]( blue)[\]](237)) '
+format = '([\[](244)[($untracked)($staged) ($modified)[:]( bright-white)[$ahead_behind]( green)]( blue)[\]](244)) '
 staged = '[+\($count\)](green) '
 ahead = '⇡${count}'
 diverged = '⇕⇡${ahead_count}⇣${behind_count}'
@@ -93,4 +93,18 @@ behind = '⇣${count}'
 commit_hash_length = 7
 tag_symbol = '🔖 '
 style = " #875fff"
-format = '[\[](237)[\($hash$tag\)]($style)[\]](237) '
+format = '[\[](244)[\($hash$tag\)]($style)[\]](244) '
+
+# Define Dracula color palette
+[palettes.dracula]
+background = "#282a36"
+current_line = "#44475a"
+foreground = "#f8f8f2"
+comment = "#6272a4"
+cyan = "#8be9fd"
+green = "#50fa7b"
+orange = "#ffb86c"
+pink = "#ff79c6"
+purple = "#bd93f9"
+red = "#ff5555"
+yellow = "#f1fa8c"

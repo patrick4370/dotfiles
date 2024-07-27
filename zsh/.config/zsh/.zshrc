@@ -90,6 +90,7 @@ setopt PUSHD_IGNORE_DUPS    # Do not store duplicates in the stack.
 setopt PUSHD_SILENT         # Do not print the directory stack after pushd or popd.
 setopt PUSHD_TO_HOME
 setopt PUSHD_IGNORE_DUPS
+setopt interactivecomments
 
 # Keybindings
 bindkey '^p' history-search-backward
@@ -124,6 +125,14 @@ bindkey -s '^L' 'clear^M'
 [ -f /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh || echo "/usr/share/fzf/completion.zsh not found"  
 [ -f /usr/share/fzf/key-bindings.zsh ] && source /usr/share/fzf/key-bindings.zsh || echo "/usr/share/fzf/key-bindings.zsh not found" 
 
+if type clipcat-menu >/dev/null 2>&1; then
+    alias clipedit=' clipcat-menu --finder=builtin edit'
+    alias clipdel=' clipcat-menu --finder=builtin remove'
+
+    bindkey -s '^\' "^Q clipcat-menu --finder=builtin insert ^J"
+    bindkey -s '^]' "^Q clipcat-menu --finder=builtin remove ^J"
+fi
+
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
-eval $(keychain --eval --quiet --agents ssh pidns_ecdsa pxe_ecdsa github_ed25519)
+eval "$(keychain --eval --quiet --agents ssh pidns_ecdsa pxe_ecdsa github_ed25519)"

@@ -1,6 +1,6 @@
 configuration {
 	modi: "window,windowcd,run,ssh,drun,keys,combi";
-	font: "CommitMono Nerd Font 16";
+    font: "CommitMono Nerd Font 16";
 	terminal: "/usr/bin/xterm";	
 	ssh-client: "/usr/bin/ssh";
 	ssh-command: "{terminal} -e "{ssh-client} {host}"";
@@ -13,11 +13,4 @@ configuration {
     sort: true;
     }
 
-//@theme "/home/patrick/.local/share/rofi/themes/Pat-Rofi.rasi"
-//@theme "/home/patrick/.local/share/rofi/themes/Pat-Rofi.rasi"
-//@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
-//@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
-//@theme "/home/patrick/.local/share/rofi/themes/Patrick.rasi"
-//@theme "/home/patrick/.local/share/rofi/themes/Pat-Rofi.rasi"
-//@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
-@theme "/home/patrick/.local/share/rofi/themes/Pat-Rofi.rasi"
+@theme "/home/patrick/.local/share/rofi/themes/dracula1.rasi"

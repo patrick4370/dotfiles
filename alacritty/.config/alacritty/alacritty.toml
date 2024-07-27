@@ -1,5 +1,5 @@
 import = [
-    "~/.config/alacritty/themes/solokai.toml",
+    "~/.config/alacritty/catppuccin-mocha.toml",
 ]
 
 live_config_reload = true
@@ -9,26 +9,26 @@ size = 12
 builtin_box_drawing = true
 
 [font.normal]
-family = "FiraCode Nerd Font Mono"
+family = "CommitMono Nerd Font Mono"
 style = "regular"
 
 [font.bold]
-family = "FiraCode Nerd Font Mono"
+family = "CommitMono Nerd Font Mono"
 style = "bold"
 
 [font.italic]
-family = "FiraCode Nerd Font Mono"
+family = "CommitMono Nerd Font Mono"
 style = "italic"
 
 [font.bold_italic]
-family = "FiraCode Nerd Font Mono"
+family = "CommitMono Nerd Font Mono"
 style = "bold_italic"
 
 [shell]
 program = "/usr/bin/zsh"
 
 [window]
-opacity = 0.85
+opacity = 0.95
 blur = true
 
 [window.padding]

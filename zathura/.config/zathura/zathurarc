@@ -62,7 +62,6 @@ map R rotate
 map <C-i> zoom in
 map <C-o> zoom out
 map <C-r> zoom expand
-map I recolor
 map <C-p> print
 map s toggle_statusbar
 map i toggle_inputbar
@@ -85,5 +84,29 @@ set statusbar-home-tilde	"true"
 # Shows  or  hides  GUI elements.
 set guioptions				"shv"
 
-# Theme
-include /home/patrick/.config/zathura/catppuccin-mocha-
+# Colours
+set completion-bg           "#303030"
+set completion-fg           "#ffffff"
+set completion-highlight-bg "#ff0000"
+set completion-highlight-fg "#ffffff"
+set default-bg              "#2A2F38"
+set default-fg              "#c0c0c0"
+set inputbar-bg             "#1793D1"
+set inputbar-fg             "#ffffff"
+set statusbar-bg            "#5f0000"
+set statusbar-fg            "#ffffff"
+set highlight-color         "rgba(0,215,0,0.5)"
+set highlight-active-color  "rgba(0,95,215,0.5)"
+set highlight-fg            "#FFFFFF"
+set notification-bg         "#5f87af"
+set notification-fg         "#ffffff"
+set notification-warning-bg "#5f87af"
+set notification-warning-fg "#ffffff"
+set notification-error-bg   "#5f87af"
+set notification-error-fg   "#ffffff"
+set render-loading-bg       "#1793D1"
+set render-loading-fg       "#ffffff"
+set index-bg                "#303030"
+set index-fg                "#ffffff"
+set index-active-bg         "#1793D1"
+set index-active-fg         "#ffffff"

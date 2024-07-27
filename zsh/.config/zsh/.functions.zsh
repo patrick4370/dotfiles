@@ -7,6 +7,33 @@ paste()
     curl --data-binary @${file} https://paste.rs
 }
 
+get_pkgbuild()
+{
+    set -e
+    pkgname=$1
+
+    if [ "$pkgname" = "" ]; then
+        echo "No package given ... quitting!"
+        return
+    fi
+
+    pkgctl repo clone --protocol=https "$pkgname"
+
+    if [ "$?" -ne 0 ]; then
+        echo "Not a valid package name"
+    fi
+}
+
+# lir()
+# {
+#     if [ "$#" -ne 1 ];
+#         echo "Please enter a repository name"
+#         exit 1
+#     fi
+
+#     comm -12 <(pacman -Qq | sort) <(pacman -Sql $1 | sort)
+# }
+
 showrepo()
 {
     if [ $# -eq 0 ]; then

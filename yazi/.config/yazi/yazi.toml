@@ -10,7 +10,7 @@ sort_sensitive = false
 sort_reverse   = false
 sort_dir_first = true
 linemode       = "none"
-show_hidden    = false
+show_hidden    = true 
 show_symlink   = true
 scrolloff      = 5
 
@@ -109,6 +109,7 @@ previewers = [
 	{ mime = "video/*", run = "video" },
 	# PDF
 	{ mime = "application/pdf", run = "pdf" },
+    { mime = "application/epub+zip", run = "pdf" },
 	# Archive
 	{ mime = "application/*zip",            run = "ouch" },
 	{ mime = "application/x-tar",           run = "ouch" },

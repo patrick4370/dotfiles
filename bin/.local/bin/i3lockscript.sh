@@ -23,8 +23,8 @@ padlock=~/.local/share/pics/lock.png
 # Program start 
 #-------------------------------------------------------------------------------
 escrotum "${backgnd}"
-convert "${backgnd}" -scale 10% -scale 1000% "${backgnd}"
-[[ -f "${backgnd}" ]] && convert "${backgnd}" "${padlock}" -gravity center -composite -matte "${backgnd}" || exit
+magick convert "${backgnd}" -scale 10% -scale 1000% "${backgnd}"
+[[ -f "${backgnd}" ]] && magick convert "${backgnd}" "${padlock}" -gravity center -composite -matte "${backgnd}" || exit
 
 i3lock -i "${backgnd}"
 rm "${backgnd}"

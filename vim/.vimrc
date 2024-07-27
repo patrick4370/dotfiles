@@ -8,104 +8,114 @@
 "  Email: <patrick4370@bigpond.com>
 
 " [General Options]
-filetype plugin indent on                                   
+filetype plugin indent on
 runtime macros/matchit.vim
 packadd! matchit
-syntax on                                                   
+syntax on
 
-set autoindent                                              
-set backspace=indent,eol,start                              
-set clipboard^=unnamed,unnamedplus                          
-set complete+=kspell                                        
-set completeopt=menuone,noselect,preview,popup              
-set dictionary+=/usr/share/dict/british-english 
-set expandtab                                               
+set autoindent
+set backspace=indent,eol,start
+set belloff=all
+set clipboard^=unnamed,unnamedplus
+set complete+=k
+set completeopt=menu
+" set dictionary+=/usr/share/dict/british-english
+set encoding=UTF-8
+set expandtab
 set foldlevel=99
 set formatoptions+=t
-set formatoptions-=cro                                      
-set hidden                                                  
+set formatoptions-=cro
+set grepprg=rg\ --vimgrep\ --smart-case\ --follow
+set hidden
 set history=500
-set hlsearch                                                
-set ignorecase                                              
-set incsearch                                               
-set laststatus=2                                            
-set listchars=trail:·,eol:¬,tab:>.                          
-set modeline                                                
-set noshowcmd                                               
-set noshowmode                                              
-set nrformats+=alpha                                        
-set number                                                  
-set omnifunc=syntaxcomplete#Complete                        
-set pastetoggle=<F2>                                        
-set path+=**                                                
-set relativenumber                                          
+set hlsearch
+set ignorecase
+set incsearch
+set laststatus=2
+set listchars=trail:·,eol:$,tab:>.,extends:>,precedes:<
+set modeline
+set mouse=nvi
+set noshowcmd
+set noshowmode
+set nrformats+=alpha
+set number
+set numberwidth=3
+set pastetoggle=<F2>
+set path+=**
+set relativenumber
+set ruler
+set rulerformat=%l,%c%V%=%P
 set sessionoptions=blank,buffers,curdir,folds,globals,help,terminal
-set shiftwidth=4                                            
-set shortmess+=f                                            
-set showcmd                                                 
-set showmatch                                               
-set showtabline=0                                           
-set smartcase                                               
-set softtabstop=4                                           
+set shiftwidth=4
+set shortmess+=f
+set shortmess-=S
+set showcmd
+set showmatch
+set showtabline=0
+set smartcase
+set softtabstop=4
 set spellfile=~/.vim/spell/en.utf-8.add
 set spellfile+=~/.vim/spell/jargon.utf-8.add
-set spelllang=en_au                                         
-set splitright                                              
-set tabstop=4                                               
+set spelllang=en_au
+set splitright
+set visualbell
+set t_vb=       " Helps disable the annoying flicker when sourcing .vimrc
+set tabstop=4
 set showtabline=2
-set term=xterm-256color
-set termguicolors                                           
+set term=xterm-256color " Needed to fix problem with HOME key
+set termguicolors
 set textwidth=75
-set virtualedit+=all
+" set virtualedit+=all
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe
-set wildmenu                                                
-set wildmode=full                                           
+set wildmenu
+set wildmode=full
+set wildoptions=pum
 set wrap linebreak nolist
 
-" [Plugin Manager.] 
+" [Plugin Manager.]
 call plug#begin()
 
-Plug 'PotatoesMaster/i3-vim-syntax'                                                 
-Plug 'SirVer/ultisnips'                                         
-Plug 'ap/vim-buftabline'                                        
-Plug 'christoomey/vim-tmux-navigator'                           
-Plug 'dhruvasagar/vim-table-mode'                               
-Plug 'dhruvasagar/vim-table-mode'                               
-Plug 'farmergreg/vim-lastplace'                                 
-Plug 'haya14busa/is.vim'                                        
-Plug 'honza/vim-snippets'                                       
-Plug 'itchyny/vim-gitbranch'                                    
-Plug 'jannis-baum/vivify.vim'                                   
-Plug 'jiangmiao/auto-pairs'                                     
-Plug 'lambdalisue/fern.vim'                                     
-Plug 'lambdalisue/nerdfont.vim'                                 
-Plug 'lambdalisue/vim-fern-git-status'
-Plug 'lambdalisue/vim-fern-hijack'
-Plug 'lambdalisue/vim-fern-renderer-nerdfont'
-Plug 'lambdalisue/vim-suda'
-Plug 'mattn/vim-lsp-settings'                                   
-Plug 'nanotee/zoxide.vim'                                       
-Plug 'nelstrom/vim-visual-star-search'                          
-Plug 'pacha/vem-statusline'                                     
+Plug 'PotatoesMaster/i3-vim-syntax'
+Plug 'preservim/nerdtree', {'on': 'NERDTreeToggle'}
+Plug 'ryanoasis/vim-devicons'
+Plug 'dstein64/vim-startuptime'
+Plug 'SirVer/ultisnips'
+Plug 'ap/vim-buftabline'
+Plug 'nvie/vim-flake8', {'for': 'python'}
+Plug 'sillybun/vim-repl', {'for': 'python'}
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'dhruvasagar/vim-table-mode'
+Plug 'vimwiki/vimwiki'
+Plug 'farmergreg/vim-lastplace'
+Plug 'haya14busa/is.vim'
+Plug 'honza/vim-snippets'
+Plug 'jannis-baum/vivify.vim', {'for': 'markdown'}
+Plug 'jiangmiao/auto-pairs'
+Plug 'junegunn/fzf.vim'
+Plug 'mattn/vim-lsp-settings'
+Plug 'mhinz/vim-grepper'
+Plug 'nanotee/zoxide.vim'
+Plug 'nelstrom/vim-visual-star-search'
+Plug 'pacha/vem-statusline'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'prabirshrestha/asyncomplete.vim'
-Plug 'prabirshrestha/vim-lsp'                                               
-Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
-Plug 'sainnhe/sonokai'
-Plug 'scrooloose/nerdcommenter'                                             
-Plug 'skywind3000/asyncrun.vim'  " If you prefer async behaviour
-Plug 'tpope/vim-abolish'
-Plug 'tpope/vim-repeat'                                                     
-Plug 'tpope/vim-surround'                                                   
-Plug 'vim-scripts/AutoComplPop'
-Plug 'vimwiki/vimwiki'                                                      
-Plug 'yuki-yano/fern-preview.vim'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-unimpaired'
+Plug 'prabirshrestha/vim-lsp'
 Plug 'romainl/vim-qf'
-
+Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
+" Plug 'sainnhe/sonokai'
+Plug 'scrooloose/nerdcommenter'
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-rhubarb'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
+Plug 'vim-scripts/AutoComplPop'
+" Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+                                            
 call plug#end()
-
+ 
 " map leader
 let mapleader = ','
 
@@ -116,15 +126,15 @@ endif
 
 " The configuration options should be placed before `colorscheme sonokai`.
 " Schemes : default, atlantis, andromeda, shusia, maia, espresso
-let g:sonokai_style = 'atlantis'
-let g:sonokai_better_performance = 1
-let g:sonokai_cursor='auto'
+" let g:sonokai_style = 'atlantis'
+" let g:sonokai_better_performance = 1
+" let g:sonokai_cursor='auto'
 
 " Colours
-set t_Co=256 
-colorscheme sonokai
+set t_Co=256
+colorscheme catppuccin_mocha 
 set background=dark
-                   
+
 " Change some colours to match what I want.
 highlight VemStatusLineBranch       cterm=none ctermfg=117 ctermbg=237 guifg=#1793D1 guibg=#3a3a3a gui=bold
 highlight VemStatusLineFileModified cterm=bold ctermfg=192 ctermbg=237 guifg=#d70000 guibg=#3a3a3a gui=bold
@@ -134,11 +144,14 @@ highlight VemStatusLineModeInsert   cterm=none ctermfg=117 ctermbg=237 guifg=#17
 highlight VemStatusLinePosition     cterm=none ctermfg=34  ctermbg=237 guifg=#00af00 guibg=#3a3a3a gui=bold
 highlight VemStatusLineSeparator    cterm=none ctermfg=241 ctermbg=237 guifg=#626262 guibg=#3a3a3a gui=none
 
+highlight clear ColorColumn
 highlight clear CursorColumn
-highlight clear CursorLine 
+highlight clear CursorLine
 highlight clear CursorLineNr
 highlight clear LineNr
+highlight clear NonText
 highlight clear SignColumn
+highlight clear Specialkey
 highlight clear SpellBad
 highlight clear SpellCap
 highlight clear SpellLocal
@@ -147,11 +160,14 @@ highlight clear StatusLine
 highlight clear Visual
 highlight clear WildMenu
 
+highlight ColorColumn               ctermbg=240
 highlight CursorColumn              ctermbg=240
 highlight CursorLine                ctermbg=240
 highlight CursorLineNr              ctermbg=236 ctermfg=15
 highlight LineNr                    ctermfg=7 ctermbg=236
+highlight NonText                   ctermfg=245
 highlight SignColumn                ctermbg=236
+highlight Specialkey                ctermfg=245
 highlight SpellBad                  cterm=underline ctermfg=9
 highlight SpellCap                  ctermfg=14
 highlight SpellLocal                ctermfg=10
@@ -160,14 +176,14 @@ highlight StatusLine                guibg=#3a3a3a ctermbg=237
 highlight Visual                    cterm=none ctermbg=28
 highlight WildMenu                  ctermbg=26 ctermfg=15
 
-highlight BufTabLineCurrent         cterm=none ctermfg=15 ctermbg=26 
+highlight BufTabLineCurrent         cterm=none ctermfg=15 ctermbg=26
 highlight BufTabLineActive          cterm=none ctermfg=15 ctermbg=26
 highlight BufTabLineHidden          cterm=none ctermfg=15 ctermbg=240
-highlight BufTabLineFill            cterm=none ctermfg=0  ctermbg=236 
-highlight BufTabLineModifiedHidden  cterm=none ctermfg=15 ctermbg=26 
-highlight BufTabLineModifiedCurrent cterm=none ctermfg=15 ctermbg=26   
-highlight BufTabLineModifiedActive  cterm=none ctermfg=15 ctermbg=26 
-   
+highlight BufTabLineFill            cterm=none ctermfg=0  ctermbg=236
+highlight BufTabLineModifiedHidden  cterm=none ctermfg=15 ctermbg=26
+highlight BufTabLineModifiedCurrent cterm=none ctermfg=15 ctermbg=26
+highlight BufTabLineModifiedActive  cterm=none ctermfg=15 ctermbg=26
+
 " BufTabLine & Buffer key maps
 let buftabline_show=1
 let g:buftabline_numbers=1
@@ -175,8 +191,9 @@ let g:buftabline_indicators=1
 let g:buftabline_separators=1
 let g:vem_statusline_filename_format='p'
 
-nnoremap <Leader>b :buffers<CR>:buffer<Space>
- 
+" Change buffers
+nnoremap <Leader>b :Buffers<CR>
+
 " Close all buffers except the active one
 command BufOnly silent! execute "%bd|e#|bd#"
 nnoremap <silent> <leader>cb :BufOnly<CR>
@@ -184,6 +201,10 @@ nnoremap <silent> <leader>cb :BufOnly<CR>
 " Cycle through buffers
 nnoremap <silent> <C-N> :bnext<CR>
 nnoremap <silent> <C-P> :bprev<CR>
+
+" Zoxide
+let g:zoxide_prefix = 'jump'
+let g:zoxide_executable='/usr/bin/zoxide'
 
 " Hexokinase Plugin
 let g:Hexokinase_highlighters = [ 'foregroundfull' ]
@@ -197,7 +218,7 @@ let g:Hexokinase_optInPatterns = [
 \     'colour_names'
 \ ]
 
-" vimwiki 
+" vimwiki
 let g:vimwiki_list = [{'path': '~/Documents/Vimwiki_md/', 'syntax': 'markdown', 'ext': '.md', 'links_space_char': '_'}]
 
 let g:vimwiki_listsyms = ' ✗○●✓'
@@ -245,9 +266,6 @@ set cursorline
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
 
-:map <Home> <esc>0a
-:imap <Home> <Esc>^i
-
 " Turn on Relative Line Numbering & Line Numbering
 nmap <F3> :set norelativenumber!<CR> " toggle relativenumber
 
@@ -258,26 +276,27 @@ nnoremap <leader>r :%s///g<left><left>
 nnoremap <leader>rc :%s///gc<left><left><left>
 
 " The same as above except instead of acting on the whole file, it will be
-" restricted to the previously visually selected range. 
+" restricted to the previously visually selected range.
 xnoremap <leader>r :s///g<left><left>
 xnoremap <leader>rc :s///gc<left><left><left>
 
-" Source the ~/.vimrc file after writing the buffer to file
-if has("autocmd")
-    autocmd BufWritePost .vimrc source $MYVIMRC
-endif
+nnoremap <leader>H :HexokinaseToggle<CR>
+
+if has ('autocmd')
+    augroup vimrc     
+        autocmd! BufWritePost $MYVIMRC source % | echom "Reloaded " . $MYVIMRC | redraw
+        autocmd! BufWritePost $MYGVIMRC if has('gui_running') | so % | echom "Reloaded " . $MYGVIMRC | endif | redraw
+    augroup END
+endif 
 
 " Markdown Preview Vivify
 nnoremap <C-F4> :Vivify<CR>
 
+" Autocomplete disable New Line
+inoremap <expr> <CR> pumvisible() ? "\<C-Y>" : "\<CR>"
+
 " Toggle Hexokinase
 map <C-S-h> :HexokinaseToggle<CR>
-
-" Copy & Paste to/from external sources
-map <leader>c "+y
-map <leader>p "+p
-vmap <leader>c "+yi
-vmap <leader>x "+x
 
 " Insert date in normal and insert mode
 nnoremap <F5> i<C-R>=strftime("%d/%B/%Y %H:%M")<CR><Space><ESC>
@@ -292,12 +311,12 @@ command! WipeReg for i in range(34,122) | silent! call setreg(nr2char(i), []) | 
 
 " Turn on or off the list option (For showing EOL etc)
 noremap <F6> :set list! nolist?<CR>
- 
+
 " Press F4 to toggle highlighting on/off, and show current value.
 noremap <F4> :set hlsearch! hlsearch?<CR>
 
 " Toggle cursorcolumn
-nnoremap <leader>/ :set cursorcolumn! cursorcolumn?<CR>
+nnoremap <F11> :set cursorcolumn! cursorcolumn?<CR>
 
 " move updown by visual (wrapped) lines
 noremap j gj
@@ -306,8 +325,8 @@ noremap k gk
 " opens $MYVIMRC for editing, or use :tabedit $MYVIMRC
 nmap <Leader>v :e $MYVIMRC<CR>
 
-" Add filename and path in insert mode 
-inoremap <Leader>fn <C-R>=expand("%:p")<CR> 
+" Add filename and path in insert mode
+inoremap <Leader>fn <C-R>=expand("%:p")<CR>
 
 " Set filetype to Markdown
 au BufNewFile,BufRead *.md,*.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn  set ft=markdown
@@ -321,73 +340,6 @@ augroup auto_wrap_comments
   " Remove it again when leaving insert mode
   autocmd User SyntaxCommentLeaveI setlocal tw=0
 augroup END
-
-" FERN Initialisation and keybindings
-
-" Custom settings, mappings and highlights
-let g:fern#disable_default_mappings = 1
-let g:fern#renderer = "nerdfont"
-highlight FernRootText                  cterm=none ctermfg=202 ctermbg=236
-highlight FernMarkedText                cterm=none ctermfg=196 ctermbg=236
-highlight FernLeafText                  cterm=none ctermfg=15  ctermbg=236
-highlight FernBranchText                cterm=none ctermfg=15  ctermbg=236
-highlight FernWindowSelectStatusLine    cterm=none ctermfg=15  ctermbg=36
-highlight FernWindowSelectIndicator     cterm=none ctermfg=15  ctermbg=36
-
-noremap <silent> <leader>f :Fern . -drawer -reveal=% -width=30 -toggle<CR>
-
-function! FernInit() abort
-    nmap <buffer><expr>
-                \ <Plug>(fern-my-open-expand-collapse)
-                \ fern#smart#leaf(
-                \ "<Plug>(fern-action-open:select)",
-                \ "\<Plug>(fern-action-expand)",
-                \ "\<Plug>(fern-action-collapse)"
-                \ )
-
-    nmap <buffer> <CR> <Plug>(fern-my-open-expand-collapse)
-    nmap <buffer> <2-LeftMouse> <Plug>(fern-my-open-expand-collapse)
-    nmap <buffer> < <Plug>(fern-action-leave)
-    nmap <buffer> > <Plug>(fern-action-enter)
-    nmap <buffer> <left> <Plug>(fern-action-leave)
-    nmap <buffer> <right> <Plug>(fern-action-enter)
-    nmap <buffer> R <Plug>(fern-action-rename)
-    nmap <buffer> H <Plug>(fern-action-open:split)
-    nmap <buffer> V <Plug>(fern-action-open:vsplit)
-    nmap <buffer> f <Plug>(fern-action-new-file)
-    nmap <buffer> D <Plug>(fern-action-new-dir)
-    nmap <buffer> h <Plug>(fern-action-hidden:toggle)
-    nmap <buffer> k <Plug>(fern-action-mark:toggle)
-    nmap <buffer> m <Plug>(fern-action-move)
-    nmap <buffer> c <Plug>(fern-action-copy)
-    nmap <buffer> o <Plug>(fern-action-open)
-    nmap <buffer> r <Plug>(fern-action-reload)
-    nmap <buffer> y <Plug>(fern-action-yank:path)
-    nmap <buffer> <space> <Plug>(fern-action-mark)
-    nmap <buffer> dd <Plug>(fern-action-trash)
-endfunction
-
-augroup FernGroup
-    autocmd!
-    autocmd FileType fern setlocal norelativenumber | setlocal nonumber | call FernInit()
-augroup END
-
-function! s:fern_settings() abort
-  nmap <silent> <buffer> p     <Plug>(fern-action-preview:toggle)
-  nmap <silent> <buffer> <C-p> <Plug>(fern-action-preview:auto:toggle)
-  nmap <silent> <buffer> <C-d> <Plug>(fern-action-preview:scroll:down:half)
-  nmap <silent> <buffer> <C-u> <Plug>(fern-action-preview:scroll:up:half)
-endfunction
-
-augroup fern-settings
-  autocmd!
-  autocmd FileType fern call s:fern_settings()
-augroup END
-
-nnoremap <Plug>(fern-close-drawer) :<C-u>FernDo close -drawer -stay<CR>
-nmap <buffer><silent> <Plug>(fern-action-open-and-close)
-      \ <Plug>(fern-action-open)
-      \ <Plug>(fern-close-drawer)
 
 " Vim Table Mode
 function! s:isAtStartOfLine(mapping)
@@ -405,13 +357,13 @@ inoreabbrev <expr> __
           \ '<c-o>:silent! TableModeDisable<cr>' : '__'
 
 " Ultisnips
-let g:UltiSnipsSnippetDirectories=["UltiSnips"] 
+let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 let UltiSnipsEditSplit="vertical"
 
-nmap <leader>e :UltiSnipsEdit 
+nmap <leader>e :UltiSnipsEdit
 
 " Window Zoom
 function! WindowUnzoom()
@@ -437,11 +389,40 @@ autocmd  WinLeave,TabLeave * if exists('w:zoomed') | silent! call WindowUnzoom()
 
 nnoremap <silent> <C-w>z :call WindowZoom()<CR>
 
-" Sudu - Sudo for vim
-let g:suda#prompt = 'Your password please: '
-
 " Abbreviations
 ab ph Patrick Heffernan
 ab em Patrick Heffernan <patrick4370@bigpond.com>
 
+" Line wrap, linebreak and nolist on for wrapping
 command! -nargs=* Wrap set wrap linebreak nolist
+
+" Navigate quickfix list with ease
+nnoremap <silent> [q :cprevious<CR>
+nnoremap <silent> ]q :cnext<CR>
+
+" fzf stuff
+let g:fzf_history_dir = '~/.local/share/fzf-history'
+let g:fzf_layout = { 'down': '25%' }
+
+autocmd! FileType fzf
+autocmd  FileType fzf set laststatus=0 noshowmode noruler
+  \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
+
+command! -bang -nargs=* Rg call fzf#vim#grep("rg --column --line-number --no-heading --color=always --vimgrep --follow ".<q-args>, 1, <bang>0)
+
+" Resize windows
+nnoremap <C-right> :vertical resize -5<cr>
+nnoremap <C-down> :resize +5<cr>
+nnoremap <C-up> :resize -5<cr>
+nnoremap <C-left> :vertical resize +5<cr>
+
+" When you forget to open vim as root
+command Sw :execute ':silent w !sudo tee % > /dev/null' | :edit!
+
+" NERDTree
+nnoremap <C-n> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFocus<CR>
+let g:NERDTreeFileLines = 1
+
+" Exit Vim if NERDTree is the only window remaining in the only tab.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | call feedkeys(":quit\<CR>:\<BS>") | endif

@@ -1,22 +1,44 @@
 # i3status-rs Configuration
 #
-# Updated: 01-11-2023 14:58 +1000 
+# Updated: 16/June/2024 12:54 
 #
 # New Version i3status-rs 0.30.4 (commit f4490035 2023-02-28)
+
 icons_format = "{icon}"
 
 [theme]
-theme = "gruvbox-light"
+theme = "dracula"
 
 [icons]
 icons = "awesome5"
 
 [[block]]
+# System Temperature
+block = "temperature"
+interval = 10
+idle = 45
+good = 70
+scale = "celsius"
+warning = 85
+format = " $icon $average avg "
+format_alt = " $icon $min min, $max max, $average avg "
+ 
+[[block]]
+block = "pomodoro"
+format = " $icon{ $message|} "
+notify_cmd = "notify-send '{msg}'"
+message = "Take a break!"
+break_message = "Back to work. Break over!"
+blocking_cmd = false
+# [block.theme_overrides]
+# idle_bg = "#bd93f9 "
+
+[[block]]
 block = "xrandr"
-format = " $icon $brightness "
-[block.theme_overrides]
-idle_bg = "#005f00"
-idle_fg = "#fffff5"
+format = " $icon   $brightness "
+# [block.theme_overrides]
+# idle_bg = "#f9f093"
+# idle_fg = "#000000"
 
 [[block]]
 # Memory Module
@@ -28,17 +50,9 @@ warning_mem = 80.0
 [block.icons_overrides]
 memory_mem = "\uf538"
 memory_swap = "\uf837"
-[block.theme_overrides]
-critical_bg = "#3f4a3c"
-critical_fg = "#ffffff"
-info_bg = "#3f4a3c"
-info_fg = "#ffffff"
-good_bg = "#3f4a3c"
-good_fg = "#ffffff"
-warning_bg = "#3f4a3c"
-warning_fg = "#ffffff"
-idle_bg = "#3f4a3c"
-idle_fg = "#ffffff"
+# [block.theme_overrides]
+# idle_bg = "#50fa7b"
+# idle_fg = "#000000"
 
 [[block]]
 # CPU Module
@@ -49,18 +63,10 @@ format = " $icon { $boost|} $frequency  "
 cpu = "\uf4bc"
 cpu_boost_on = "\uf205"
 cpu_boost_off = "\uf204"
-[block.theme_overrides]
-idle_bg = "#a3af9e"
-idle_fg = "#303030"
-good_bg = "#005fff"
-good_fg = "#fffff5"
-info_bg = "#005fff"
-info_fg = "#fffff5"
-warning_bg = "#ffaf00"
-warning_fg = "#262626"
-critical_bg = "#ff0000"
-critical_fg = "#ffffff"
-# 
+# [block.theme_overrides]
+# idle_bg = "#bd93f9"
+# idle_fg = "#000000"
+
 [[block]]
 # Battery Module
 block = "battery"
@@ -75,50 +81,10 @@ critical = 20
 warning = 65
 good = 70
 info = 80
-[block.theme_overrides]
-idle_bg = "#005f00"
-idle_fg = "#ffffff"
-good_bg = "#ff0000"
-good_fg = "#dadada"
-info_bg = "#ff3333"
-info_fg = "#dadada"
-warning_bg = "#ffbf00"
-warning_fg = "#303030"
-critical_bg = "#d70000"
-critical_fg = "#bcbcbc"
-[block.icons_overrides]
-bat_charging = "\uf0e7"
-bat = "\uf244"
-
-[[block]]
-# System Temperature
-block = "temperature"
-interval = 10
-idle = 45
-good = 70
-scale = "celsius"
-warning = 85
-format = " $icon $average avg "
-format_alt = " $icon $min min, $max max, $average avg "
-[block.theme_overrides]
-good_bg = "#3f4a3c"
-good_fg = "#ffffff"
-warning_bg = "#ff0000"
-warning_fg = "#ffffff"
- 
-# [[block]]
-# # Exchange rate
-# block = "custom"
-# command = "/home/patrick/.local/bin/exchange.sh"
-# interval = 14400
-# shell = "/bin/bash"
-# [[block.click]]
-# button = "left"
-# cmd = "librewolf --new-tab http://www.exchangerate.com/currency-converter/USD/AUD/1.00/?XR-QuickConverter=convert&calc_short_from_iso=239&calc_short_to_iso=15"
 # [block.theme_overrides]
-# idle_bg = "#005f00"
-# idle_fg = "#ffffff"
- 
+# idle_bg = "#f9f093"
+# idle_fg = "#000000"
+
 [[block]]
 # Time and Date
 block = "time"
@@ -128,31 +94,9 @@ button = "left"
 cmd = '/usr/bin/gsimplecal'
 [block.format]
 full = " $icon $timestamp.datetime(f:'%R', l:en_AU) "
-[block.theme_overrides]
-idle_bg = "#a3af9e"
-idle_fg = "#303030"
- 
-[[block]]
-# Rofi Power Menu
-block = "custom"
-command = "echo -e \uf011"
-[[block.click]]
-button = "left"
-cmd = "~/.local/bin/rofi-power 'i3-msg exit'"
-[block.theme_overrides]
-idle_bg = "#005f00"
-idle_fg = "#ffffff"
-
-[[block]]
-# Rofi Bluetooth Menu
-block = "custom"
-command = "echo -e \uf293"
-[[block.click]]
-button = "left"
-cmd = "/usr/bin/rofi-bluetooth"
-[block.theme_overrides]
-idle_bg = "#3f4a3c"
-idle_fg="#ffffff"
+# [block.theme_overrides]
+# idle_bg = "#bd93f9"
+# idle_fg = "#000000"
 
 [[block]]
 # BlueAnt X0 Speaker
@@ -198,3 +142,38 @@ format = " $icon {$percentage|} $battery_icon "
 "21..70" = "warning"
 "71..100" = "good"
 
+[[block]]
+# Rofi Bluetooth Menu
+block = "custom"
+command = "echo -e \uf293"
+[[block.click]]
+button = "left"
+cmd = "/usr/bin/rofi-bluetooth"
+# [block.theme_overrides]
+# idle_bg = "#50fa7b"
+# idle_fg="#000000"
+
+[[block]]
+# Rofi Power Menu
+block = "custom"
+command = "echo -e \uf011"
+[[block.click]]
+button = "left"
+cmd = "~/.local/bin/rofi-power 'i3-msg exit'"
+# [block.theme_overrides]
+# idle_bg = "#ff5555"
+# idle_fg = "#ffffff"
+
+# [[block]]
+# # Exchange rate
+# block = "custom"
+# command = "/home/patrick/.local/bin/exchange.sh"
+# interval = 14400
+# shell = "/bin/bash"
+# [[block.click]]
+# button = "left"
+# cmd = "librewolf --new-tab http://www.exchangerate.com/currency-converter/USD/AUD/1.00/?XR-QuickConverter=convert&calc_short_from_iso=239&calc_short_to_iso=15"
+# [block.theme_overrides]
+# idle_bg = "#005f00"
+# idle_fg = "#ffffff"
+ 
