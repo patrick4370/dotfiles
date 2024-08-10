@@ -1,7 +1,7 @@
-Xft.dpi: 125.37
-Xft.antialias: true
-Xft.hinting: true
-Xft.rgba: rgb
-Xft.autohint: true
-Xft.hintstyle: hintfull
-URxvt*font:    xft:Hack Nerd Font:style=Regular:size=11
+Xft.dpi:        105.6
+Xft.antialias:  true
+Xft.hinting:    true
+Xft.rgba:       rgb
+Xft.autohint:   true
+Xft.hintstyle:  hintfull
+URxvt*font:     xft:Hack Nerd Font:style=Regular:size=11

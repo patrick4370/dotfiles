@@ -18,6 +18,7 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light momo-lab/zsh-smartinput
 zinit light Aloxaf/fzf-Tab
+zinit light gessen/zsh-fzf-kill
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-history-substring-search
 zinit light ael-code/zsh-colored-man-pages
@@ -133,6 +134,11 @@ if type clipcat-menu >/dev/null 2>&1; then
     bindkey -s '^]' "^Q clipcat-menu --finder=builtin remove ^J"
 fi
 
+# No screen blanking
+# sleep 1
+xset s 0 0
+
+source ~/.config/zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 eval "$(keychain --eval --quiet --agents ssh pidns_ecdsa pxe_ecdsa github_ed25519)"

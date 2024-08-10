@@ -27,13 +27,13 @@ set zoom-step 20
 set scroll-step 80
 
 # enable incremental search
-set incremental-search true
+# set incremental-search true
 
 # Defines if hidden files and directories should be displayed in completion.
 set show-hidden				"true"
 
 # Open Zathura in inverted mode
-set recolor					"false"
+# set recolor					"false"
 
 # Open masterpdfeditor4 to edit file - Ctrl+e to open.
 map <C-e> feedkeys ":exec masterpdfeditor4 $FILE<Return>"
@@ -54,20 +54,13 @@ map C set "first-page-column 1:1"
 map <C-c> set "first-page-column 1:2" 
 
 # Key Bindings
-map u scroll				"half-up"
-map d scroll				"half-down"
-map D toggle_page_mode
-map r reload
-map R rotate
-map <C-i> zoom in
-map <C-o> zoom out
-map <C-r> zoom expand
 map <C-p> print
-map s toggle_statusbar
-map i toggle_inputbar
+map <A-d> zoom default
+map <A-i> zoom in
+map <A-o> zoom out
 
 # Defines which auto adjustment mode should be used if a document is loaded.
-set adjust-open				"best-fit"
+set adjust-open				"width"
 
 # Defines if a notification should be displayed after selecting text.
 set selection-notification	"true"
@@ -84,29 +77,5 @@ set statusbar-home-tilde	"true"
 # Shows  or  hides  GUI elements.
 set guioptions				"shv"
 
-# Colours
-set completion-bg           "#303030"
-set completion-fg           "#ffffff"
-set completion-highlight-bg "#ff0000"
-set completion-highlight-fg "#ffffff"
-set default-bg              "#2A2F38"
-set default-fg              "#c0c0c0"
-set inputbar-bg             "#1793D1"
-set inputbar-fg             "#ffffff"
-set statusbar-bg            "#5f0000"
-set statusbar-fg            "#ffffff"
-set highlight-color         "rgba(0,215,0,0.5)"
-set highlight-active-color  "rgba(0,95,215,0.5)"
-set highlight-fg            "#FFFFFF"
-set notification-bg         "#5f87af"
-set notification-fg         "#ffffff"
-set notification-warning-bg "#5f87af"
-set notification-warning-fg "#ffffff"
-set notification-error-bg   "#5f87af"
-set notification-error-fg   "#ffffff"
-set render-loading-bg       "#1793D1"
-set render-loading-fg       "#ffffff"
-set index-bg                "#303030"
-set index-fg                "#ffffff"
-set index-active-bg         "#1793D1"
-set index-active-fg         "#ffffff"
+include /home/patrick/.config/zathura/catppuccin-macchiato
+

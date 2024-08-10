@@ -1,4 +1,4 @@
-include ~/.config/newsboat/universal-color
+include ~/.config/newsboat/dark
 auto-reload yes
 reload-time 60
 reload-threads 100

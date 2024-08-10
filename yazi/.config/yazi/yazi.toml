@@ -83,10 +83,15 @@ suppress_preload = false
 prepend_previewers = [
   { name = "*.md", run = "glow" },
   { mime = "text/csv", run = "miller"},
+  { name = "*.csv", run = "rich-preview"}, # for csv files
+  { name = "*.md", run = "rich-preview" }, # for markdown (.md) files
+  { name = "*.ipynb", run = "rich-preview"}, # for jupyter notebooks (.ipynb)
+  { name = "*.json", run = "rich-preview"}, # for json (.json) files
+# { name = "*.lang_type", run = "rich-preview"} # for particular language files eg. .py, .go., .lua, etc.
+
 ]
 
 preloaders = [
-	{ name = "*", cond = "!mime", run = "mime", multi = true, prio = "high" },
 	# Image
 	{ mime = "image/*", run = "image" },
 	# Video
@@ -119,6 +124,11 @@ previewers = [
 	{ mime = "application/x-xz",            run = "ouch" }, 
 	# Fallback
 	{ name = "*", run = "file" },
+    { name = "*.csv", run = "rich-preview"}, # for csv files
+    { name = "*.md", run = "rich-preview" }, # for markdown (.md) files
+    { name = "*.ipynb", run = "rich-preview"}, # for jupyter notebooks (.ipynb)
+    { name = "*.json", run = "rich-preview"}, # for json (.json) files
+#    { name = "*.lang_type", run = "rich-preview"} # for particular language files eg. .py, .go., .lua, etc.
 ]
 
 [input]
@@ -190,4 +200,3 @@ sort_reverse   = false
 [log]
 enabled = false
 
-[headsup]

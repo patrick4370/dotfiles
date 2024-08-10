@@ -6,12 +6,25 @@
 [manager]
 
 keymap = [
-	{ on = [ "<Esc>" ], run = "escape",             desc = "Exit visual mode, clear selected, or cancel search" },
-	{ on = [ "<C-[>" ], run = "escape",             desc = "Exit visual mode, clear selected, or cancel search" },
-	{ on = [ "q" ],     run = "quit",               desc = "Exit the process" },
-	{ on = [ "Q" ],     run = "quit --no-cwd-file", desc = "Exit the process without writing cwd-file" },
-	{ on = [ "<C-q>" ], run = "close",              desc = "Close the current tab, or quit if it is last tab" },
-	{ on = [ "<C-z>" ], run = "suspend",            desc = "Suspend the process" },
+	{ on = [ "<Esc>" ],    run = "escape",                              desc = "Exit visual mode, clear selected, or cancel search" },
+	{ on = [ "<C-[>" ],    run = "escape",                              desc = "Exit visual mode, clear selected, or cancel search" },
+	{ on = [ "q" ],        run = "quit",                                desc = "Exit the process" },
+	{ on = [ "Q" ],        run = "quit --no-cwd-file",                  desc = "Exit the process without writing cwd-file" },
+	{ on = [ "<C-q>" ],    run = "close",                               desc = "Close the current tab, or quit if it is last tab" },
+	{ on = [ "<C-z>" ],    run = "suspend",                             desc = "Suspend the process" },
+    
+    # chmod
+    { on   = [ "c", "m" ], run  = "plugin chmod",                       desc = "Chmod on selected files" },
+
+    # Compress selected Files
+    { on   = [ "c", "a" ], run  = "plugin compress",                    desc = "Archive selected files" },
+
+    # Fast enter
+    { on   = [ "l" ],      run  = "plugin --sync fast-enter", desc = "Enter the subfolder faster, or open the file directly" },
+
+    # Jump to next file
+    { on   = "f",          run  = "plugin jump-to-char", desc = "Jump to char" },
+    { on   = "<C-s>",      run  = 'shell "$SHELL" --block --confirm',   desc = "Open shell here" },
 
     # Bookmarks
     { on = [ "u", "a" ], run = "plugin bookmarks-persistence --args=save", desc = "Save current position as a bookmark" },
@@ -86,15 +99,15 @@ keymap = [
 	{ on = [ "D" ],         run = "remove --permanently",       desc = "Permanently delete the files" },
 	{ on = [ "a" ],         run = "create",                     desc = "Create a file or directory (ends with / for directories)" },
 	{ on = [ "r" ],         run = "rename --cursor=before_ext", desc = "Rename a file or directory" },
-	{ on = [ ";" ],         run = "shell",                      desc = "Run a shell command" },
-	{ on = [ ":" ],         run = "shell --block",              desc = "Run a shell command (block the UI until the command finishes)" },
+	{ on = [ ";" ],         run = "shell --interactive",        desc = "Run a shell command" },
+	{ on = [ ":" ],         run = "shell --interactive --block",desc = "Run a shell command (block the UI until the command finishes)" },
 	{ on = [ "." ],         run = "hidden toggle",              desc = "Toggle the visibility of hidden files" },
 	{ on = [ "s" ],         run = "search fd",                  desc = "Search files by name using fd" },
 	{ on = [ "S" ],         run = "search rg",                  desc = "Search files by content using ripgrep" },
 	{ on = [ "<C-s>" ],     run = "search none",                desc = "Cancel the ongoing search" },
 	{ on = [ "z" ],         run = "plugin zoxide",              desc = "Jump to a directory using zoxide" },
 	{ on = [ "Z" ],         run = "plugin fzf",                 desc = "Jump to a directory, or reveal a file using fzf" },
-    { on = [ "<C-A-s>" ],     run = 'shell "$SHELL" --block --confirm', desc = "Open shell here" },
+    { on = [ "<C-A-s>" ],   run = 'shell "$SHELL" --block --confirm', desc = "Open shell here" },
 
 	# Linemode
 	{ on = [ "m", "s" ], run = "linemode size",        desc = "Set linemode to size" },
@@ -163,9 +176,9 @@ keymap = [
 	# Help
 	{ on = [ "~" ], run = "help", desc = "Open help" },
 
-    # Maximise Preview Pane
-    { on = [",","T"], run = "plugin --sync max-preview" },
-    { on = [",","H"], run = "plugin --sync hide-preview"},
+    { on = "T", run = "plugin --sync max-preview", desc = "Maximize or restore preview" },
+    { on = "H", run = "plugin --sync hide-preview", desc = "Hide preview" },
+    
 ]
 
 [tasks]

@@ -7,7 +7,7 @@
 icons_format = "{icon}"
 
 [theme]
-theme = "dracula"
+theme = "slick"
 
 [icons]
 icons = "awesome5"
@@ -149,9 +149,9 @@ command = "echo -e \uf293"
 [[block.click]]
 button = "left"
 cmd = "/usr/bin/rofi-bluetooth"
-# [block.theme_overrides]
-# idle_bg = "#50fa7b"
-# idle_fg="#000000"
+[block.theme_overrides]
+idle_bg = "#50fa7b"
+idle_fg="#000000"
 
 [[block]]
 # Rofi Power Menu

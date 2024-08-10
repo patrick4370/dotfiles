@@ -11,7 +11,7 @@
 #  unset f
 # fi
 
-# xset s 1800 1800
+xset s 0 0
 # xset +dpms dpms 900 900 900
 # 
 exec i3

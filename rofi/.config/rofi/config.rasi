@@ -13,4 +13,8 @@ configuration {
     sort: true;
     }
 
-@theme "/home/patrick/.local/share/rofi/themes/dracula1.rasi"
+//@theme "/home/patrick/.local/share/rofi/themes/dracula1.rasi"
+//@theme "/home/patrick/.local/share/rofi/themes/catppuccin-mocha.rasi"
+//@theme "/home/patrick/.local/share/rofi/themes/Patrick.rasi"
+//@theme "/home/patrick/.local/share/rofi/themes/Patrick.rasi"
+@theme "/home/patrick/.local/share/rofi/themes/Patrick.rasi"

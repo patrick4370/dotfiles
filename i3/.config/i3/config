@@ -1,6 +1,6 @@
 # vim: filetype=i3
 # i3wm configuration
-# Updated: 01-11-2023 10:57 +1000
+# Updated: 06/August/2024 11:36  
 # Modified by Patrick Heffernan <patrick4370@bigpond.com>
 
 # Font for window titles. Will also be used by the bar unless a different font 
@@ -10,12 +10,42 @@ font pango:Inconsolata:Mono:Bold 9, FontAwesome 10
 
 # Variables
 set $mod mod4
-set $gaps 5
+set $gaps 2
 set $term --no-startup-id $TERMINAL 
 set $launcher-clipboard-insert clipcat-menu insert
 set $launcher-clipboard-remove clipcat-menu remove
 
+# Colours
+set $rosewater #f4dbd6
+set $flamingo #f0c6c6
+set $pink #f5bde6
+set $mauve #c6a0f6
+set $red #ed8796
+set $maroon #ee99a0
+set $peach #fab387
+set $yellow #eed49f
+set $green #a6da95
+set $teal #8bd5ca
+set $sky #91d7e3
+set $sapphire #7dc4e4
+set $blue #8aadf4
+set $lavender #b7bdf8
+set $text #cad3f5
+set $subtext1 #b8c0e0
+set $subtext0 #a5adcb
+set $overlay2 #939ab7
+set $overlay1 #8087a2
+set $overlay0 #6e738d
+set $surface2 #5b6078
+set $surface1 #494d64
+set $surface0 #363a4f
+set $base #24273a
+set $mantle #1e2030
+set $crust #181926
+set $barback #424242
+
 # Autostart
+exec --no-startup-id /home/patrick/.screenlayout/screenlayout.sh
 exec --no-startup-id /usr/bin/ibus-daemon -drxR
 exec --no-startup-id dex --autostart --environment i3
 exec_always --no-startup-id /usr/bin/picom --config ~/.config/picom/picom.conf
@@ -23,17 +53,16 @@ exec --no-startup-id /usr/bin/setxkbmap -option "caps:escape_shifted_capslock"
 exec --no-startup-id xinput --set-prop "AlpsPS/2 ALPS DualPoint TouchPad" "Device Enabled" 0
 exec --no-startup-id xinput --set-prop "AT Translated Set 2 keyboard" "Device Enabled" 0
 exec --no-startup-id xinput --set-prop "AlpsPS/2 ALPS DualPoint Stick" "Device Enabled" 0
-exec --no-startup-id /home/patrick/.screenlayout/screenlayout.sh
 exec --no-startup-id /usr/bin/autotiling
 exec --no-startup-id /usr/bin/rclone mount --vfs-cache-mode full --vfs-cache-max-age 1h --vfs-cache-max-size 50G --daemon gdrive: /home/patrick/gdrive 
 exec --no-startup-id /usr/bin/rclone mount --vfs-cache-max-age 1h --vfs-cache-max-size 50G --daemon onedrive: /home/patrick/onedrive
-exec --no-startup-id xidlehook --not-when-audio --not-when-fullscreen --timer 360 "~/.local/bin/i3lockscript.sh" "" &
-exec --no-startup-id xset dpms 3600 7200 0
-exec --no-startup-id /usr/bin/xfce4-power-manager --daemon
+exec --no-startup-id xidlehook --not-when-audio --not-when-fullscreen --timer 600 "~/.local/bin/i3lockscript.sh" "" &
 exec --no-startup-id /usr/bin/numlockx 
 exec_always --no-startup-id /usr/bin/clipcatd
 exec --no-startup-id /usr/bin/udiskie -sna
 exec --no-startup-id /usr/bin/lxpolkit
+exec --no-startup-id xrandr --output eDP-1 --screenlayoutale 1.2x1.2
+exec --no-startup-id xrdb -load -I${HOME}/.Xresources.d ~/.Xresources
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -43,7 +72,7 @@ gaps inner $gaps
 gaps outer $gaps
 #
 # Only show gaps when multiple windows open
-smart_gaps on
+smart_gaps off
 
 # Focus Follows Mouse
 focus_follows_mouse no
@@ -66,40 +95,13 @@ show_marks yes
 
 tiling_drag modifier
 
-set $rosewater #f5e0dc
-set $flamingo #f2cdcd
-set $pink #f5c2e7
-set $mauve #cba6f7
-set $red #f38ba8
-set $maroon #eba0ac
-set $peach #fab387
-set $yellow #f9e2af
-set $green #a6e3a1
-set $teal #94e2d5
-set $sky #89dceb
-set $sapphire #74c7ec
-set $blue #89b4fa
-set $lavender #b4befe
-set $text #cdd6f4
-set $subtext1 #bac2de
-set $subtext0 #a6adc8
-set $overlay2 #9399b2
-set $overlay1 #7f849c
-set $overlay0 #6c7086
-set $surface2 #585b70
-set $surface1 #45475a
-set $surface0 #313244
-set $base #1e1e2e
-set $mantle #181825
-set $crust #11111b
-
 # Colours for windows
-# class                  border    bground  text indicator  child_border
-client.focused           $lavender $base    $text  $rosewater $lavender
-client.focused_inactive  $overlay0 $base    $text  $rosewater $overlay0
-client.unfocused         $overlay0 $base    $text  $rosewater $overlay0
-client.urgent            $peach    $base    $peach $overlay0  $peach
-client.placeholder       $overlay0 $base    $text  $overlay0  $overlay0
+# class                  border    bground  text    indicator  child_border
+client.focused           $blue     $base    $yellow $blue      $blue
+client.focused_inactive  $overlay0 $base    $text   $rosewater $overlay0
+client.unfocused         $overlay0 $base    $text   $rosewater $overlay0
+client.urgent            $peach    $base    $yellow $overlay0  $peach
+client.placeholder       $overlay0 $base    $yellow $overlay0  $overlay0
 client.background        $base
 
 # Define names for default workspaces for which we configure key bindings later on.
@@ -133,10 +135,10 @@ assign [class="Zathura"]                                $ws10
 # Floating windows & Layouts
 for_window [class="Arandr" instance="arandr"] floating enable, resize set 800 800, move position center
 for_window [class="Blueman-manager"] floating enable, resize set 720 566, move position center
-for_window [class="Gcolor3"] floating enable, resize set 780 305
+for_window [class="Nl.hjdskes.gcolor3"] floating enable, resize set 780 305
 for_window [class="Lightdm-gtk-greeter-settings"] floating enable, move position center
 for_window [class="Lxappearance"] floating enable, resize set 800 600, move position center
-for_window [class="Pavucontrol" title="Volume Control"] floating enable
+for_window [class="pavucontrol" title="Volume Control"] floating enable
 for_window [class="betterbird"] layout tabbed
 for_window [class="betterbird" window_role="about"] floating enable, move position center
 for_window [class="Usbimager" instance="usbimager"] floating enable
@@ -146,19 +148,19 @@ for_window [class="^.*"] border pixel 1
 for_window [class="feh"] floating enable, move position center
 for_window [class="librewolf" window_role="About"] floating enable, move position center
 for_window [class="mpv" instance="gl"] floating enable, move position center
-for_window [instance="paru"] sticky enable, floating enable, resize set 1500 800, border pixel 1, move position center
+for_window [instance="paru"] sticky enable, floating enable, resize set 1600 800, border pixel 1, move position center
 for_window [class="GParted"] floating enable, resize set 1120 700, move position center
 for_window [instance="ncmpcpp"] floating enable, resize set 1200 700, move position center
 for_window [class="Imager" instance="rpi-imager"] floating enable
 for_window [id=56623110 title="MakeMKV BETA"] floating enable
 for_window [class="Bitwarden"] move position center, resize set 1170 900, floating enable 
 for_window [class="Zathura"] focus
-for_window [class="Thunar"] floating enable, resize set 1200 1000, move position center
 for_window [class="zenity"] floating enable, resize set 600 800, move position center
-for_window [class="Sound-juicer"] floating enable, move position center
+for_window [class="Sound-juicer"] floating enable, resize set 1000 800, move position center
 for_window [class="yazi"] floating enable, resize set 1700 1000, move position center
 for_window [class="Nsxiv"] floating enable
 for_window [class="pika-backup"] floating enable
+for_window [class="Otpgui"] floating enable
 
 # Move through workspaces
 bindsym Mod1+$mod+Right workspace next
@@ -218,10 +220,10 @@ bindsym $mod+q kill
 bindsym $mod+F1 exec --no-startup-id ~/.local/bin/yad-help.sh
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -230,10 +232,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -242,7 +244,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym Mod1+h split h
 
 # SSH
 bindsym $mod+r exec --no-startup-id rofi -show ssh
@@ -271,10 +273,13 @@ bindsym $mod+shift+space floating toggle
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 
-# Screen Shots Select Area - Take Screenshot - Take Screenshot with delay
+# Screen Shots Select Area
 bindsym --release $mod+Shift+F12 exec --no-startup-id escrotum --select '~/Pictures/Screenshots/%Y-%m-%d-%H%M%S_$wx$h_escrotum.png' && notify-send "Selection saved"
+# Screenreen Shotsots Desktop
 bindsym --release $mod+F12 exec --no-startup-id escrotum '~/Pictures/Screenshots/%Y-%m-%d-%H%M%S_$wx$h_escrotum.png' && notify-send "Screenshot saved"
+# Screen Shots Desktoplay 8 seconds
 bindsym --release $mod+Shift+d exec --no-startup-id escrotum --delay 8 '~/Pictures/Screenshots/%Y-%m-%d-%H%M%S_$wx$h_escrotum.png' && notify-send "Screenshot saved"
+# Screenshotreen Shotsotsots Take Shot of window_rolendow
 bindsym --release $mod+F11 exec --no-startup-id escrotum -x $(xwininfo -int | awk '/Window id:/ {print $4}') '~/Pictures/Screenshots/%Y-%m-%d-%H%M%S_$wx$h_escrotum.png' && notify-send "Window screenshot saved"
 
 # exit i3 (logs you out of your X session)
@@ -328,27 +333,26 @@ bindsym $mod+Shift+b bar mode toggle
 # Start i3status-rust with configuration & colours
 bar 
 {
-    font pango:Inconsolata Mono Bold 10, FontAwesome 10 
-	position top
+    font pango:Inconsolata Nerd Font, Material Icons 14
 	status_command /usr/bin/i3status-rs 
-    workspace_buttons yes
+	position top
 	output eDP-1
     workspace_min_width 60
     strip_workspace_numbers yes
     binding_mode_indicator yes
-    mode dock
 
-colors {
-    background         $base
-    statusline         $text
-    focused_statusline $text
-    focused_separator  $base
-    focused_workspace  $base $base $green
-    active_workspace   $base $base $blue
-    inactive_workspace $base $base $surface1
-    urgent_workspace   $base $base $surface1
-    binding_mode       $base $base $surface1
-  }
+    colors {
+        #Class             border       Background      Text
+        background         $barback
+        statusline         $red         $barback        #ffffff
+        focused_statusline $text
+        focused_separator  $base
+        focused_workspace  $blue        $base           $yellow
+        active_workspace   $overlay0    $text           $green
+        inactive_workspace $overlay0    $base           $surface2
+        urgent_workspace   $red         $base           $red
+        binding_mode       $base        $base           $surface1
+      }
 }
 
 # Scratchpad - Plain old terminal
@@ -359,7 +363,7 @@ for_window [instance="dropdown"] floating enable, sticky enable, resize set 1500
 # bpytop
 exec --no-startup-id alacritty --class btop -e btop
 bindsym $mod+Shift+t [instance="btop"] scratchpad show; [instance="btop"] move position center
-for_window [instance="btop"] floating enable, sticky enable, resize set 1300 800, move scratchpad
+for_window [instance="btop"] floating enable, sticky enable, resize set 1500 700, move scratchpad
 
 # Newsboat
 exec --no-startup-id alacritty --class newsboat -e newsboat

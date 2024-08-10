@@ -84,6 +84,7 @@ ze()
                 $XDG_CONFIG_HOME/zsh/.alias.zsh
                 $XDG_CONFIG_HOME/zsh/.zlogin
                 $XDG_CONFIG_HOME/zsh/.zlogout
+                /home/patrick/.config/zsh/.zprofile
                )
 
         local string=" The ZSH Config Editor "
@@ -103,24 +104,25 @@ ce()
         # well. Date: 06-06-2023 09:02 +1000
 
         myconfigs=(
-                 $XDG_CONFIG_HOME/zathura/zathurarc
-                 $XDG_CONFIG_HOME/yazi/*    
-                 $XDG_CONFIG_HOME/weechat/*.conf 
-                 $XDG_CONFIG_HOME/tmux/tmux.conf
-                 $XDG_CONFIG_HOME/rofi/config.rasi 
-                 $XDG_CONFIG_HOME/ranger/rc.conf 
-                 $XDG_CONFIG_HOME/picom/picom.conf
-                 $XDG_CONFIG_HOME/nsxiv/* 
-                 $XDG_CONFIG_HOME/ncmpcpp/config
-                 $XDG_CONFIG_HOME/mpv/mpv.conf 
-                 $XDG_CONFIG_HOME/mpd/mpd.conf
-                 $XDG_CONFIG_HOME/lsd/* 
-                 $XDG_CONFIG_HOME/i3status-rust/config.toml 
-                 $XDG_CONFIG_HOME/i3/config
-                 $XDG_CONFIG_HOME/dunst/dunstrc 
-                 $XDG_CONFIG_HOME/alacritty/alacritty.toml 
-                 $XDG_CONFIG_HOME/starship.toml
                  $HOME/.vimrc
+                 $XDG_CONFIG_HOME/alacritty/alacritty.toml 
+                 $XDG_CONFIG_HOME/bat/config
+                 $XDG_CONFIG_HOME/dunst/dunstrc 
+                 $XDG_CONFIG_HOME/i3/config
+                 $XDG_CONFIG_HOME/i3status-rust/config.toml 
+                 $XDG_CONFIG_HOME/lsd/* 
+                 $XDG_CONFIG_HOME/mpd/mpd.conf
+                 $XDG_CONFIG_HOME/mpv/mpv.conf 
+                 $XDG_CONFIG_HOME/ncmpcpp/config
+                 $XDG_CONFIG_HOME/nsxiv/* 
+                 $XDG_CONFIG_HOME/picom/picom.conf
+                 $XDG_CONFIG_HOME/ranger/rc.conf 
+                 $XDG_CONFIG_HOME/rofi/config.rasi 
+                 $XDG_CONFIG_HOME/starship.toml
+                 $XDG_CONFIG_HOME/tmux/tmux.conf
+                 $XDG_CONFIG_HOME/weechat/*.conf 
+                 $XDG_CONFIG_HOME/yazi/*    
+                 $XDG_CONFIG_HOME/zathura/zathurarc
                )
 
         local string=" Config Editor ~/.config "
@@ -197,7 +199,7 @@ public_ip()
 orphans() 
 {
   if [[ ! -n $(pacman -Qdt) ]]; then
-    printf  "%s\n\n" "No Unused Dependencies to remove"
+    printf  "\n%s\n" "No Unused Dependencies to remove"
   else
     sudo pacman -Rs $(pacman -Qdtq)
   fi
@@ -209,16 +211,6 @@ pac_pkgdep()
 	echo -e "--- $1's dependencies ---\n"
 	pacman -Si $1 | awk -F'[:<=>]' '/^Depends/ {print $2}' | xargs -n1 | sort -u
 	echo -e "\n"
-}
-
-# Exit ranger to current directory
-r() 
-{
-    if [[ -z ${1} ]]; then
-        ranger $(pwd) --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR" 2>/dev/null
-    else
-        ranger ${1} --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR" 2>/dev/null
-    fi
 }
 
 # Cursor colours

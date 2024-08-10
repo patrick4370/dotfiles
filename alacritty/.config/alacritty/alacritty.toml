@@ -1,35 +1,37 @@
 import = [
-    "~/.config/alacritty/catppuccin-mocha.toml",
+    "~/.config/alacritty/themes/Tomorrow-Night-Bright.toml",
 ]
 
 live_config_reload = true
 
 [font]
-size = 12
+size = 17
 builtin_box_drawing = true
 
 [font.normal]
-family = "CommitMono Nerd Font Mono"
+family = "Inconsolata Nerd Font Mono"
 style = "regular"
 
 [font.bold]
-family = "CommitMono Nerd Font Mono"
+family = "Inconsolata Nerd Font Mono"
 style = "bold"
 
 [font.italic]
-family = "CommitMono Nerd Font Mono"
+family = "Inconsolata Nerd Font Mono"
 style = "italic"
 
 [font.bold_italic]
-family = "CommitMono Nerd Font Mono"
+family = "Inconsolata Nerd Font Mono"
 style = "bold_italic"
 
 [shell]
 program = "/usr/bin/zsh"
 
 [window]
-opacity = 0.95
+opacity = 0.80
 blur = true
+dimensions = { columns = 150, lines = 100 }
+decorations = "Buttonless"
 
 [window.padding]
 x = 8
@@ -129,6 +131,7 @@ hide_when_typing = true
 mouse = "Right"
 mods = "Control"
 action = "Paste"
+
 
 [[hints.enabled]]
 command = "xdg-open"

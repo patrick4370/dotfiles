@@ -76,9 +76,6 @@ set wrap linebreak nolist
 call plug#begin()
 
 Plug 'PotatoesMaster/i3-vim-syntax'
-Plug 'preservim/nerdtree', {'on': 'NERDTreeToggle'}
-Plug 'ryanoasis/vim-devicons'
-Plug 'dstein64/vim-startuptime'
 Plug 'SirVer/ultisnips'
 Plug 'ap/vim-buftabline'
 Plug 'nvie/vim-flake8', {'for': 'python'}
@@ -89,7 +86,6 @@ Plug 'vimwiki/vimwiki'
 Plug 'farmergreg/vim-lastplace'
 Plug 'haya14busa/is.vim'
 Plug 'honza/vim-snippets'
-Plug 'jannis-baum/vivify.vim', {'for': 'markdown'}
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/fzf.vim'
 Plug 'mattn/vim-lsp-settings'
@@ -102,7 +98,6 @@ Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'romainl/vim-qf'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
-" Plug 'sainnhe/sonokai'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-fugitive'
@@ -111,8 +106,8 @@ Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'vim-scripts/AutoComplPop'
-" Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+Plug 'chriszarate/yazi.vim'
                                             
 call plug#end()
  
@@ -132,7 +127,7 @@ endif
 
 " Colours
 set t_Co=256
-colorscheme catppuccin_mocha 
+colorscheme catppuccin_macchiato 
 set background=dark
 
 " Change some colours to match what I want.
@@ -162,18 +157,18 @@ highlight clear WildMenu
 
 highlight ColorColumn               ctermbg=240
 highlight CursorColumn              ctermbg=240
-highlight CursorLine                ctermbg=240
-highlight CursorLineNr              ctermbg=236 ctermfg=15
-highlight LineNr                    ctermfg=7 ctermbg=236
+highlight CursorLine                ctermbg=27 ctermfg=255
+highlight CursorLineNr              ctermbg=236 ctermfg=255
+highlight LineNr                    ctermfg=255 ctermbg=236
 highlight NonText                   ctermfg=245
 highlight SignColumn                ctermbg=236
 highlight Specialkey                ctermfg=245
-highlight SpellBad                  cterm=underline ctermfg=9
+highlight SpellBad                  cterm=underline ctermfg=124
 highlight SpellCap                  ctermfg=14
 highlight SpellLocal                ctermfg=10
 highlight SpellRare                 ctermfg=12
 highlight StatusLine                guibg=#3a3a3a ctermbg=237
-highlight Visual                    cterm=none ctermbg=28
+highlight Visual                    ctermfg=255 ctermbg=34
 highlight WildMenu                  ctermbg=26 ctermfg=15
 
 highlight BufTabLineCurrent         cterm=none ctermfg=15 ctermbg=26
@@ -288,9 +283,6 @@ if has ('autocmd')
         autocmd! BufWritePost $MYGVIMRC if has('gui_running') | so % | echom "Reloaded " . $MYGVIMRC | endif | redraw
     augroup END
 endif 
-
-" Markdown Preview Vivify
-nnoremap <C-F4> :Vivify<CR>
 
 " Autocomplete disable New Line
 inoremap <expr> <CR> pumvisible() ? "\<C-Y>" : "\<CR>"
@@ -426,3 +418,119 @@ let g:NERDTreeFileLines = 1
 
 " Exit Vim if NERDTree is the only window remaining in the only tab.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | call feedkeys(":quit\<CR>:\<BS>") | endif
+
+" set to 1, nvim will open the preview window after entering the Markdown buffer
+" default: 0
+let g:mkdp_auto_start = 0
+
+" set to 1, the nvim will auto close current preview window when changing
+" from Markdown buffer to another buffer
+" default: 1
+let g:mkdp_auto_close = 1
+
+" set to 1, Vim will refresh Markdown when saving the buffer or
+" when leaving insert mode. Default 0 is auto-refresh Markdown as you edit or
+" move the cursor
+" default: 0
+let g:mkdp_refresh_slow = 0
+
+" set to 1, the MarkdownPreview command can be used for all files,
+" by default it can be use in Markdown files only
+" default: 0
+let g:mkdp_command_for_global = 0
+
+" set to 1, the preview server is available to others in your network.
+" By default, the server listens on localhost (127.0.0.1)
+" default: 0
+let g:mkdp_open_to_the_world = 0
+
+" use custom IP to open preview page.
+" Useful when you work in remote Vim and preview on local browser.
+" For more details see: https://github.com/iamcco/markdown-preview.nvim/pull/9
+" default empty
+let g:mkdp_open_ip = ''
+
+" specify browser to open preview page
+" for path with space
+" valid: `/path/with\ space/xxx`
+" invalid: `/path/with\\ space/xxx`
+" default: ''
+let g:mkdp_browser = ''
+
+" set to 1, echo preview page URL in command line when opening preview page
+" default is 0
+let g:mkdp_echo_preview_url = 0
+
+" a custom Vim function name to open preview page
+" this function will receive URL as param
+" default is empty
+let g:mkdp_browserfunc = ''
+
+" options for Markdown rendering
+" mkit: markdown-it options for rendering
+" katex: KaTeX options for math
+" uml: markdown-it-plantuml options
+" maid: mermaid options
+" disable_sync_scroll: whether to disable sync scroll, default 0
+" sync_scroll_type: 'middle', 'top' or 'relative', default value is 'middle'
+"   middle: means the cursor position is always at the middle of the preview page
+"   top: means the Vim top viewport always shows up at the top of the preview page
+"   relative: means the cursor position is always at relative positon of the preview page
+" hide_yaml_meta: whether to hide YAML metadata, default is 1
+" sequence_diagrams: js-sequence-diagrams options
+" content_editable: if enable content editable for preview page, default: v:false
+" disable_filename: if disable filename header for preview page, default: 0
+let g:mkdp_preview_options = {
+    \ 'mkit': {},
+    \ 'katex': {},
+    \ 'uml': {},
+    \ 'maid': {},
+    \ 'disable_sync_scroll': 0,
+    \ 'sync_scroll_type': 'middle',
+    \ 'hide_yaml_meta': 1,
+    \ 'sequence_diagrams': {},
+    \ 'flowchart_diagrams': {},
+    \ 'content_editable': v:false,
+    \ 'disable_filename': 0,
+    \ 'toc': {}
+    \ }
+
+" use a custom Markdown style. Must be an absolute path
+" like '/Users/username/markdown.css' or expand('~/markdown.css')
+let g:mkdp_markdown_css = ''
+
+" use a custom highlight style. Must be an absolute path
+" like '/Users/username/highlight.css' or expand('~/highlight.css')
+let g:mkdp_highlight_css = ''
+
+" use a custom port to start server or empty for random
+let g:mkdp_port = ''
+
+" preview page title
+" ${name} will be replace with the file name
+let g:mkdp_page_title = '「${name}」'
+
+" use a custom location for images
+" let g:mkdp_images_path = /home/user/.markdown_images
+
+" recognized filetypes
+" these filetypes will have MarkdownPreview... commands
+let g:mkdp_filetypes = ['markdown']
+
+" set default theme (dark or light)
+" By default the theme is defined according to the preferences of the system
+let g:mkdp_theme = 'light'
+
+" combine preview window
+" default: 0
+" if enable it will reuse previous opened preview window when you preview markdown file.
+" ensure to set let g:mkdp_auto_close = 0 if you have enable this option
+let g:mkdp_combine_preview = 0
+
+" auto refetch combine preview contents when change markdown buffer
+" only when g:mkdp_combine_preview is 1
+let g:mkdp_combine_preview_auto_refresh = 1
+
+nnoremap <silent> - :Yazi<cr>
+nnoremap <silent> _ :YaziWorkingDirectory<cr>
+nnoremap <silent> <C-v> :vsplit \| :Yazi<cr>
