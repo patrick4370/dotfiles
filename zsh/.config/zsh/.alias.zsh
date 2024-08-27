@@ -57,6 +57,7 @@ alias video='yt-dlp --config-locations "~/.config/yt-dlp/video" '
 alias vs='sudo vim '
 alias vss='sort -u "${HOME}"/.config/nvim/spell/en.utf-8.add -o "${HOME}"/.config/nvim/spell/en.utf-8.add'
 alias wget='wget -c'
+alias zswap_stats='sudo grep -r . /sys/kernel/debug/zswap'
 
 alias d='dirs -v | head -10'
 alias 1='cd -'

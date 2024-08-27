@@ -17,8 +17,8 @@ set autoindent
 set backspace=indent,eol,start
 set belloff=all
 set clipboard^=unnamed,unnamedplus
-set complete+=k
-set completeopt=menu
+" set complete+=k
+" set completeopt=longest
 " set dictionary+=/usr/share/dict/british-english
 set encoding=UTF-8
 set expandtab
@@ -39,6 +39,7 @@ set noshowcmd
 set noshowmode
 set nrformats+=alpha
 set number
+set omnifunc=syntaxcomplete#Complete
 set numberwidth=3
 set pastetoggle=<F2>
 set path+=**
@@ -106,8 +107,9 @@ Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'vim-scripts/AutoComplPop'
-Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 Plug 'chriszarate/yazi.vim'
+Plug 'jampow/vim-arc-dark-theme'
+Plug 'jamessan/vim-gnupg'
                                             
 call plug#end()
  
@@ -127,7 +129,7 @@ endif
 
 " Colours
 set t_Co=256
-colorscheme catppuccin_macchiato 
+colorscheme arc-dark 
 set background=dark
 
 " Change some colours to match what I want.
@@ -533,4 +535,7 @@ let g:mkdp_combine_preview_auto_refresh = 1
 
 nnoremap <silent> - :Yazi<cr>
 nnoremap <silent> _ :YaziWorkingDirectory<cr>
-nnoremap <silent> <C-v> :vsplit \| :Yazi<cr>
+nnoremap <silent> <C-A-v> :vsplit \| :Yazi<cr>
+
+autocmd User GnuPG setl textwidth=72
+

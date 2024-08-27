@@ -10,7 +10,7 @@ font pango:Inconsolata:Mono:Bold 9, FontAwesome 10
 
 # Variables
 set $mod mod4
-set $gaps 2
+set $gaps 3
 set $term --no-startup-id $TERMINAL 
 set $launcher-clipboard-insert clipcat-menu insert
 set $launcher-clipboard-remove clipcat-menu remove
@@ -55,9 +55,11 @@ exec --no-startup-id xinput --set-prop "AT Translated Set 2 keyboard" "Device En
 exec --no-startup-id xinput --set-prop "AlpsPS/2 ALPS DualPoint Stick" "Device Enabled" 0
 exec --no-startup-id /usr/bin/autotiling
 exec --no-startup-id /usr/bin/rclone mount --vfs-cache-mode full --vfs-cache-max-age 1h --vfs-cache-max-size 50G --daemon gdrive: /home/patrick/gdrive 
-exec --no-startup-id /usr/bin/rclone mount --vfs-cache-max-age 1h --vfs-cache-max-size 50G --daemon onedrive: /home/patrick/onedrive
+exec --no-startup-id /usr/bin/rclone mount --vfs-cache-mode full --vfs-cache-max-age 1h --vfs-cache-max-size 50G --daemon onedrive: /home/patrick/onedrive
+exec_always --no-startup-id /usr/bin/rclone mount --daemon pidns: /home/patrick/pidns/
 exec --no-startup-id xidlehook --not-when-audio --not-when-fullscreen --timer 600 "~/.local/bin/i3lockscript.sh" "" &
 exec --no-startup-id /usr/bin/numlockx 
+exec --no-startup-id /usr/bin/tailscale-systray
 exec_always --no-startup-id /usr/bin/clipcatd
 exec --no-startup-id /usr/bin/udiskie -sna
 exec --no-startup-id /usr/bin/lxpolkit
@@ -72,7 +74,7 @@ gaps inner $gaps
 gaps outer $gaps
 #
 # Only show gaps when multiple windows open
-smart_gaps off
+smart_gaps on
 
 # Focus Follows Mouse
 focus_follows_mouse no
@@ -134,7 +136,6 @@ assign [class="Zathura"]                                $ws10
 
 # Floating windows & Layouts
 for_window [class="Arandr" instance="arandr"] floating enable, resize set 800 800, move position center
-for_window [class="Blueman-manager"] floating enable, resize set 720 566, move position center
 for_window [class="Nl.hjdskes.gcolor3"] floating enable, resize set 780 305
 for_window [class="Lightdm-gtk-greeter-settings"] floating enable, move position center
 for_window [class="Lxappearance"] floating enable, resize set 800 600, move position center
@@ -159,8 +160,7 @@ for_window [class="zenity"] floating enable, resize set 600 800, move position c
 for_window [class="Sound-juicer"] floating enable, resize set 1000 800, move position center
 for_window [class="yazi"] floating enable, resize set 1700 1000, move position center
 for_window [class="Nsxiv"] floating enable
-for_window [class="pika-backup"] floating enable
-for_window [class="Otpgui"] floating enable
+for_window [class="vlc" window_role="vlc-main"] floating enabled, resize set 950 940
 
 # Move through workspaces
 bindsym Mod1+$mod+Right workspace next
@@ -172,9 +172,7 @@ bindsym --whole-window $mod+button2 kill
 bindsym $mod+Ctrl+f focus parent; fullscreen; focus child
 
 # Rofi Bitwarden Password
-bindsym $mod+b exec --no-startup-id /usr/bin/rofi-rbw
-
-# Clipcat Menu
+bindsym $mod+b exec --no-startup-id /usr/bin/bwmenu
 bindsym $mod+c exec /usr/bin/clipcat-menu
 
 # Volume control

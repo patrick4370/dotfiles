@@ -17,6 +17,7 @@ zinit snippet OMZP::command-not-found
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light momo-lab/zsh-smartinput
+zinit light ninrod/pass-zsh-completion
 zinit light Aloxaf/fzf-Tab
 zinit light gessen/zsh-fzf-kill
 zinit light zsh-users/zsh-autosuggestions
@@ -47,7 +48,7 @@ path=(~/.local/bin $path)
 export PATH
 
 # Additional function and site-function paths 
-fpath=($fpath)
+fpath=($fpath ~/.local/share/zsh/completions/)
 
 # Completion parameters
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
@@ -136,9 +137,14 @@ fi
 
 # No screen blanking
 # sleep 1
-xset s 0 0
+[[ ! -n $SSH_CLIENT ]] && xset s 0 0
 
 source ~/.config/zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
-eval "$(keychain --eval --quiet --agents ssh pidns_ecdsa pxe_ecdsa github_ed25519)"
+
+if [[ -n $SSH_CLIENT ]]; then
+    eval "$(keychain --eval --quiet --nogui --agents ssh,gpg pidns_ecdsa pxe_ecdsa github_ed25519 0x446DEED0)"
+else
+    eval "$(keychain --eval --quiet --agents ssh,gpg pidns_ecdsa pxe_ecdsa github_ed25519 0x446DEED0)"
+fi
