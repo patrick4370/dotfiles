@@ -52,9 +52,9 @@ alias sprunge='stripansi | curl -F "sprunge=<-" http://sprunge.us'
 alias stripansi="perl -pe 's/\e\[?.*?[\@-~]//g'"
 alias swapinfo='vmstat -s -S M | \grep swap'
 alias tlw="tmux list-windows | sed -n 's/.*layout \(.*\)] @.*/\1/p'"
-alias v='vim '
+alias v='vim -X'
 alias video='yt-dlp --config-locations "~/.config/yt-dlp/video" '
-alias vs='sudo vim '
+alias vs='sudo vim -X '
 alias vss='sort -u "${HOME}"/.config/nvim/spell/en.utf-8.add -o "${HOME}"/.config/nvim/spell/en.utf-8.add'
 alias wget='wget -c'
 alias zswap_stats='sudo grep -r . /sys/kernel/debug/zswap'

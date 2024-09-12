@@ -110,6 +110,7 @@ Plug 'vim-scripts/AutoComplPop'
 Plug 'chriszarate/yazi.vim'
 Plug 'jampow/vim-arc-dark-theme'
 Plug 'jamessan/vim-gnupg'
+Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
                                             
 call plug#end()
  

@@ -137,14 +137,16 @@ fi
 
 # No screen blanking
 # sleep 1
-[[ ! -n $SSH_CLIENT ]] && xset s 0 0
+if [ ! -n "${SSH_CLIENT}" ]; then
+    xset -dpms 
+fi
 
 source ~/.config/zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
 if [[ -n $SSH_CLIENT ]]; then
-    eval "$(keychain --eval --quiet --nogui --agents ssh,gpg pidns_ecdsa pxe_ecdsa github_ed25519 0x446DEED0)"
+    eval "$(keychain --eval --quiet --nogui --agents ssh pidns_ed25519-sk_2024-09-10_YK1 pidns_ed25519-sk_2024-09-10_YK2 pxe_ed25519-sk_2024-09-10_YK1 pxe_ed25519-sk_2024-09-10_YK2)"
 else
-    eval "$(keychain --eval --quiet --agents ssh,gpg pidns_ecdsa pxe_ecdsa github_ed25519 0x446DEED0)"
+    eval "$(keychain --eval --quiet --agents ssh pidns_ed25519-sk_2024-09-10_YK1 pidns_ed25519-sk_2024-09-10_YK2 pxe_ed25519-sk_2024-09-10_YK1 pxe_ed25519-sk_2024-09-10_YK2)"
 fi
