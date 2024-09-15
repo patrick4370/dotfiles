@@ -120,6 +120,7 @@ ce()
                  $XDG_CONFIG_HOME/rofi/config.rasi 
                  $XDG_CONFIG_HOME/starship.toml
                  $XDG_CONFIG_HOME/tmux/tmux.conf
+                 $XDG_CONFIG_HOME/udiskie/config.yml
                  $XDG_CONFIG_HOME/weechat/*.conf 
                  $XDG_CONFIG_HOME/yazi/*    
                  $XDG_CONFIG_HOME/zathura/zathurarc

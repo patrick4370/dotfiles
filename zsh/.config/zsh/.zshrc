@@ -145,8 +145,10 @@ source ~/.config/zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
-if [[ -n $SSH_CLIENT ]]; then
-    eval "$(keychain --eval --quiet --nogui --agents ssh pidns_ed25519-sk_2024-09-10_YK1 pidns_ed25519-sk_2024-09-10_YK2 pxe_ed25519-sk_2024-09-10_YK1 pxe_ed25519-sk_2024-09-10_YK2)"
-else
-    eval "$(keychain --eval --quiet --agents ssh pidns_ed25519-sk_2024-09-10_YK1 pidns_ed25519-sk_2024-09-10_YK2 pxe_ed25519-sk_2024-09-10_YK1 pxe_ed25519-sk_2024-09-10_YK2)"
+unset SSH_AGENT_PID
+if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
+  export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
 fi
+export GPG_TTY=$(tty)
+gpg-connect-agent updatestartuptty /bye >/dev/null
+

@@ -37,6 +37,7 @@ alias pac_explicit='pacman -Qqen > ~/explicit.txt'
 alias pac_foreign='pacman -Qqm > ~/foreign.txt'
 alias pac_inup="grep --color=never "$(date +"%Y-%m-%d")" /var/log/pacman.log | grep -i 'installed\|upgraded'"
 alias pacbackup='comm -23 <(pacman -Qeq|sort) <(pacman -Qmq|sort) > pkglist.txt'
+alias pacdiff='pacdiff --backup --sudo --threeway'
 alias pdf='zathura'
 alias ping='ping -4 -c 4'
 alias pitemp="ssh -t -p 549 patrick@pidns 'vcgencmd measure_temp' 2> /dev/null" 
