@@ -136,4 +136,4 @@ source ~/.config/zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
-eval $(keychain --eval --timeout 43200 --quiet --agents ssh ~/.ssh/github_ed25519 ~/.ssh/gitlab_ed25519 ~/.ssh/pidns_ed25519-sk_2024-09-19_YK1 ~/.ssh/pidns_ed25519-sk_2024-09-19_YK2 ~/.ssh/pxe_ed25519-sk_2024-09-19_YK2 ~/.ssh/pxe_ed25519-sk_2024-09-21_YK1)
+eval $(keychain --eval --timeout 43200 --agents ssh ~/.ssh/github_ed25519 ~/.ssh/gitlab_ed25519 ~/.ssh/pidns_ed25519-sk_2024-09-19_YK1 ~/.ssh/pidns_ed25519-sk_2024-09-19_YK2 ~/.ssh/pxe_ed25519-sk_2024-09-19_YK2 ~/.ssh/pxe_ed25519-sk_2024-09-21_YK1)
