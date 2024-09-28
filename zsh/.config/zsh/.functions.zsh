@@ -135,6 +135,15 @@ ce()
 
 }
 
+phone()
+{
+    adb kill-server > /dev/null 2>&1
+    adb start-server > /dev/null 2>&1
+    adb tcpip 5555 > /dev/null 2>&1
+    adb connect 192.168.10.50:5555
+    scrcpy & 
+}
+
 # Last pacman update
 lstupg()
 {

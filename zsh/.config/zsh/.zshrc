@@ -69,6 +69,11 @@ zstyle ':completion:*' group-name ''
 zstyle ':completion:*:*:-command-:*:*' group-order alias builtins functions commands
 zstyle ':completion:*' rehash true
 zstyle ':completion:*' file-sort modification
+# zstyle ':completion:*:*:ssh:*:*' known-hosts-files /etc/ssh/ssh_known_hosts ~/.ssh/known_hosts
+# zstyle ':completion:*:(scp|rsync):*' tag-order ' hosts:-ipaddr:ip\ address hosts:-host:host files'
+# zstyle ':completion:*:(ssh|scp|rsync):*:hosts-host' ignored-patterns '*(.|:)*' loopback ip6-loopback localhost ip6-localhost broadcasthost
+# zstyle ':completion:*:(ssh|scp|rsync):*:hosts-ipaddr' ignored-patterns '^(<->.<->.<->.<->|(|::)([[:xdigit:].]##:(#c,2))##(|%*))' '127.0.0.<->' '255.255.255.255' '::1' 'fe80::*'
+# zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' \ '+l:|?=** r:|?=**'
 
 # History Parameters
 HISTFILE=$XDG_CONFIG_HOME/zsh/.zsh_history
@@ -127,28 +132,8 @@ bindkey -s '^L' 'clear^M'
 [ -f /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh || echo "/usr/share/fzf/completion.zsh not found"  
 [ -f /usr/share/fzf/key-bindings.zsh ] && source /usr/share/fzf/key-bindings.zsh || echo "/usr/share/fzf/key-bindings.zsh not found" 
 
-if type clipcat-menu >/dev/null 2>&1; then
-    alias clipedit=' clipcat-menu --finder=builtin edit'
-    alias clipdel=' clipcat-menu --finder=builtin remove'
-
-    bindkey -s '^\' "^Q clipcat-menu --finder=builtin insert ^J"
-    bindkey -s '^]' "^Q clipcat-menu --finder=builtin remove ^J"
-fi
-
-# No screen blanking
-# sleep 1
-if [ ! -n "${SSH_CLIENT}" ]; then
-    xset -dpms 
-fi
-
 source ~/.config/zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
-unset SSH_AGENT_PID
-if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
-  export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
-fi
-export GPG_TTY=$(tty)
-gpg-connect-agent updatestartuptty /bye >/dev/null
-
+eval $(keychain --eval --timeout 43200 --quiet --agents ssh ~/.ssh/github_ed25519 ~/.ssh/gitlab_ed25519 ~/.ssh/pidns_ed25519-sk_2024-09-19_YK1 ~/.ssh/pidns_ed25519-sk_2024-09-19_YK2 ~/.ssh/pxe_ed25519-sk_2024-09-19_YK2 ~/.ssh/pxe_ed25519-sk_2024-09-21_YK1)

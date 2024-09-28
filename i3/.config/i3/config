@@ -60,7 +60,6 @@ exec_always --no-startup-id /usr/bin/rclone mount --daemon pidns: /home/patrick/
 exec --no-startup-id xidlehook --not-when-audio --not-when-fullscreen --timer 600 "~/.local/bin/i3lockscript.sh" "" &
 exec --no-startup-id /usr/bin/numlockx 
 exec --no-startup-id /usr/bin/tailscale-systray
-exec_always --no-startup-id /usr/bin/clipcatd
 exec --no-startup-id /usr/bin/udiskie -sna
 exec --no-startup-id /usr/bin/lxpolkit
 exec --no-startup-id xrandr --output eDP-1 --screenlayoutale 1.2x1.2
@@ -136,6 +135,7 @@ assign [class="strawberry"]                             $ws7
 assign [class="Picard"]                                 $ws8
 assign [class="GLava"]                                  $ws9  
 assign [class="Zathura"]                                $ws10
+assign [class="Gthumb"]                                 $ws9
 
 # Floating windows & Layouts
 for_window [class="Arandr" instance="arandr"] floating enable, resize set 800 800, move position center
@@ -168,6 +168,12 @@ for_window [id=56623110 title="MakeMKV BETA"] floating enable
 for_window [instance="ncmpcpp"] floating enable, resize set 1200 700, move position center
 for_window [instance="paru"] sticky enable, floating enable, resize set 1600 800, border pixel 1, move position center
 for_window [class="QtPass" instance="qtpass"] floating enable, resize set 1000 600, move position center
+for_window [class="betterbird" instance="Msgcompose" window_role="Msgcompose"] floating enable, resize set 1500 700, move position center
+for_window [class="scrcpy"] floating enable, move position 1460 35 
+for_window [class="Dconf-editor"] floating enable
+
+# Yazi
+bindsym $mod+Shift+f exec "alacritty --class yazi -e yazi"
 
 # Move through workspaces
 bindsym Mod1+$mod+Right workspace next
@@ -197,10 +203,6 @@ bindsym $mod+Shift+x exec --no-startup-id ~/.local/bin/i3lockscript.sh
 
 # Focus parent window
 bindsym $mod+a focus parent
-
-# Clipboard
-bindsym $mod+p exec $launcher-clipboard-insert
-bindsym $mod+o exec $launcher-clipboard-remove
 
 # Start Rofi as program launcher
 bindsym $mod+d exec --no-startup-id rofi -show drun -show-icons -sorting-method fzf eDP1
@@ -300,7 +302,7 @@ bindsym $mod+Ctrl+Left resize grow width 10 px or 10 ppt
 
 # Instant scratchpad on any window
 bindsym $mod+Page_Up mark "alpha", move scratchpad
-bindsym $mod+Page_Down [con_mark="alpha"] scratchpad show,floating disable
+bindsym $mod+Page_Down [con_mark="alpha"] scratchpad show, floating enable
 
 # Mark a Window
 bindsym $mod+Shift+m exec i3-input -F 'mark %s' -l 1 -P 'Mark: '
@@ -376,3 +378,4 @@ for_window [instance="btop"] floating enable, sticky enable, resize set 1500 700
 exec --no-startup-id alacritty --class newsboat -e newsboat
 bindsym $mod+n [instance="newsboat"] scratchpad show; [instance="newsboat"] move position center
 for_window [instance="newsboat"] floating enable, resize set 1500 700, move scratchpad
+

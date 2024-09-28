@@ -2,7 +2,7 @@
 
 # : Manager {{{
 [flavor]
-use = "catppuccin-macchiato"
+use = "kanagawa"
 
 [manager]
 cwd = { fg = "#94e2d5" }

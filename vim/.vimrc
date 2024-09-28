@@ -6,7 +6,7 @@
 "
 " Author: Patrick Heffernan
 "  Email: <patrick4370@bigpond.com>
-
+ 
 " [General Options]
 filetype plugin indent on
 runtime macros/matchit.vim
@@ -16,10 +16,12 @@ syntax on
 set autoindent
 set backspace=indent,eol,start
 set belloff=all
-set clipboard^=unnamed,unnamedplus
+set clipboard=unnamedplus,unnamed
 " set complete+=k
 " set completeopt=longest
 " set dictionary+=/usr/share/dict/british-english
+set diffopt+=iwhite
+" set diffopt=filler,context:0
 set encoding=UTF-8
 set expandtab
 set foldlevel=99
@@ -34,18 +36,19 @@ set incsearch
 set laststatus=2
 set listchars=trail:·,eol:$,tab:>.,extends:>,precedes:<
 set modeline
-set mouse=nvi
+set mouse=a
 set noshowcmd
 set noshowmode
 set nrformats+=alpha
 set number
-set omnifunc=syntaxcomplete#Complete
+" set omnifunc=syntaxcomplete#Complete
 set numberwidth=3
 set pastetoggle=<F2>
 set path+=**
 set relativenumber
 set ruler
 set rulerformat=%l,%c%V%=%P
+set scrollbind
 set sessionoptions=blank,buffers,curdir,folds,globals,help,terminal
 set shiftwidth=4
 set shortmess+=f
@@ -111,6 +114,7 @@ Plug 'chriszarate/yazi.vim'
 Plug 'jampow/vim-arc-dark-theme'
 Plug 'jamessan/vim-gnupg'
 Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
+Plug 'jamessan/vim-gnupg'
                                             
 call plug#end()
  
@@ -132,6 +136,11 @@ endif
 set t_Co=256
 colorscheme arc-dark 
 set background=dark
+
+" load different colorscheme when using vimdiff
+if &diff
+    colorscheme habamax
+endif
 
 " Change some colours to match what I want.
 highlight VemStatusLineBranch       cterm=none ctermfg=117 ctermbg=237 guifg=#1793D1 guibg=#3a3a3a gui=bold
@@ -536,7 +545,9 @@ let g:mkdp_combine_preview_auto_refresh = 1
 
 nnoremap <silent> - :Yazi<cr>
 nnoremap <silent> _ :YaziWorkingDirectory<cr>
-nnoremap <silent> <C-A-v> :vsplit \| :Yazi<cr>
+nnoremap <silent> <C-S-y> :vsplit \| :Yazi<cr>
 
 autocmd User GnuPG setl textwidth=72
+let g:GPGPreferArmor=1
+let g:GPGDefaultRecipients=["patrick4370@outlook.com.au"]
 

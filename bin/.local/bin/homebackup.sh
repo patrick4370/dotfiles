@@ -14,7 +14,7 @@
 pushd "$HOME" || exit
 
 if grep -sq '/run/media/patrick/Backup' /proc/mounts; then
-    rsync -avp --delete --progress --safe-links --include-from='include.txt' . /run/media/patrick/Backup/dell_e7440/
+    rsync -avp --delete --progress --safe-links --include-from='$XDG_CONFIG_HOME/include.txt' . /run/media/patrick/Backup/dell_e7440/
     dunstify "Success" "Backup completed at $(date +"%d/%m/%Y %H:%M")" -u critical
 else
     dunstify "Failure" "/run/media/patrick/Backup is not mounted" -u critical
